@@ -1,0 +1,77 @@
+@font-face {
+    font-weight: 600;
+    font-family: 'EMprint';
+    src: url( 'fonts/EMprint-Semibold.eot' );
+    src:
+        url( 'fonts/EMprint-Semibold.eot?#iefix' ) format( 'embedded-opentype' ),
+        url( 'fonts/EMprint-Semibold.woff2' ) format( 'woff2' ),
+        url( 'fonts/EMprint-Semibold.woff' ) format( 'woff' ),
+        url( 'fonts/EMprint-Semibold.ttf' ) format( 'truetype' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'EMprint';
+    src: url( 'fonts/EMprint-Semibold.eot' );
+    src:
+        url( 'fonts/EMprint-Semibold.eot?#iefix' ) format( 'embedded-opentype' ),
+        url( 'fonts/EMprint-Semibold.woff2' ) format( 'woff2' ),
+        url( 'fonts/EMprint-Semibold.woff' ) format( 'woff' ),
+        url( 'fonts/EMprint-Semibold.ttf' ) format( 'truetype' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: 'EMprint';
+    src: url( 'fonts/EMprint-Light.eot' );
+    src:
+        url( 'fonts/EMprint-Light.eot?#iefix' ) format( 'embedded-opentype' ),
+        url( 'fonts/EMprint-Light.woff2' ) format( 'woff2' ),
+        url( 'fonts/EMprint-Light.woff' ) format( 'woff' ),
+        url( 'fonts/EMprint-Light.ttf' ) format( 'truetype' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'EMprint';
+    src: url( 'fonts/EMprint-Regular.eot' );
+    src:
+        url( 'fonts/EMprint-Regular.eot?#iefix' ) format( 'embedded-opentype' ),
+        url( 'fonts/EMprint-Regular.woff2' ) format( 'woff2' ),
+        url( 'fonts/EMprint-Regular.woff' ) format( 'woff' ),
+        url( 'fonts/EMprint-Regular.ttf' ) format( 'truetype' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: 'EMprint';
+    src: url( 'fonts/EMprint-Bold.eot' );
+    src:
+        url( 'fonts/EMprint-Bold.eot?#iefix' ) format( 'embedded-opentype' ),
+        url( 'fonts/EMprint-Bold.woff2' ) format( 'woff2' ),
+        url( 'fonts/EMprint-Bold.woff' ) format( 'woff' ),
+        url( 'fonts/EMprint-Bold.ttf' ) format( 'truetype' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 800;
+    font-family: 'EMprint';
+    src: url( 'fonts/EMprint-Bold.eot' );
+    src:
+        url( 'fonts/EMprint-Bold.eot?#iefix' ) format( 'embedded-opentype' ),
+        url( 'fonts/EMprint-Bold.woff2' ) format( 'woff2' ),
+        url( 'fonts/EMprint-Bold.woff' ) format( 'woff' ),
+        url( 'fonts/EMprint-Bold.ttf' ) format( 'truetype' );
+    font-style: normal;
+    font-display: swap;
+}

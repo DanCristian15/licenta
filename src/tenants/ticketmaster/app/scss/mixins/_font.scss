@@ -1,0 +1,53 @@
+$font-family: "Averta Std", sans-serif;
+$base-font-size: 14px;
+
+$font-sizes: (
+    'xxxxxs': 9px,
+    'xxxxs': 10px,
+    'xxxs': 11px,
+    'xxs': 12px,
+    'xs': 13px,
+    's':  14px,
+    'm': 15px,
+    'l': 16px,
+    'xl':  17px,
+    'xxl': 18px,
+    'xxxl': 20px,
+    'xxxxl': 24px,
+    'xxxxxl':  30px,
+    'xxxxxxl': 32px,
+    'xxxxxxxl':  36px
+);
+$font-weights: (
+    'thin': 100,
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'large': 600,
+    'bold': 700,
+    'black': 800
+);
+
+@function font-size($level: 'm') {
+    @return map-get($font-sizes, $level);
+}
+
+@mixin font-size($level) {
+    font-size: map-get( $font-sizes, $level );
+}
+
+@mixin line-height($level) {
+    line-height: map-get( $font-sizes, $level ) !important;
+}
+
+@function line-height( $level: 'm' ) {
+    @return map-get($font-sizes, $level);
+}
+
+@function font-weight($level: 'regular') {
+    @return map-get($font-weights, $level);
+}
+
+@mixin font-weight($level) {
+    font-weight: map-get( $font-weights, $level );
+}

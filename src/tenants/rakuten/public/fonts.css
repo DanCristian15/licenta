@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-Italic.eot');
+    src: url('fonts/Stag-Italic.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-Italic.woff2') format('woff2'), url('fonts/Stag-Italic.woff') format('woff'), url('fonts/Stag-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-Thin.eot');
+    src: url('fonts/Stag-Thin.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-Thin.woff2') format('woff2'), url('fonts/Stag-Thin.woff') format('woff'), url('fonts/Stag-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-BlackItalic.eot');
+    src: url('fonts/Stag-BlackItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-BlackItalic.woff2') format('woff2'), url('fonts/Stag-BlackItalic.woff') format('woff'), url('fonts/Stag-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-ThinItalic.eot');
+    src: url('fonts/Stag-ThinItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-ThinItalic.woff2') format('woff2'), url('fonts/Stag-ThinItalic.woff') format('woff'), url('fonts/Stag-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-Regular.eot');
+    src: url('fonts/Stag-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-Regular.woff2') format('woff2'), url('fonts/Stag-Regular.woff') format('woff'), url('fonts/Stag-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-Medium.eot');
+    src: url('fonts/Stag-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-Medium.woff2') format('woff2'), url('fonts/Stag-Medium.woff') format('woff'), url('fonts/Stag-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-Black.eot');
+    src: url('fonts/Stag-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-Black.woff2') format('woff2'), url('fonts/Stag-Black.woff') format('woff'), url('fonts/Stag-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-SemiBold.eot');
+    src: url('fonts/Stag-SemiBold.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-SemiBold.woff2') format('woff2'), url('fonts/Stag-SemiBold.woff') format('woff'), url('fonts/Stag-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-SemiBoldItalic.eot');
+    src: url('fonts/Stag-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-SemiBoldItalic.woff2') format('woff2'), url('fonts/Stag-SemiBoldItalic.woff') format('woff'), url('fonts/Stag-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-Light.eot');
+    src: url('fonts/Stag-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-Light.woff2') format('woff2'), url('fonts/Stag-Light.woff') format('woff'), url('fonts/Stag-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-Bold.eot');
+    src: url('fonts/Stag-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-Bold.woff2') format('woff2'), url('fonts/Stag-Bold.woff') format('woff'), url('fonts/Stag-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-BoldItalic.eot');
+    src: url('fonts/Stag-BoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-BoldItalic.woff2') format('woff2'), url('fonts/Stag-BoldItalic.woff') format('woff'), url('fonts/Stag-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-MediumItalic.eot');
+    src: url('fonts/Stag-MediumItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-MediumItalic.woff2') format('woff2'), url('fonts/Stag-MediumItalic.woff') format('woff'), url('fonts/Stag-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stag';
+    src: url('fonts/Stag-LightItalic.eot');
+    src: url('fonts/Stag-LightItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Stag-LightItalic.woff2') format('woff2'), url('fonts/Stag-LightItalic.woff') format('woff'), url('fonts/Stag-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}

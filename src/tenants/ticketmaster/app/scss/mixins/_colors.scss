@@ -1,0 +1,75 @@
+@import '@tenantScssThemeVariables';
+@import '../_utility-scss';
+
+$theme-colors: (
+    'primary':                              var( --v-primary-base ),
+    'secondary':                            var( --v-secondary-base ),
+    'tertiary':                             var( --v-tertiary-base ),
+    'quaternary':                           var( --v-quaternary-base ),
+    'quinary':                              var( --v-quinary-base ),
+    'senary':                               var( --v-senary-base ),
+    'septenary':                            var( --v-septenary-base ),
+    'accent':                               var( --v-accent-base ),
+    'anchor':                               var( --v-anchor-base ),
+    'error':                                var( --v-error-base ),
+    'success':                              var( --v-success-base ),
+    'warning':                              var( --v-warning-base ),
+    'info':                                 var( --v-info-base ),
+    'overlay':                              var( --v-overlay-base ),
+    'shadow':                               var( --v-shadow-base ),
+    'gradient-primary-1':                   var( --v-gradientPrimary1-base ),
+    'gradient-primary-2':                   var( --v-gradientPrimary2-base ),
+    'gradient-secondary-1':                 var( --v-gradientSecondary1-base ),
+    'gradient-secondary-2':                 var( --v-gradientSecondary2-base ),
+    'gradient-radial-1':                    var( --v-gradientRadial1-base ),
+    'gradient-radial-2':                    var( --v-gradientRadial2-base ),
+    'home-banner-gradient-start':           var( --v-homeBannerGradientStart-base ),
+    'home-banner-gradient-end':             var( --v-homeBannerGradientEnd-base ),
+    'home-banner-search-button-bg-color':   var( --v-homeBannerSearchButtonBgColor-base ),
+    'footer-gradient-start':                var( --v-footerGradientStart-base ),
+    'footer-gradient-end':                  var( --v-footerGradientEnd-base ),
+    'calendar':                             var( --v-calendar-base ),
+    'background-timer':                     var( --v-backgroundTimer-base ),
+    'background-success':                   var( --v-backgroundSuccess-base ),
+    'bonus-points-chip-bg-color':           var( --v-bonusPointsChipBgColor-base ),
+    'bonus-points-chip-color':              var( --v-bonusPointsChipColor-base ),
+    'favorite-marked':                      var( --v-favoriteMarked-base ),
+    'favorite-unmarked':                    var( --v-favoriteUnMarked-base ),
+    'event-status-chip-cancelled':          var( --v-eventStatusChipCancelled-base ),
+    'event-status-chip-postponed':          var( --v-eventStatusChipPostponed-base ),
+    'event-status-chip-rescheduled':        var( --v-eventStatusChipRescheduled-base )
+);
+
+$theme-colors-global: (
+    'white': #FFFFFF,
+    'black': #000000,
+    'transparent': transparent,
+    'event-health-check': #F80445
+);
+
+$theme-colors-variants: (
+    'primary-lighten-1': lighten( map-get( $theme-colors-hex, 'primary' ), 52 ), // not used
+    'primary-lighten-2': lighten( map-get( $theme-colors-hex, 'primary' ), 27 ),
+    'primary-darken-1': darken( map-get( $theme-colors-hex, 'primary' ), 12 ),
+    'senary-darken-1': darken( map-get( $theme-colors-hex, 'senary' ), 32 )
+);
+
+$theme-colors: map-merge( map-merge( $theme-colors, $theme-colors-global ), $theme-colors-variants );
+$theme-colors-hex: map-merge( map-merge( $theme-colors-hex, $theme-colors-global ), $theme-colors-variants );
+
+@function theme-color($key: 'primary') {
+    @return map-get-strict($theme-colors, $key);
+}
+
+@function theme-color-hex($key: 'primary' ) {
+    @return map-get-strict($theme-colors-hex, $key );
+}
+
+// UTILITY classes for colors
+@mixin theme-color($colors, $attribute: 'color', $prefix: '-') {
+    @each $index, $hex in $colors {
+        .#{$prefix}#{$index} {
+            #{$attribute}: $hex;
+        }
+    }
+}

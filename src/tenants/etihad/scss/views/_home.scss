@@ -1,0 +1,37 @@
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__title {
+            color: black;
+            font-size: 48px;
+            font-weight: font-weight( 'medium' ) !important;
+        }
+
+        .gst-home__subtitle {
+            color: black;
+            font-size: font-size( 'm' );
+            font-weight: font-weight( 'regular' ) !important;
+            letter-spacing: -0.27px;
+        }
+    }
+
+    .gst-top-events-card-list {
+        h4 {
+            font-weight: font-weight( 'regular' );
+            letter-spacing: -0.4px;
+        }
+
+        .v-btn {
+            font-weight: font-weight( 'regular' );
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .gst-home {
+        .gst-banner.gst-banner--home {
+            .gst-home__title {
+                font-size: font-size( 'xxxxxl' );
+            }
+        }
+    }
+}

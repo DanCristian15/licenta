@@ -1,0 +1,25 @@
+.gst-bonus-points-cart-checkout-summary {
+    span {
+        color: #FFFFFF !important;
+    }
+
+    h4 {
+        color: #FFBF27 !important;
+        text-transform: capitalize;
+    }
+}
+
+.gst-bonus-points-cart-checkout-confirmation {
+    p.tertiary--text {
+        color: #FFFFFF !important;
+    }
+
+    h4.quaternary--text {
+        color: #FFBF27 !important;
+        text-transform: capitalize;
+    }
+}
+
+.gst-bp-chip {
+    text-transform: unset !important;
+}

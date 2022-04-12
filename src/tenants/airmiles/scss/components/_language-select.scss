@@ -1,0 +1,29 @@
+$color-lang-select: #5E5E5E;
+$border-color-lang-select: rgb( 94, 94, 94, 0.2 );
+
+.gst-lang-select {
+    .v-btn.gst-lang-select__button {
+        border-radius: border-radius( 'm' ) !important;
+    }
+
+    &.gst-lang-select--secondary {
+        .v-btn.gst-lang-select__button {
+            border: 1px solid $border-color-lang-select !important;
+            color: $color-lang-select;
+
+            svg .gst-svg-icon {
+                fill: $color-lang-select;
+            }
+        }
+
+        .v-btn.gst-lang-select__button--active {
+            border: 1px solid theme-color( 'primary' );
+            background: theme-color( 'primary' ) !important;
+            color: theme-color( 'white' ) !important;
+
+            svg .gst-svg-icon {
+                fill: theme-color( 'white' );
+            }
+        }
+    }
+}

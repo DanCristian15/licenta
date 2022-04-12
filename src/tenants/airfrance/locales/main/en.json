@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem Miles"
+                        }
+                    },
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "FLYING BLUE Account Number"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "FLYING BLUE Lifestyle",
+                "subtitle": "More content. More miles. More adventures."
+            }
+        }
+    }
+}

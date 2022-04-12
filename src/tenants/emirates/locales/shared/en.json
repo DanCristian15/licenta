@@ -1,0 +1,28 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} SKYWARDS MILES",
+                "pointWithCount_plural": "{{ formattedCount }} SKYWARDS MILES"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} SKYWARDS MILES",
+                "pointWithCount_plural": "{{ formattedCount }} SKYWARDS MILES"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} SKYWARDS MILE",
+                "title_plural": "{{points}} SKYWARDS MILES"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn Skywards Miles. Simple as that."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} skywards Miles"
+                }
+            }
+        }
+    }
+}

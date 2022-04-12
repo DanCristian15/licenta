@@ -1,0 +1,21 @@
+.gst-checkout-step-2 {
+    .gst-section-title {
+        font-weight: font-weight( 'bold' );
+    }
+
+    .v-input__control {
+        span {
+            font-weight: font-weight( 'regular' );
+        }
+    }
+
+    .v-btn {
+        span {
+            font-size: font-size( 's' );
+        }
+    }
+
+    label {
+        color: theme-color( 'primary' ) !important;
+    }
+}

@@ -1,0 +1,13 @@
+$footer-text-color: #425775;
+
+.gst-footer {
+    color: $footer-text-color !important;
+
+    .gst-menu-link {
+        color: $footer-text-color !important;
+    }
+
+    .gst-menu-link--white {
+        color: $footer-text-color !important;
+    }
+}

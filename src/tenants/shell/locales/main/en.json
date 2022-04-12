@@ -1,0 +1,23 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Fuel Rewards Account"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Events & Experiences",
+                "subtitle": "More content. More Fuel Rewards. More adventures."
+            }
+        }
+    }
+}

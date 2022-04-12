@@ -1,0 +1,5 @@
+#!/bin/sh
+
+envsubst '$KEYCLOAK' < /etc/nginx/default.conf.template > /etc/nginx/conf.d/default.conf
+
+exec /usr/bin/run.sh

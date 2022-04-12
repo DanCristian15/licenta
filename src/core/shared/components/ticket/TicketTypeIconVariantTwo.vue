@@ -1,0 +1,80 @@
+
+<template>
+    <v-flex
+        :class="offerClass"
+        d-flex
+        align-center
+        class="gst-ticket-offer-type-icon">
+        <component :is="offerIcon" />
+    </v-flex>
+</template>
+<script>
+    import { isResale as ticketUtilsIsResale } from '@core/utils/ticketUtils';
+    import IconCheckCircle from '@core/shared/assets/icons/check_circle.svg';
+    import IconTicket from '@core/shared/assets/icons/ticket.svg';
+
+    export default {
+        name: 'TicketTypeIconVariantTwo',
+        components: {
+            /* eslint-disable vue/no-unused-components */
+            IconCheckCircle,
+            IconTicket
+            /* eslint-enable vue/no-unused-components */
+        },
+        i18nOptions: {
+            namespaces: 'shared',
+            keyPrefix: 'components.ticket.ticketOfferTypeIcon'
+        },
+        props: {
+            type: {
+                type: String,
+                default: 'standard'
+            },
+            offerName: {
+                type: String,
+                default: ''
+            }
+        },
+        computed: {
+            offerIcon( ) {
+                return ticketUtilsIsResale( this.type ) ? 'IconCheckCircle' : 'IconTicket';
+            },
+            offerLabel( ) {
+                return ticketUtilsIsResale( this.type ) ? this.$t( 'labels.resale' ) : this.$t( 'labels.standard' );
+            },
+            offerClass( ) {
+                return ticketUtilsIsResale( this.type ) ? 'gst-ticket-offer-type-icon--resale' : 'gst-ticket-offer-type-icon--standard';
+            }
+        }
+    };
+</script>
+<style lang="scss" scoped>
+    @import "@scssVariables";
+
+    .gst-ticket-offer-type-icon {
+        line-height: 13px;
+        font-size: font-size( 'xxxs' );
+        font-weight: font-weight( 'bold' );
+        text-transform: uppercase;
+    }
+
+    .gst-ticket-offer-type-icon.gst-ticket-offer-type-icon--resale {
+        svg {
+            .gst-svg-icon {
+                fill: theme-color( 'success' );
+            }
+        }
+
+        color: theme-color( 'success' );
+    }
+
+    .gst-ticket-offer-type-icon.gst-ticket-offer-type-icon--standard {
+        svg {
+            .gst-svg-icon {
+                fill: theme-color( 'primary' );
+            }
+        }
+
+        color: theme-color( 'primary' );
+    }
+</style>

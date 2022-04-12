@@ -1,0 +1,19 @@
+.gst-footer {
+    color: black !important;
+
+    .gst-menu-link {
+        color: black !important;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .gst-menu-link--white {
+        color: black !important;
+
+        &:hover {
+            color: black !important;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }}",
+                "pointWithCount_plural": "{{ formattedCount }}"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }}",
+                "pointWithCount_plural": "{{ formattedCount }}"
+            },
+            "bonusPointsChip": {
+                "title": "<b>{{points}}</b> Points PC Optimum en prime*"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Gagnez des points PC Optimum en prime* sur des millions d'événements et d'expériences dans le monde."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} Points PC Optimum en prime*"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": "*Lorsque vous payez votre carte de crédit. President’s Choice Financial Mastercard®, obtenez 10 points PC Optimum en prime par dollar d’achat de services de mode de vie PC® (taxes comprises) en plus des 10 points réguliers PC Optimum par dollar gagnés pour tous les achats sur la carte. S’applique aux nouvelles réservations uniquement. Les points en prime PC Optimum porteront la mention « Primes de récompense services de mode de vie PC » sur votre relevé de points PC Optimum. Tous les points associés à des achats effectués pendant la période de promotion seront retenus si les produits sont annulés ou remboursés. L’offre peut être modifiée en tout temps. Le rachat minimum est de 10 000 points PC Optimum (qui vaut 10 $ en récompense) et des tranches de 10 000 points PC Optimum par la suite à des épiceries participantes où des produits Choix du Président sont vendus. Certaines restrictions s’appliquent au rachat; visitez <a href=\"http://pcoptimum.ca\">pcoptimum.ca</a> pour tous les détails."
+                }
+            },
+            "copyright": "© {{ year }} PC Optimum. Tous droits réservés."
+        }
+    }
+}

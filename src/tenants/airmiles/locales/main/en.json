@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem Miles"
+                        }
+                    },
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "AIR MILES  Account Number"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "AIR MILES Lifestyle",
+                "subtitle": "Earn up to 3 Miles per $1 on lifestyle products."
+            }
+        }
+    }
+}

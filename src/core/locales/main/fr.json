@@ -1,0 +1,338 @@
+{
+    "static": {
+        "notFound": {
+            "message": "Désolé, la page que vous avez demandée est introuvable. Veuillez cliquer sur le bouton ci-dessous pour revenir à la page d'accueil."
+        }
+    },
+    "views": {
+        "attraction": {
+            "theAttraction": {
+                "_components": {
+                    "musicLinks": {
+                        "title": "Écoute maintenant"
+                    },
+                    "similarAttractions": {
+                        "title": "Artistes et équipes similaires"
+                    }
+                },
+                "messages": {
+                    "noData": {
+                        "content": "Recevez une notification lorsque les billets sont disponibles dans votre région ou revenez plus tard.",
+                        "title": "Aucun événement à venir"
+                    }
+                }
+            }
+        },
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "checkoutConfirmation": {
+                        "buttons": {
+                            "download": "Téléchargez vos billets électroniques"
+                        },
+                        "subtitle": {
+                            "elecTicket": "Vous recevrez un email de confirmation de Ticketmaster avec un lien de téléchargement.",
+                            "noElecTicket": "Vous allez recevoir un courriel de confirmation de Ticketmaster.<br>Les billets seront livré à votre addresse"
+                        },
+                        "title": "Vous allez!"
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Échangez Des $t(_common:terms.bonusPointLong_plural)",
+                            "finalTotal": "$t(_common:terms.total) $t(_common:terms.final)",
+                            "includingTaxes": "*les taxes sont incluses",
+                            "pricePerTicket": "$t(_common:terms.price) par $t(_common:terms.ticket)",
+                            "pricePerTicketDetail": " taxes et frais",
+                            "shipping": "Expédition",
+                            "shippingTaxes": "Taxes d'expédition"
+                        }
+                    },
+                    "headerWithCountDown": {
+                        "labels": {
+                            "countDown": "Les billets sont réservés pour"
+                        }
+                    },
+                    "sidebar": {
+                        "faqCard": {
+                            "items": {
+                                "item0": {
+                                    "answer": "Immédiatement après avoir acheté vos billets, nous alons affichiez le lien qui vas te permir de réclamer votre billet électronique auprès de Ticketmaster. Vous allons également recevoir un couriel de Ticketmaster qui vas confirmer que votre commande a été passée avec un lien pour récupérer votre eTicket. Pour les billets de revente vérifiés, une fois que le vendeur a confirmé votre commande (ainsi le placée sous notre confiance de l’acheteur), votre carte de credit sera débité. Une fois que les billets sont prêts à être livré, vous allons recevoir un couriel de confirmation de livraision de Ticketmaster avec des instructions sur comment avoir accès a votre billets en fonction de la méthode de livraison que vous avez choisis.",
+                                    "question": "Que se passe-t-il après avoir acheté mes billets?"
+                                },
+                                "item1": {
+                                    "answer": "Nous vous garantie que vous allons recevoir vos billets en avance de l’événement. Cela signifie que si votre événement est aujourd’hui, vous allons recevoir vos billets en 3 heures. Si vous achetez vos billets dans les 3 heures en avance de l’événement, vous allons recevoir vos billets dans les 15 à 30 minutes suivant.",
+                                    "question": "Quand est-ce-que je vais recevoir mes billets?"
+                                },
+                                "item2": {
+                                    "answer": "Absolument. Il y a certaines salles qui peuvent avoir des sections avec des sieges qui sont numérotés pair et impair, mais ne vous trompez pas. Vos sièges seront réunis, sauf si il y a un indication contraire.",
+                                    "question": "Est-ce-que mes sièges sont ensemble?"
+                                },
+                                "item3": {
+                                    "answer": "Oui, extrêmement. Votre numéro de carte de crédit est cryptée et transmis par SSL directement dans une coffre-fort electronique sécurisé, et le petit icône verrou sur votre navigateur le confirme. Il y a pas une seule moment que votre information de carte de credit est stockée sur nos serveurs.",
+                                    "question": "Est-ce sécuritaire?"
+                                },
+                                "item4": {
+                                    "answer": "Vos points de fidélités seront ajoutés après l'événement.",
+                                    "question": "Òu puis-je voir les points de fidélité pour la commande que j'ai passée?"
+                                }
+                            },
+                            "title": "Questions?"
+                        }
+                    },
+                    "step1Summary": {
+                        "buttons": {
+                            "next": "Continuez vers la facturation et la livraison"
+                        }
+                    },
+                    "step2Delivery": {
+                        "buttons": {
+                            "next": "Continuer au paiement"
+                        },
+                        "form": {
+                            "fieldsets": {
+                                "customerInformation": "Information de client pour facturation",
+                                "deliveryInformation": "Informations de livraison"
+                            },
+                            "labels": {
+                                "address": "Adresse",
+                                "agree": "je suis d'accord avec le ",
+                                "city": "Ville",
+                                "country": "Pays",
+                                "electronic": "Billet électronique",
+                                "email": "Adresse courriel",
+                                "firstName": "Prénom",
+                                "healthCheck": "J'accepte toutes les exigences de contrôle de santé pour assister à cet événement.",
+                                "lastName": "Nom de famille",
+                                "loyalty": "Numéro de Compte Fidélité",
+                                "phone": "Numéro de téléphone",
+                                "state": "État / Province",
+                                "terms": "Termes et conditions",
+                                "zip": "Zip / code postal"
+                            },
+                            "messages": {
+                                "countryShippingOptionsError": "La livraison dans le pays sélectionné n'est pas disponible.",
+                                "healthCheckError": "Vous devez accepter toutes les exigences du bilan de santé pour continuer.",
+                                "info": "Les billets seront envoyés à votre couriel. Veuillez assurer que l’information est correcte.",
+                                "shippingOptionsError": "Veuillez choisir un mode de livraison.",
+                                "termsError": "Vous devez accepter les conditions pour continuer."
+                            },
+                            "tooltips": {
+                                "electronic": "Imprimez vos billets électroniques et emportez-les avec vous sur le site"
+                            }
+                        }
+                    },
+                    "step3Payment": {
+                        "buttons": {
+                            "seeDetails": "Voir les détails"
+                        },
+                        "info": {
+                            "card": "Carte de crédit ou de débit",
+                            "security": "Votre achat de billet est 100% sécurisé et vérifié par Ticketmaster"
+                        },
+                        "labels": {
+                            "radio1": "Payer avec {{bonusPoints}} ({{bonusPointsAvailable}} $t(_common:terms.bonusPoint_plural, lowercase) disponibles)",
+                            "radio1SuffixNotEnoughBonusPoints": " - pas assez de $t(_common:terms.bonusPointLong_plural, lowecase)",
+                            "radio2": "Payer avec Carte de crédit ou de débit",
+                            "radio3": "Divisé"
+                        },
+                        "messages": {
+                            "bonusPointsError": "Les $t(_common:terms.bonusPoint_plural, lowercase) à échanger ne peuvent pas dépasser votre solde",
+                            "formHasError": "Il y a quelques erreurs dans le formulaire. Veuillez vérifier vos informations et réessayer."
+                        },
+                        "orderDetailsModal": {
+                            "title": "Résumé de paiement"
+                        },
+                        "total": "Vous paierez un total de: {{amount}}"
+                    }
+                },
+                "indicator": {
+                    "labels": {
+                        "step1Summary": "Sommaire",
+                        "step2Delivery": "Facturation et livraison",
+                        "step3Payment": "Paiement"
+                    }
+                },
+                "progressStepAnimationModal": {
+                    "description": "Ne fermez pas cette fenêtre tant que votre commande n'est pas terminée",
+                    "labels": {
+                        "step1Verifying": "Vérification du paiement",
+                        "step2Processing": "Traitement de vos billets",
+                        "step3Finalizing": "Finalisons votre commande"
+                    },
+                    "title": "Veuillez patienter pendant le traitement de votre commande"
+                }
+            }
+        },
+        "event": {
+            "eventInfoModal": {
+                "details": {
+                    "attractions": {
+                        "messages": {
+                            "noData": "Les attractions ne sont pas disponibles pour cet événement"
+                        },
+                        "title": "S'aligner"
+                    },
+                    "labels": {
+                        "accessibleSeatingDetail": "Sièges accessibles ",
+                        "boxOfficeInfo": "Informations sur la billetterie",
+                        "childRule": "Règles enfant",
+                        "generalRule": "Information additionnelle",
+                        "info": "Informations importantes sur l'événement",
+                        "openHoursDetail": "Heures d'ouverture de la billetterie",
+                        "parkingDetail": "Détail du parking",
+                        "pleaseNote": "Remarques",
+                        "ticketLimit": "Limite de billets",
+                        "willCallDetail": "Recueillir les détails"
+                    },
+                    "messages": {
+                        "noData": "Aucune information n'est disponible pour cet événement"
+                    }
+                },
+                "title": "Informations sur l'événement"
+            },
+            "theEvent": {
+                "_components": {
+                    "eventAttractionList": {
+                        "title": "Voir les événements alternatifs pour"
+                    },
+                    "eventTicketFilterQuantity": {
+                        "labels": {
+                            "custom": "Le montant personnalisé"
+                        },
+                        "titleCustom": "Entrer le montant personnalisé"
+                    },
+                    "eventTicketsMaintenanceOverlay": {
+                        "message": "Cet événement est actuellement indisponible en raison d'une maintenance quotidienne.<br><br>Veuillez revenir plus tard pour acheter des billets pour cet événement."
+                    }
+                },
+                "progressStepAnimationModal": {
+                    "labels": {
+                        "step1Availability": "Confirmons la disponibilité",
+                        "step2Reserving": "Réservons vos billets",
+                        "step3AddingToCart": "Ajouté à votre panier"
+                    },
+                    "title": "Veuillez patiente pendant que nous sécurisons vos billets"
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "_components": {
+                    "eventCardList": {
+                        "messages": {
+                            "noData": "Aucun événement trouvé. Veuillez choisir un autre type d'événement."
+                        },
+                        "title": "Événements populaires à"
+                    },
+                    "justForUserEntities": {
+                        "title": "Juste pour toi"
+                    },
+                    "recentlyViewedEntities": {
+                        "title": "Consulté récemment"
+                    }
+                },
+                "subtitle": "",
+                "title": "Billets pour tout le monde."
+            }
+        },
+        "search": {
+            "theSearch": {
+                "_components": {
+                    "searchResultTabs": {
+                        "all": {
+                            "buttons": {
+                                "seeAll": "Voir tous"
+                            },
+                            "messages": {
+                                "noData": {
+                                    "content": {
+                                        "text1": "Vérifie ton orthographe",
+                                        "text2": "Étendre la plage de dates",
+                                        "text3": "Mettre à jour l'emplacement",
+                                        "text4": "Essayez d'utiliser des mots clés plus généraux"
+                                    },
+                                    "title": "Essayez ce qui suit:"
+                                }
+                            },
+                            "title": "Tout"
+                        },
+                        "attractions": {
+                            "messages": {
+                                "noData": {
+                                    "content": "Essayez une autre recherche ou revenez plus tard.",
+                                    "title": "Aucun match trouvé pour les artistes ou les équipes"
+                                }
+                            },
+                            "title": "Artiste et équipess"
+                        },
+                        "events": {
+                            "messages": {
+                                "noData": {
+                                    "content": "Essayez une autre recherche ou revenez plus tard.",
+                                    "title": "Aucune correspondance trouvée pour les événements"
+                                }
+                            },
+                            "title": "Événements"
+                        },
+                        "venues": {
+                            "messages": {
+                                "noData": {
+                                    "content": "Essayez une autre recherche ou revenez plus tard.",
+                                    "title": "Aucune correspondance trouvée pour les lieux"
+                                }
+                            },
+                            "title": "Lieu"
+                        }
+                    }
+                },
+                "titleAll": "{{ totalCount }} résultats",
+                "titleKeyword": "{{ totalCount }} résultats pour '{{ keyword }}'"
+            }
+        },
+        "userFavorites": {
+            "theUserFavorites": {
+                "_components": {
+                    "userFavoritesTabs": {
+                        "attractions": {
+                            "messages": {
+                                "noFilterData": "Vous n'avez pas ajouté un favoris dans la catégorie sélectionner."
+                            },
+                            "noData": {
+                                "card": {
+                                    "content": {
+                                        "event": "Rechercher l'artiste ou l'équipe",
+                                        "favorite": "Cliquez sur l'icône favoris",
+                                        "tickets": "Voir leur page"
+                                    },
+                                    "title": "Ajoutez votre artiste ou votre équipe préférée"
+                                },
+                                "content": "Commencez à chercher pour ajouter vos artistes et équipes préférés pour ne rien manquer!",
+                                "title": "Vous n'avez ajouté aucun favori"
+                            },
+                            "title": "Mes artistes et équipes"
+                        },
+                        "events": {
+                            "messages": {
+                                "noFilterData": "Vous n'avez pas ajouté un favoris dans la ville sélectionner."
+                            },
+                            "noData": {
+                                "card": {
+                                    "content": {
+                                        "event": "Rechercher l'événement",
+                                        "favorite": "Cliquez sur l'icône favoris",
+                                        "tickets": "Voir les billets disponibles"
+                                    },
+                                    "title": "Ajouté vos événements préférée"
+                                },
+                                "content": "Commence à rechercher pour ajouter vos événements préférée pour être certain de ne rien manquer!",
+                                "title": "Vous n'avez ajouté aucun favori"
+                            },
+                            "title": "Événements"
+                        }
+                    }
+                },
+                "title": "Mes favoris"
+            }
+        }
+    }
+}

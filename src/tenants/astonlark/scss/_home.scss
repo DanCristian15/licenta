@@ -1,0 +1,71 @@
+
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__title {
+            background: linear-gradient( 270deg, #A146BB 0%, #FD4F57 100% );
+            font-size: 48px;
+            font-weight: font-weight( 'bold' );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gst-home__subtitle {
+            font-size: font-size( 'm' );
+            font-weight: font-weight( 'regular' );
+            letter-spacing: -0.3px;
+        }
+    }
+
+    .gst-just-for-user-entities {
+        background: linear-gradient( 270deg, theme-color( 'gradient-secondary-1' ) 0%, theme-color( 'gradient-secondary-2' ) 100% );
+    }
+
+    .gst-top-events-card-list {
+        h4 {
+            font-weight: font-weight( 'medium' );
+            letter-spacing: -0.4px;
+        }
+    }
+
+    .gst-recently-viewed-entities__title {
+        font-weight: font-weight( 'medium' );
+        letter-spacing: -0.4px;
+    }
+
+    .gst-btn-clasification__group {
+        button {
+            font-weight: font-weight( 'bold' );
+        }
+    }
+
+    @include mobile-only {
+        .gst-banner.gst-banner--home {
+            .gst-home__title {
+                padding-left: 35px;
+                font-size: font-size( 'xxxxxxl' );
+                font-weight: font-weight( 'bold' );
+            }
+
+            .gst-home__subtitle {
+                padding-left: 35px;
+                font-size: font-size( 'm' );
+                font-weight: font-weight( 'regular' );
+                letter-spacing: -0.3px;
+            }
+        }
+
+        .gst-recently-viewed-entities__title {
+            font-size: font-size( 'xxxl' );
+        }
+
+        .gst-just-for-user-entities {
+            background: linear-gradient( 270deg, theme-color( 'gradient-secondary-1' ) 0%, theme-color( 'gradient-secondary-2' ) 100% );
+        }
+
+        .gst-top-events-card-list {
+            h4 {
+                letter-spacing: -0.4px;
+            }
+        }
+    }
+}

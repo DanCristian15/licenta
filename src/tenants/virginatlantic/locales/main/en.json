@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem Points"
+                        }
+                    },
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Virgin Atlantic Account Number"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Flying Club members get Lifestyle",
+                "subtitle": "Earn double points on lifestyle event purchases."
+            }
+        }
+    }
+}

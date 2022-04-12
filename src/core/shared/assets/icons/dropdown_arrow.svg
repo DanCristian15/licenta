@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icons / dropdown arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons-/-dropdown-arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path">
+            <polygon transform="translate(12.000000, 12.000000) scale(-1, 1) rotate(-360.000000) translate(-12.000000, -12.000000) " points="0 0 24 0 24 24 0 24"></polygon>
+            <path class="gst-svg-icon" d="M8.53243848,9.26651481 L12.0044743,12.8018223 L15.4765101,9.26651481 C15.8255034,8.91116173 16.3892617,8.91116173 16.738255,9.26651481 C17.0872483,9.62186788 17.0872483,10.1958998 16.738255,10.5512528 L12.6308725,14.7334852 C12.2818792,15.0888383 11.7181208,15.0888383 11.3691275,14.7334852 L7.26174497,10.5512528 C6.91275168,10.1958998 6.91275168,9.62186788 7.26174497,9.26651481 C7.61073826,8.92027335 8.18344519,8.91116173 8.53243848,9.26651481 Z" fill="#23262D" fill-rule="nonzero" transform="translate(12.000000, 12.000000) scale(-1, 1) rotate(-360.000000) translate(-12.000000, -12.000000) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Numéro de compte SKYWARDS MILES"
+                            }
+                        }
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Échangez des Miles Skywards"
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Style de vie Skywards",
+                "subtitle": "Plus de contenu. Plus de Miles Skywards. Plus d'aventures."
+            }
+        }
+    }
+}

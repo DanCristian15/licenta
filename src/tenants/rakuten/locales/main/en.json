@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem Cash Back"
+                        }
+                    },
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Rakuten Account Number"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Events & Experiences",
+                "subtitle": "More content. More cash back. More adventures."
+            }
+        }
+    }
+}

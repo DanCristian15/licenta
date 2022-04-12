@@ -1,0 +1,13 @@
+.gst-btn.v-btn {
+    transition: background-color 0.1s ease;
+
+    &.gst-btn--invert {
+        background-color: theme-color( 'white' ) !important;
+        color: theme-color( 'primary' ) !important;
+    }
+
+    &.gst-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):not(.gst-btn-disabled-default) {
+        background-color: theme-color( 'septenary' ) !important;
+        color: theme-color( 'white' ) !important;
+    }
+}

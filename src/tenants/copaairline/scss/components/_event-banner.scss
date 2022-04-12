@@ -1,0 +1,7 @@
+@include mobile-only {
+    .gst-event-banner {
+        .gst-event-banner__name {
+            font-weight: font-weight( 'large' ) !important;
+        }
+    }
+}

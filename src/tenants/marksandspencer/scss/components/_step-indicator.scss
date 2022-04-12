@@ -1,0 +1,16 @@
+.gst-indicator__step--current .gst-indicator__step-divider,
+.gst-indicator__step--previous .gst-indicator__step-divider {
+    border-color: theme-color( 'secondary' ) !important;
+}
+
+.gst-indicator__step--current .gst-indicator__step-inner,
+.gst-indicator__step--previous .gst-indicator__step-inner {
+    background: theme-color( 'secondary' ) !important;
+    box-shadow: 0 0 0 4px theme-color( 'secondary' ) !important;
+}
+
+.gst-indicator__step--current {
+    .gst-indicator__step-label {
+        color: theme-color( 'secondary' ) !important;
+    }
+}

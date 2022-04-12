@@ -1,0 +1,18 @@
+.gst-checkwiz-step-payment {
+    .v-btn {
+        line-height: line-height( 'xl' );
+        font-size: font-size( 's' );
+
+        span {
+            line-height: line-height( 'xl' );
+            font-size: font-size( 's' );
+        }
+    }
+
+    .v-item--active {
+        label {
+            color: theme-color( 'quaternary' );
+            font-weight: font-weight( 'medium' );
+        }
+    }
+}

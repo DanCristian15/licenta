@@ -1,0 +1,17 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} Remise en argent",
+                "pointWithCount_plural": "{{ formattedCount }} Remise en argent"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} Remise en argent",
+                "pointWithCount_plural": "{{ formattedCount }} Remise en argent"
+            },
+            "bonusPointsHomeBanner": {
+                "titleMoney": "Obtenez des billets, mérite de l'argent en remise bonus. Aussi simple que ça."
+            }
+        }
+    }
+}

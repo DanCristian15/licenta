@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Miles&Smiles Account"
+                            }
+                        }
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem Miles"
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Events & Experiences",
+                "subtitle": "More content. More miles. More adventures."
+            }
+        }
+    }
+}

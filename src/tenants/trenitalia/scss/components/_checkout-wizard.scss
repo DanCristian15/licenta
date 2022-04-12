@@ -1,0 +1,23 @@
+@import '@core/scss/tenants/__utility_tenant_mixins';
+
+@include checkout-wizard-checkbox-icon;
+@include checkout-wizard-checkbox-form-label('primary');
+@include checkout-wizard-checkbox-step-indicator;
+
+.gst-ticket-date-icon,
+.gst-ticket-location-icon {
+    color: theme-color( 'quaternary' );
+}
+
+.gst-expansion-panel,
+.gst-expansion-panel .v-expansion-panel-header {
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+.gst-price-list-container__total-quantity {
+    font-weight: font-weight( 'medium' ) !important;
+}
+
+.v-application .gst-faq-card > p {
+    font-weight: font-weight( 'medium' ) !important;
+}

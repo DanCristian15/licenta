@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": "src",
+    "paths": {
+      "@core/*": [
+        "./core/*"
+      ],
+      "@api": [
+        "./core/api/*"
+      ],
+      "@assets": [
+        "./core/assets/*"
+      ],
+      "@filters": [
+        "./core/filters/*"
+      ],
+      "@helpers": [
+        "./core/helpers/*"
+      ],
+      "@locales": [
+        "./core/locales/*"
+      ],
+      "@mixins": [
+        "./core/mixins/*"
+      ],
+      "@routes": [
+        "./core/routes/*"
+      ],
+      "@shared/*": [
+        "./core/shared/*"
+      ],
+      "@services/*": [
+        "./core/services/*"
+      ],
+      "@store": [
+        "./core/store/*"
+      ],
+      "@scssVariables": [
+        "./src/core/scss/_variables.scss"
+      ],
+      "@scssMixins": [
+        "./src/core/scss/mixins/_index.scss"
+      ],
+      "@views": [
+        "./core/views/*"
+      ],
+      "@utils": [
+        "./core/utils/*"
+      ],
+      "@tenants/*": [
+        "./tenants/*"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    "hooks",
+    "tests"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "MileaagePlus Account Number"
+                            }
+                        }
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem Miles"
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "MILEAGEPLUS LIFESTYLE",
+                "subtitle": "More content. More Miles. More Adventures"
+            }
+        }
+    }
+}

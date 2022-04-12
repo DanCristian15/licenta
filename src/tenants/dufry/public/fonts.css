@@ -1,0 +1,48 @@
+@font-face {
+    font-weight: 300;
+    font-family: 'Fontfabric';
+    src: url( 'fonts/Fontfabric\ -\ Intro\ Light.otf' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: 'Fontfabric';
+    src: url( 'fonts/Fontfabric\ -\ Intro\ Regular.otf' );
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-weight: normal;
+    font-family: 'Fontfabric';
+    src: url( 'fonts/Fontfabric\ -\ Intro\ Regular.otf' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'Fontfabric';
+    src: url( 'fonts/Fontfabric\ -\ Intro\ SemiBold.otf' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 800;
+    font-family: 'Fontfabric';
+    src: url( 'fonts/Fontfabric\ -\ Intro\ Black.otf' );
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: 'Fontfabric';
+    src: url( 'fonts/Fontfabric\ -\ Intro\ Bold.otf' );
+    font-style: normal;
+    font-display: swap;
+}

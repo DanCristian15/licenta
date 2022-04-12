@@ -1,0 +1,55 @@
+.gst-btn.v-btn.gst-btn--see-more {
+    color: theme-color( 'primary' ) !important;
+    border-color: theme-color( 'primary' ) !important;
+    border-radius: border-radius( 'xs' ) !important;
+    min-width: 140px;
+}
+
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__title {
+            font-family: "Emirates Medium", sans-serif;
+        }
+    }
+}
+
+.gst-footer {
+    .gst-menu-link--white {
+        color: theme-color( 'white' );
+    }
+
+    .gst-footer__copyright {
+        color: theme-color( 'white' );
+    }
+
+    .gst-footer__app-info {
+        color: theme-color( 'white' );
+    }
+
+    .gst-lang-select.gst-lang-select--secondary .v-btn.gst-lang-select__button {
+        color: theme-color( 'white' );
+        border-color: theme-color( 'white' ) !important;
+
+        .gst-svg-icon {
+            fill: theme-color( 'white' );
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .gst-home {
+        .gst-banner.gst-banner--home {
+            .gst-home__title {
+                padding-left: 30px;
+                font-size: font-size( 'xxxxl' );
+                text-align: left;
+            }
+
+            .gst-home__subtitle {
+                padding-left: 30px;
+                font-size: font-size( 's' );
+                text-align: left;
+            }
+        }
+    }
+}

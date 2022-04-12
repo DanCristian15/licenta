@@ -1,0 +1,28 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} MILES",
+                "pointWithCount_plural": "{{ formattedCount }}  MILES"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} MILES",
+                "pointWithCount_plural": "{{ formattedCount }} MILES"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} MILE",
+                "title_plural": "{{points}} MILES"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Obtenez des billets, mérite des AIR MILES. Aussi simple que ça."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} Miles"
+                }
+            }
+        }
+    }
+}

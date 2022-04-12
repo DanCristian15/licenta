@@ -1,0 +1,9 @@
+.gst-ticket-offer-type-icon.gst-ticket-offer-type-icon--standard {
+    color: theme-color( 'secondary' ) !important;
+
+    svg {
+        .gst-svg-icon {
+            fill: theme-color( 'secondary' ) !important;
+        }
+    }
+}

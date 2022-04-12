@@ -1,0 +1,11 @@
+.gst-event-ticket-detail-content__toolbar {
+    .gst-btn--cancel {
+        .v-btn__content {
+            color: theme-color( 'anchor' );
+        }
+
+        svg .gst-svg-icon {
+            fill: theme-color( 'anchor' );
+        }
+    }
+}

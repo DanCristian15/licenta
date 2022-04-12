@@ -1,0 +1,95 @@
+@import '@core/scss/tenants/__utility_tenant_mixins';
+
+@include checkout-wizard-checkbox-icon;
+@include checkout-wizard-checkbox-form-label('primary', 'medium');
+@include checkout-wizard-checkbox-step-indicator;
+
+.gst-ticket-date-icon,
+.gst-ticket-location-icon {
+    color: theme-color( 'quaternary' );
+}
+
+.gst-expansion-panel,
+.gst-expansion-panel .v-expansion-panel-header {
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+.v-application .gst-faq-card > p {
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+.gst-checkout-step-1 {
+    .gst-ticket-date-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-location-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-btn {
+        font-size: font-size( 's' );
+        font-weight: font-weight( 'medium' ) !important;
+    }
+}
+
+.gst-checkout-step-2 {
+    .gst-section-title {
+        font-size: font-size( 'xxxs' );
+    }
+
+    .gst-checkout-step-2-form__shipping-options {
+        label {
+            font-weight: font-weight( 'regular' ) !important;
+        }
+    }
+
+    .gst-checkout-step-2-form__field-terms-conditions label {
+        font-weight: font-weight( 'light' ) !important;
+    }
+
+    .gst-btn {
+        font-size: font-size( 's' );
+        font-weight: font-weight( 'medium' ) !important;
+    }
+
+    .gst-btn--invert {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+}
+
+.gst-checkwiz-step-payment {
+    .braintree-form {
+        .braintree-form__label {
+            font-size: font-size( 'xxs' );
+            font-weight: font-weight( 'regular' ) !important;
+        }
+    }
+
+    .gst-checkwiz-step-payment__info-card {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-btn {
+        font-size: font-size( 's' );
+        font-weight: font-weight( 'medium' ) !important;
+    }
+
+    .gst-btn--invert {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+}
+
+.gst-checkout-confirmation__container {
+    .gst-checkout-confirmation__title {
+        font-weight: font-weight( 'medium' ) !important;
+    }
+
+    .gst-ticket-date-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-location-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+}

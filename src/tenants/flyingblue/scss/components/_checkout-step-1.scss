@@ -1,0 +1,24 @@
+.gst-checkout-step-1 {
+    .gst-ticket-date-icon {
+        color: theme-color( 'quaternary' ) !important;
+
+        svg .gst-svg-icon {
+            fill: theme-color( 'tertiary' ) !important;
+        }
+    }
+
+    .gst-ticket-location-icon {
+        span {
+            color: theme-color( 'quaternary' ) !important;
+        }
+
+        svg .gst-svg-icon {
+            fill: theme-color( 'tertiary' ) !important;
+        }
+    }
+
+    .v-btn__content {
+        line-height: line-height( 'm' );
+        font-size: font-size( 'xxs' );
+    }
+}

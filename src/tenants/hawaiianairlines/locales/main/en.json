@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "HawaiianMiles Account Number"
+                            }
+                        }
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem miles"
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Events & Experiences",
+                "subtitle": "Earn bonus HawaiianMiles on event purchases."
+            }
+        }
+    }
+}

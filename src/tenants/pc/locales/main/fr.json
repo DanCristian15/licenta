@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "PC Optimum numéro de carte"
+                            }
+                        }
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Échangez Des PC Optimum Points en prime*"
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Obtenez des billets, mériter des points PC Optimum en prime*.",
+                "subtitle": "Aussi simple que cela."
+            }
+        }
+    }
+}

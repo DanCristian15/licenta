@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-BlackItalic.eot');
+    src: url('fonts/ArialMTPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-BlackItalic.woff2') format('woff2'),
+        url('fonts/ArialMTPro-BlackItalic.woff') format('woff'),
+        url('fonts/ArialMTPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-Black.eot');
+    src: url('fonts/ArialMTPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-Black.woff2') format('woff2'),
+        url('fonts/ArialMTPro-Black.woff') format('woff'),
+        url('fonts/ArialMTPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-ExtraBoldItalic.eot');
+    src: url('fonts/ArialMTPro-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-ExtraBoldItalic.woff2') format('woff2'),
+        url('fonts/ArialMTPro-ExtraBoldItalic.woff') format('woff'),
+        url('fonts/ArialMTPro-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-Bold.eot');
+    src: url('fonts/ArialMTPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/rialMTPro-Bold.woff2') format('woff2'),
+        url('fonts/ArialMTPro-Bold.woff') format('woff'),
+        url('fonts/ArialMTPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-BoldItalic.eot');
+    src: url('fonts/ArialMTPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/rialMTPro-BoldItalic.woff2') format('woff2'),
+        url('fonts/ArialMTPro-BoldItalic.woff') format('woff'),
+        url('fonts/ArialMTPro-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-Italic.eot');
+    src: url('fonts/ArialMTPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-Italic.woff2') format('woff2'),
+        url('fonts/ArialMTPro-Italic.woff') format('woff'),
+        url('fonts/ArialMTPro-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-LightItalic.eot');
+    src: url('fonts/ArialMTPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-LightItalic.woff2') format('woff2'),
+        url('fonts/ArialMTPro-LightItalic.woff') format('woff'),
+        url('fonts/ArialMTPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-ExtraBold.eot');
+    src: url('fonts/ArialMTPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-ExtraBold.woff2') format('woff2'),
+        url('fonts/ArialMTPro-ExtraBold.woff') format('woff'),
+        url('fonts/ArialMTPro-ExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-Light.eot');
+    src: url('fonts/ArialMTPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-Light.woff2') format('woff2'),
+        url('fonts/ArialMTPro-Light.woff') format('woff'),
+        url('fonts/ArialMTPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-MediumItalic.eot');
+    src: url('fonts/ArialMTPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-MediumItalic.woff2') format('woff2'),
+        url('fonts/ArialMTPro-MediumItalic.woff') format('woff'),
+        url('fonts/ArialMTPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-Medium.eot');
+    src: url('fonts/ArialMTPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-Medium.woff2') format('woff2'),
+        url('fonts/ArialMTPro-Medium.woff') format('woff'),
+        url('fonts/ArialMTPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT Pro';
+    src: url('fonts/ArialMTPro-Regular.eot');
+    src: url('fonts/ArialMTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArialMTPro-Regular.woff2') format('woff2'),
+        url('fonts/ArialMTPro-Regular.woff') format('woff'),
+        url('fonts/ArialMTPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: 400;
+    font-display: swap;
+}
+

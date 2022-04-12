@@ -1,0 +1,38 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} point",
+                "pointWithCount_plural": "{{ formattedCount }} points"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} point",
+                "pointWithCount_plural": "{{ formattedCount }} points"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} POINT",
+                "title_plural": "{{points}} POINTS"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn Bonus Points. Simple as that."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "YOU GET {{points}} POINTS"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

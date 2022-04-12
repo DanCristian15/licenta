@@ -1,0 +1,25 @@
+.gst-header {
+    .gst-tenant-logo__link {
+        height: 50px !important;
+    }
+
+    .gst-menu-link {
+        color: theme-color( 'primary' ) !important;
+    }
+}
+
+.gst-tenant-logo__content {
+    display: block;
+    height: 100% !important;
+
+    svg {
+        height: 100%;
+    }
+}
+
+.gst-home__subtitle {
+    line-height: line-height( 'xxxxxxxl' ) !important;
+    font-size: 15px !important;
+    font-weight: font-weight( regular ) !important;
+    letter-spacing: -0.27px !important;
+}

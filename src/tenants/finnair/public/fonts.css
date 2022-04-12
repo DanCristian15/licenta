@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Amplitude';
+    src: url('fonts/Amplitude-Bold.eot');
+    src: url('fonts/Amplitude-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Amplitude-Bold.woff2') format('woff2'),
+        url('fonts/Amplitude-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Amplitude';
+    src: url('fonts/Amplitude-Black.eot');
+    src: url('fonts/Amplitude-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Amplitude-Black.woff2') format('woff2'),
+        url('fonts/Amplitude-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Amplitude';
+    src: url('fonts/Amplitude-Light.eot');
+    src: url('fonts/Amplitude-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Amplitude-Light.woff2') format('woff2'),
+        url('fonts/Amplitude-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Amplitude';
+    src: url('fonts/Amplitude-Medium.eot');
+    src: url('fonts/Amplitude-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Amplitude-Medium.woff2') format('woff2'),
+        url('fonts/Amplitude-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Amplitude';
+    src: url('fonts/Amplitude-Regular.eot');
+    src: url('fonts/Amplitude-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Amplitude-Regular.woff2') format('woff2'),
+        url('fonts/Amplitude-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+

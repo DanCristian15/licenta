@@ -1,0 +1,344 @@
+{
+    "views": {
+        "event": {
+            "theEvent": {
+                "_components": {
+                    "_components": {
+                        "inputs": {
+                            "accessibilityToggleFormInput": {
+                                "message": "Sorry we don’t have any accessibility seating available at the moment"
+                            }
+                        }
+                    },
+                    "eventBanner": {
+                        "buttons": {
+                            "moreInfo": "More Info"
+                        }
+                    },
+                    "eventCheckoutConfirmationModal": {
+                        "message": "Are you sure you want to continue without a hotel?",
+                        "buttons": {
+                            "continueToCheckout": "Continue to Checkout",
+                            "addHotel": "Add Hotel"
+                        }
+                    },
+                    "eventNotAvailable": {
+                        "footer": {
+                            "content": "By continuing past this page, you agree to our <a href='/termsAgreement' target='_blank'>Terms of use</a>. | © Ticketmaster. All rights reserved."
+                        }
+                    },
+                    "eventTicketListEmpty": {
+                        "title": "Please Adjust Your Search",
+                        "message": "The seating options you selected aren't available due to the ticket quantity or filter you applied. Please try adjusting the number of tickets selected or use the seat map to search for available seats."
+                    },
+                    "eventTicketDetailSidebar": {
+                        "_components": {
+                            "eventTicketDetailSidebarHeader": {
+                                "titleWithCount": "You will get 1 ticket.",
+                                "titleWithCount_plural": "You will get {{ count }} tickets together in this row."
+                            }
+                        }
+                    },
+                    "sectionDetailSidebar": {
+                        "_components": {
+                            "sectionDetailSidebarHeader": {
+                                "titleWithCount": "You will get 1 ticket.",
+                                "titleWithCount_plural": "You will get {{ count }} tickets together."
+                            }
+                        }
+                    },
+                    "eventInfoModal": {
+                        "tabs": {
+                            "titles": {
+                                "eventInfo": "event info",
+                                "hotelPackageInfo": "hotel package info"
+                            }
+                        },
+                        "details": {
+                            "attractions": {
+                                "messages": {
+                                    "noData": "Attractions are not available for this event"
+                                },
+                                "title": "Lineup"
+                            },
+                            "labels": {
+                                "accessibleSeatingDetail": "Accessible Tickets",
+                                "boxOfficeInfo": "Box Office Info",
+                                "childRule": "Child Rules",
+                                "generalRule": "Additional Info",
+                                "info": "Important Event Info",
+                                "openHoursDetail": "Box Office Hours",
+                                "parkingDetail": "Parking Details",
+                                "pleaseNote": "Notes",
+                                "ticketLimit": "Ticket Limit",
+                                "willCallDetail": "Collect Details",
+                                "pricesLabel": "Prices are in"
+                            },
+                            "messages": {
+                                "noData": "Information for this event is not available"
+                            }
+                        },
+                        "hotelDetails": {
+                            "title": "Bundled Ticket + Hotel Experience",
+                            "messages": {
+                                "noData": "Hotel package info not available "
+                            }
+                        },
+                        "title": "More Info"
+                    },
+                    "eventTicketFilterModal": {
+                        "sortListBy": "Sort list by",
+                        "pricesAreIn": "Prices are in"
+                    },
+                    "EventPackageOffersNotAvailableModal": {
+                        "message": "Sorry, it looks like the package you built is no longer available.",
+                        "buttons": {
+                            "close": "Build Another Package"
+                        }
+                    },
+                    "healthCheckConfirmationModal": {
+                        "title": "What you need to know"
+                    },
+                    "progressStepAnimationModal": {
+                        "labels": {
+                            "stepConfirm": "Confirming availability",
+                            "stepBuild": "Building your package",
+                            "stepCheckHotel": "Checking hotel availability",
+                            "stepReserveTickets": "Reserving your tickets",
+                            "stepAddCart": "Adding to cart"
+                        },
+                        "title": "Please wait while we secure your tickets"
+                    }
+                }
+            },
+            "thePackage": {
+                "_components": {
+                    "eventDetails": {
+                        "description": "Enjoy the convenience of entertainment packages that include a one night stay at a hotel and event tickets. Packages must be purchased in pairs, 2 tickets to a room."
+                    },
+                    "hotelDetails": {
+                        "title": "The Hotel",
+                        "extraAmenities": "+ {{count}} more"
+                    },
+                    "marketingPoints": {
+                        "title": "Package includes",
+                        "eventTickets": "Two tickets in the listed section",
+                        "hotelReservation": "A one night stay at a hotel",
+                        "extra": "A welcome drink"
+                    },
+                    "packageDetails": {
+                        "title": "How the packages work?",
+                        "subtitle": "Once you have booked your package via Ticketmaster you will be sent a booking confirmation with details of the tickets that are included. Tickets will be delivered to you by Ticketmaster by the delivery method you have chosen. Also, within 48 hours of your booking you will receive an email with your hotel booking information to present to the hotel upon check-in."
+                    },
+                    "priceDetails": {
+                        "twoTickets": "Two tickets in the listed section",
+                        "oneNightStay": "1 night stay",
+                        "perPerson": "/per person",
+                        "totalPlusTaxes": "TOTAL + taxes and fees"
+                    }
+                }
+            }
+        },
+        "cart": {
+            "theCheckout": {
+                "_components": {
+                    "headerWithCountDown": {
+                        "title": "Checkout",
+                        "label": "Time Remaining",
+                        "tooltip": "The seats are reserved. You have specified remaining time to complete your order."
+                    },
+                    "fieldsets": {
+                        "detailFieldset": {
+                            "title": "Enter your details",
+                            "labels": {
+                                "firstName": "First Name",
+                                "lastName": "Last Name",
+                                "email": "Email Address",
+                                "emailConfirm": "Confirm Email Address",
+                                "hotelReservationRequest": "Special Request (optional)"
+                            }
+                        },
+                        "paymentFieldset": {
+                            "title": "Payment",
+                            "labels": {
+                                "officials": "Official card of",
+                                "country": "Country",
+                                "address": "Address",
+                                "city": "City",
+                                "state": "State / Province",
+                                "zip": "ZIP / Postal Code",
+                                "phone": "Phone Number",
+                                "email": "Email address",
+                                "firstName": "First Name",
+                                "lastName": "Last Name",
+                                "cardNumber": "Card Number",
+                                "cardExpire": "Expiration Date",
+                                "cardCVV": "Security Code",
+                                "securityCodeInfo": "3-digits on back of card"
+                            },
+                            "warnings": {
+                                "email": "Tickets will be sent to your email address. Please make sure it's correct."
+                            },
+                            "errors": {
+                                "noShippingOptionsForCountry": "Shipping to the selected country is not available."
+                            }
+                        },
+                        "shippingFieldset": {
+                            "errors": {
+                                "requireShippingOptions": "Please choose a method of delivery."
+                            }
+                        },
+                        "action": {
+                            "errors": {
+                                "requireHealthCheck": "You must agree with all health check requirements to continue.",
+                                "requireTerms": "You must agree with terms to continue."
+                            }
+                        }
+                    },
+                    "action": {
+                        "title": "Total Package",
+                        "titleTicketsOnly": "Total",
+                        "labels": {
+                            "termsEventTicket": "I have read and agree to the current",
+                            "termsHotelReservation": "I have read and agree to hotel booking",
+                            "termsEventHealthCheck": "I agree to all health check requirements to attend this event."
+                        },
+                        "warning": "*All Sales Final - No Refunds",
+                        "exceptionsApplying": "Exceptions may apply, see our Terms of Use.",
+                        "feesNotIncluded": "Not included: resort fees and taxes."
+                    },
+                    "containers": {
+                        "hotelReservationContainer": {
+                            "stayLength": "Total length of stay:",
+                            "checkIn": "Check-in",
+                            "checkOut": "Check-out"
+                        },
+                        "paymentProviderDownContainer": {
+                            "message": "Please try again later to purchase tickets & hotel.",
+                            "title": "The payment system is temporarily down"
+                        }
+                    },
+                    "confirmLeaveModal": {
+                        "title": "Cancel purchase?",
+                        "content": "By proceeding your selections will be removed.",
+                        "buttons": {
+                            "cancel": "Yes, Cancel",
+                            "continue": "Continue to Checkout"
+                        }
+                    },
+                    "orderConfirmationModal": {
+                        "ticketsOnlyTitle": "You Got The Tickets",
+                        "hotelAndTicketsTitle": "You Got The Tickets & Hotel Room",
+                        "ticketsOrder": "Tickets order",
+                        "hotelOrder": "Hotel order",
+                        "claimTickets": "Claim Tickets",
+                        "closeDetails": "Close Details",
+                        "importantDetails": "Important Details:",
+                        "paymentSummary": "Payment Summary:",
+                        "paymentMethod": "Payment Method",
+                        "viewDetails": "View Details",
+                        "thingsToKnow": "Things to Know",
+                        "allSalesFinal": "All Sales Final - No Refunds",
+                        "manageYourAccount": "Manage Your Account",
+                        "viewBookingDetails": "View Booking Details",
+                        "getDirections": "Get Directions",
+                        "helpCenter": "For more information visit our Help Center",
+                        "goMobile": "Go Mobile:",
+                        "goMobileInfo": "Your phone's your ticket. Locate your tickets in your account - or in your app. When you go mobile, your tickets will not be emailed to you or available for print.",
+                        "schedulingNote": {
+                            "title": "A Note on Scheduling",
+                            "message": "Due to circumstances surrounding COVID-19, scheduling may be impacted and the NFL, teams or venues may cancel, reschedule or postpone games. Full refunds will be available if the NFL or the team cancels a game and it cannot be replayed, or if it is played under conditions that prohibit fans from attending. If a game is postponed or rescheduled, your tickets are valid for the new date, so hang onto them and we will keep you posted. In addition to our standard Purchase Policy, our Supplemental Terms apply."
+                        },
+                        "nflClearBarPolicy": {
+                            "title": "NFL Clear Bag Policy",
+                            "subtitle": "Every fan may use the following specified bags to carry items into the stadium:",
+                            "rule1": "One bag that is clear plastic, vinyl or PVC and does not exceed 12'' x 6'' x 12'' OR",
+                            "rule2": "A one-gallon clear plastic freezer bag AND",
+                            "rule3": "In addition to one of the clear bags noted above, fans may also carry a small clutch or purse approximately the hand sized.",
+                            "exception": "An exception will be made for medically necessary items after proper inspection. Find the NFL's policy here. Please refer to your team's specific stadium policy for complete safety information. Security and screening policies are subject to change.",
+                            "manageAccount": "You can manage, transfer or sell these tickets form your Ticketmaster.com account.",
+                            "refund": "All sales final - no refunds or exchanges"
+                        },
+                        "total": "Total",
+                        "tickets": "Tickets",
+                        "fees": "Fees",
+                        "delivery": "Delivery"
+                    },
+                    "termsAgreementModal": {
+                        "title": "Terms and Conditions"
+                    }
+                },
+                "progressStepAnimationModal": {
+                    "title": "Please wait while we secure your tickets",
+                    "description": "",
+                    "labels": {
+                        "ticketsOnly": {
+                            "step1Verifying": "Verifying payment",
+                            "step2Processing": "Processing tickets",
+                            "step3Finalizing": "Finalizing your order"
+                        },
+                        "hotelAndTickets": {
+                            "step1Verifying": "Confirming availability",
+                            "step2Processing": "Confirming your ticket",
+                            "step3Finalizing": "Confirming your hotel"
+                        }
+                    }
+                },
+                "messages": {
+                    "formHasError": "There are some errors in the form. Please check your information and try again."
+                }
+            }
+        }
+    },
+    "modules": {
+        "hotel": {
+            "modal": {
+                "_components": {
+                    "_components": {
+                        "hotelDetailsAddressBar": {
+                            "showOnMap": "show on map",
+                            "accessibility": {
+                                "subway": "Subway Access",
+                                "bus": "Bus Station Nearby"
+                            },
+                            "highlights": {
+                                "location": "Great location"
+                            }
+                        },
+                        "hotelDetailsTabsNavigation": {
+                            "overview": "Overview",
+                            "rooms": "Rooms",
+                            "whatsNearby": "What's Nearby"
+                        },
+                        "hotelDetailsModalBody": {
+                            "_components": {
+                                "hotelDetailsRoomFilters": {
+                                    "childrenLabel": "Ages 0-17"
+                                },
+                                "hotelDetailsModalNearTab": {
+                                    "topAttractions": "Top Attractions",
+                                    "barsRestaurants": "Bars & Restaurants",
+                                    "publicTransit": "Public Transit",
+                                    "closestAirport": "Closest Airport"
+                                },
+                                "hotelDetailsModalOverviewTab": {
+                                    "amenities": "Amenities"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "inputs": {
+                "addHotelReservation": {
+                    "_components": {
+                        "hotelsNoData": {
+                            "title": "Please Change Your Details",
+                            "message": "There are no rooms available with your current selection. Please try adjusting the dates and the number of guests."
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

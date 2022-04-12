@@ -1,0 +1,18 @@
+.gst-ticket-offer-type-icon.gst-ticket-offer-type-icon--standard {
+    line-height: line-height( 'xxxxl' );
+    color: theme-color( 'accent' ) !important;
+
+    svg {
+        .gst-svg-icon {
+            fill: theme-color( 'accent' ) !important;
+        }
+    }
+
+    .gst-ticket-offer-type-icon__icon {
+        display: flex !important;
+    }
+}
+
+.gst-ticket-offer-small-card .gst-ticket-offer-small-card__price {
+    font-size: font-size( 'xxs' ) !important;
+}

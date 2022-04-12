@@ -1,0 +1,10 @@
+.gst-icon-checked .gst-svg-icon,
+.gst-checkwiz-step-payment__icon-check .gst-svg-icon {
+    fill: theme-color( 'quaternary' ) !important;
+}
+
+.braintree-sheet__content--form .braintree-form__field-group {
+    .braintree-form__label {
+        color: theme-color( 'secondary' ) !important;
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Us",
+            "title": "About Us"
+        }
+    },
+    "terms": {
+        "bonusPointMoney": "Donation",
+        "bonusPointMoneyCurrencySymbol": "Donation"
+    }
+}

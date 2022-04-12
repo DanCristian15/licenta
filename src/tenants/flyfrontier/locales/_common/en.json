@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Us",
+            "title": "About Us"
+        }
+    },
+    "terms": {
+        "bonusPoint": "Frontier Mile",
+        "bonusPointLong": "Frontier Mile",
+        "bonusPointLong_plural": "Frontier Mile",
+        "bonusPoint_plural": "Frontier Mile"
+    }
+}

@@ -1,0 +1,36 @@
+server {
+  listen 8080 default_server;
+  listen [::]:8080 default_server;
+
+  root /usr/share/nginx/html;
+
+  index index.html;
+  client_max_body_size 10M;
+
+  server_name _;
+
+  location /api {
+    proxy_http_version 1.1;
+    proxy_set_header X-Forwarded-Host "";
+    proxy_set_header X-Original-Uri "";
+    proxy_set_header X-Scheme "";
+    proxy_set_header apiKey "6347C57BD68D479DDE643C2AC8CB6";
+    proxy_pass http://gst-composite-http:8080;
+  }
+
+ #COMMENT FOR PRODUCTION
+
+   location /swagger {
+     proxy_http_version 1.1;
+     proxy_set_header X-Forwarded-Host "";
+     proxy_set_header X-Original-Uri "";
+     proxy_set_header X-Scheme "";
+     proxy_set_header apiKey "6347C57BD68D479DDE643C2AC8CB6";
+     proxy_pass http://gst-composite-http:8080;
+   }
+
+
+  location / {
+      try_files $uri /index.html;
+  }
+}

@@ -1,0 +1,55 @@
+.gst-home {
+    .gst-top-events-card-list {
+        h4 {
+            line-height: line-height( 'xxxxl' );
+            font-weight: font-weight( 'medium' );
+            letter-spacing: -0.36px;
+        }
+
+        h4 span {
+            color: color-theme( 'primary' ) !important;
+        }
+
+        h4 .gst-dropdown-icon-svg .gst-svg-icon {
+            fill: color-theme( 'primary' );
+        }
+    }
+
+    .gst-home__subtitle {
+        color: theme-color( 'white' );
+    }
+
+    .gst-recently-viewed-entities__title {
+        font-size: font-size( 'xxxl' );
+        font-weight: font-weight( 'medium' );
+    }
+
+    .gst-bp-chip {
+        font-weight: font-weight( 'bold' ) !important;
+    }
+
+    .gst-just-for-user-entities {
+        background: linear-gradient( to top right, theme-color( 'gradient-secondary-1' ) 0%, theme-color( 'gradient-secondary-2' ) 100% ) !important;
+    }
+
+    @include mobile-only {
+        .gst-home__subtitle,
+        .gst-home__title {
+            padding: 0 24px;
+            text-align: center !important;
+        }
+
+        .gst-search-input {
+            .v-text-field__slot input::placeholder {
+                opacity: 1;
+            }
+        }
+    }
+
+    .gst-attraction-card-variant-5,
+    .gst-event-card-variant-4 {
+        h2 {
+            color: theme-color( 'white' );
+        }
+    }
+}

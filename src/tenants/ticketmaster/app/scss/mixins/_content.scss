@@ -1,0 +1,17 @@
+@import "./z-index";
+
+$content-max-width: 959px;
+
+$border-radius: (
+    'xxs': 2px,
+    'xs': 4px,
+    's': 6px,
+    'm': 10px,
+    'l': 19px,
+    'xl': 30px,
+    'circle': 50%
+);
+
+@mixin border-radius($level) {
+    border-radius: map-get( $border-radius, $level ) !important;
+}

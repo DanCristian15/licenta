@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>alert / success</title>
+    <desc>Created with Sketch.</desc>
+    <g id="alert-/-success" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0" y="0" width="24" height="24"></rect>
+            <path class="gst-svg-icon" d="M12,3 C16.9705627,3 21,7.02943725 21,12 C21,16.9705627 16.9705627,21 12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 Z M14.3506979,8.98006794 L10.589425,12.7537012 L9.64930214,11.8102929 C9.23381421,11.3949881 8.56017672,11.3949881 8.14494928,11.8102929 C7.72946135,12.2281613 7.72946135,12.9049542 8.14494928,13.3202589 L9.83737881,15.0199321 C10.2528667,15.4378004 10.9262437,15.4378004 11.3417317,15.0199321 L15.8550507,10.490034 C16.2705386,10.0721656 16.2705386,9.39537268 15.8550507,8.98006794 C15.4395628,8.56219958 14.7661858,8.56219958 14.3506979,8.98006794 Z" id="Combined-Shape" fill="#23262D"></path>
+        </g>
+    </g>
+</svg>

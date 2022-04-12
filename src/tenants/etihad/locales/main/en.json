@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem Miles"
+                        }
+                    },
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Etihad Account Number"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Etihad Guest Lifestyle",
+                "subtitle": "Earn double Miles on lifestyle product purchases."
+            }
+        }
+    }
+}

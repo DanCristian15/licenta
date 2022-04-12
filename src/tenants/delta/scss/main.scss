@@ -1,0 +1,48 @@
+@import "@scssMixins";
+@import "@scssVariables";
+@import "custom";
+@import "banners";
+
+$color-white: #FFFFFF;
+$color-black: #A70000;
+
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__title {
+            color: $color-white;
+            font-size: font-size( 'xxxxxxxl' );
+        }
+
+        .gst-home__subtitle {
+            color: $color-white;
+            font-size: font-size( 's' );
+        }
+
+        @media (max-width: 959px) {
+            .gst-home__title {
+                font-size: font-size( 'xxxxxl' );
+            }
+        }
+    }
+
+    .gst-bp {
+        h3 {
+            color: $color-black;
+            font-size: font-size( 'xxxl' );
+        }
+    }
+}
+
+.gst-footer {
+    .gst-menu-link--white {
+        color: $color-white;
+    }
+
+    .gst-footer__copyright {
+        color: $color-white;
+    }
+
+    .gst-footer__app-info {
+        color: $color-white;
+    }
+}

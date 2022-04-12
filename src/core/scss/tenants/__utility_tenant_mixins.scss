@@ -1,0 +1,51 @@
+@mixin checkout-wizard-checkbox-icon( $color: 'accent' ) {
+    .gst-checkbox.gst-input.gst-input--secondary.v-input--selection-controls.v-input--checkbox,
+    .gst-checkout-step-2-form__field-terms-conditions.v-input--selection-controls.v-input--checkbox,
+    .gst-checkout-step-2-form__field-healthcheck.v-input--selection-controls.v-input--checkbox,
+    .v-input--selection-controls.v-input--radio-group.v-input--radio-group--column {
+        svg.gst-icon-checked .gst-svg-icon {
+            fill: theme-color( $color ) !important;
+        }
+    }
+
+    .gst-checkwiz-step-payment__icon-check .gst-svg-icon {
+        fill: theme-color( $color ) !important;
+    }
+}
+
+@mixin checkout-wizard-checkbox-form-label( $color: 'primary', $font-weight: null ) {
+    .gst-input.v-input.gst-input--secondary.v-text-field--outlined label {
+        color: theme-color( $color );
+
+        @if ( $font-weight ) {
+            font-weight: font-weight( $font-weight ) !important;
+        }
+    }
+
+    div.braintree-form__field-group .braintree-form__label {
+        color: map-get-strict( $theme-colors-hex, $color ) !important;
+
+        @if ( $font-weight ) {
+            font-weight: font-weight( $font-weight ) !important;
+        }
+    }
+}
+
+@mixin checkout-wizard-checkbox-step-indicator( $color: 'accent', $labelColor: 'tertiary' ) {
+    .gst-indicator__step--current .gst-indicator__step-divider,
+    .gst-indicator__step--previous .gst-indicator__step-divider {
+        border-color: theme-color( $color ) !important;
+    }
+
+    .gst-indicator__step--current .gst-indicator__step-inner,
+    .gst-indicator__step--previous .gst-indicator__step-inner {
+        background: theme-color( $color ) !important;
+        box-shadow: 0 0 0 4px theme-color( $color ) !important;
+    }
+
+    .gst-indicator__step--current {
+        .gst-indicator__step-label {
+            color: theme-color( $labelColor ) !important;
+        }
+    }
+}

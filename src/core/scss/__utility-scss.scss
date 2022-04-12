@@ -1,0 +1,32 @@
+@function map-get-strict( $map, $key ) {
+    @if map-has-key( $map, $key ) {
+        @return map-get( $map, $key );
+    }
+
+    @else {
+        @error "ERROR: Specified index does not exist in the mapping: "+$key;
+    }
+}
+
+@function map-get-by-step-strict( $map, $key, $step ) {
+    @if map-get-strict( $map, $key ) {
+        $keys: map-keys( $map );
+        $index: index( $keys, $key );
+        $minStep: 1 - $index;
+        $maxStep: length( $map ) - $index;
+
+        @if ( $step < $minStep ) {
+            @error "ERROR: Specified step cannot be smaller than: "+$minStep;
+        }
+
+        @else if ( $step > $maxStep ) {
+            @error "ERROR: Specified step cannot be greater than: "+$maxStep;
+        }
+
+        @else {
+            $stepKey: nth( $keys, ( $index + $step ) );
+
+            @return map-get( $map, $stepKey );
+        }
+    }
+}

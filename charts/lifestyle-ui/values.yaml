@@ -1,0 +1,10 @@
+frontend:
+
+  nameOverride: gst-lifestyle-ui
+
+  image:
+    repository: gstregistry.azurecr.io/gst-lifestyle/gst-lifestyle-ui
+    tag: ${IMAGE_TAG}
+    pullPolicy: Always
+
+  waitForServices:

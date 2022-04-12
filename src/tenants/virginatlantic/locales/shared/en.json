@@ -1,0 +1,28 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} Point",
+                "pointWithCount_plural": "{{ formattedCount }} Points"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} Point",
+                "pointWithCount_plural": "{{ formattedCount }} Points"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} POINT",
+                "title_plural": "{{points}} POINTS"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn Virgin Points. Simple as that."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} POINTS"
+                }
+            }
+        }
+    }
+}

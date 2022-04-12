@@ -1,0 +1,34 @@
+.gst-input.v-input.gst-input--secondary.v-text-field--outlined label {
+    color: theme-color( 'primary' );
+}
+
+div.braintree-form__field-group .braintree-form__label {
+    color: theme-color( 'primary' ) !important;
+    font-weight: font-weight( 'medium' ) !important;
+}
+
+.gst-ticket-date-icon,
+.gst-ticket-location-icon {
+    color: theme-color( 'quaternary' );
+}
+
+.gst-expansion-panel,
+.gst-expansion-panel .v-expansion-panel-header {
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+.gst-price-list-container__total-quantity {
+    font-weight: font-weight( 'medium' ) !important;
+}
+
+.v-application .gst-faq-card > p {
+    font-weight: font-weight( 'medium' ) !important;
+}
+
+.gst-checkwiz-step-payment {
+    .v-item--active {
+        label {
+            color: theme-color( 'quaternary' );
+        }
+    }
+}

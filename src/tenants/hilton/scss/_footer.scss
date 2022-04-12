@@ -1,0 +1,19 @@
+.gst-footer {
+    color: theme-color( 'quaternary' ) !important;
+
+    .gst-menu-link {
+        color: theme-color( 'quaternary' ) !important;
+
+        .gst-menu-link:hover {
+            color: theme-color( 'quaternary' );
+        }
+
+        .gst-menu-link--white {
+            color: theme-color( 'quaternary' ) !important;
+
+            &:hover {
+                color: theme-color( 'quaternary' ) !important;
+            }
+        }
+    }
+}

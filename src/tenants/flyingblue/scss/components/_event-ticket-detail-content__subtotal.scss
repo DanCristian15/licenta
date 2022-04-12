@@ -1,0 +1,13 @@
+.gst-event-ticket-detail-content .gst-event-ticket-detail-content__subtotal {
+    line-height: line-height( 'xl' ) !important;
+    font-weight: font-weight( 'medium' ) !important;
+    letter-spacing: -0.41px;
+}
+
+@include mobile-only {
+    .gst-event-ticket-modal .gst-event-ticket-modal__subtotal {
+        line-height: line-height( 'xl' ) !important;
+        font-weight: font-weight( 'medium' ) !important;
+        letter-spacing: -0.41px;
+    }
+}

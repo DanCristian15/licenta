@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Rapid Rewards Account Number"
+                            }
+                        }
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem Rapid Rewards"
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Southwest Rapid Rewards",
+                "subtitle": "Earn double Rapid Rewards<span style='font-size:8px; vertical-align: text-top;'>®</span> points on lifestyle products."
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} Avios",
+                "pointWithCount_plural": "{{ formattedCount }} Avios"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} Avios",
+                "pointWithCount_plural": "{{ formattedCount }} Avios"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} Avio",
+                "title_plural": "{{points}} Avios"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn Bonus Avios. Simple as that."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} Avios"
+                }
+            }
+        }
+    }
+}

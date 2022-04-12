@@ -1,0 +1,38 @@
+.gst-bonus-points-home-banner {
+    h3 {
+        padding-left: 100px;
+        color: #FFFFFF !important;
+
+        @include mobile-only {
+            padding-left: unset;
+        }
+    }
+
+    a {
+        padding-left: 100px;
+        color: #FFFFFF !important;
+
+        @include mobile-only {
+            padding-left: unset;
+        }
+    }
+
+    .v-icon.primary--text {
+        color: #FFFFFF !important;
+    }
+}
+
+.gst-bonus-points-cart-checkout-summary {
+    span {
+        color: #FFFFFF !important;
+    }
+
+    h4 {
+        color: #FFFFFF !important;
+        text-transform: capitalize;
+    }
+}
+
+.gst-bp-chip {
+    text-transform: unset !important;
+}

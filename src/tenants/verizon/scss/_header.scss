@@ -1,0 +1,36 @@
+.gst-header {
+    .gst-tenant-logo__link {
+        height: 50px !important;
+    }
+
+    .gst-menu-list {
+        li a {
+            color: theme-color( 'quaternary' );
+        }
+    }
+
+    .gst-menu-list li a:hover {
+        color: theme-color( 'secondary' ) !important;
+    }
+}
+
+.gst-burger-menu_link:hover {
+    color: theme-color( 'secondary' ) !important;
+}
+
+.gst-tenant-logo__content {
+    display: block;
+    height: 100% !important;
+
+    svg {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+@include mobile-only {
+    .gst-tenant-logo__content {
+        svg {
+            max-width: 150px !important;
+        }
+    }
+}

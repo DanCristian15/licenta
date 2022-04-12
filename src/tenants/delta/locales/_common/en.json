@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Delta SkyMiles",
+            "title": "About Delta SkyMiles"
+        }
+    },
+    "terms": {
+        "bonusPoint": "SkyMile®",
+        "bonusPointLong": "SkyMile®",
+        "bonusPointLong_plural": "SkyMiles®",
+        "bonusPoint_plural": "SkyMiles®"
+    }
+}

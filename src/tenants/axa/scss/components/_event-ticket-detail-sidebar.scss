@@ -1,0 +1,42 @@
+.gst-event-ticket-detail-content--sidebar {
+    .gst-bonus-points-cart-checkout-summary {
+        .gst-bp__badge {
+            top: 0;
+            right: 8px;
+        }
+    }
+
+    .gst-ticket-date-icon,
+    .gst-ticket-location-icon {
+        color: theme-color( 'quaternary' );
+        font-weight: font-weight( 'large' ) !important;
+    }
+
+    .gst-ticket-date-icon svg,
+    .gst-ticket-location-icon svg {
+        opacity: 1 !important;
+    }
+
+    .gst-ticket-card-variant-three__seat-location,
+    .gst-ticket-card-variant-three__seats {
+        font-weight: font-weight( 'large' ) !important;
+    }
+}
+
+.gst-event-ticket-modal {
+    .gst-ticket-date-icon,
+    .gst-ticket-location-icon {
+        color: theme-color( 'quaternary' );
+        font-weight: font-weight( 'large' ) !important;
+    }
+
+    .gst-ticket-date-icon svg,
+    .gst-ticket-location-icon svg {
+        opacity: 1 !important;
+    }
+
+    .gst-ticket-card-variant-three__seat-location,
+    .gst-ticket-card-variant-three__seats {
+        font-weight: font-weight( 'large' ) !important;
+    }
+}

@@ -1,0 +1,23 @@
+.gst-bp-chip {
+    font-weight: font-weight( 'medium' ) !important;
+}
+
+.gst-ticket-offer-price-icon__money {
+    font-size: font-size( 'xxxxs' ) !important;
+    font-weight: font-weight( 'black' ) !important;
+}
+
+.gst-ticket-offer-price-icon__bonus-points-chip {
+    padding: 5px 2px 4px !important;
+
+    p {
+        padding-right: 2px !important;
+        padding-left: 2px !important;
+    }
+}
+
+@include mobile-only {
+    .gst-ticket-offer-price-icon__money {
+        font-size: font-size( 'xxxs' ) !important;
+    }
+}

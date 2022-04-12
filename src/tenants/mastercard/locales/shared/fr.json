@@ -1,0 +1,7 @@
+{
+    "layouts": {
+        "footer": {
+            "copyright": "© {{ year }} Everyday Priceless. All rights reserved."
+        }
+    }
+}

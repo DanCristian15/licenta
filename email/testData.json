@@ -1,0 +1,62 @@
+{
+  "GUEST_LAST_NAME": "Girigan",
+  "HOTEL_PHONE": "+6024388688",
+  "TICKETMASTER_URL": "https://www.ticketmaster.com",
+  "PAYMENT_CURRENCY": "USD",
+  "CHECK_OUT_TIME": "11:00",
+  "HOTEL_IMAGES": [
+    "http://photos.hotelbeds.com/giata/13/137828/137828a_hb_a_019.jpg",
+    "http://photos.hotelbeds.com/giata/13/137828/137828a_hb_a_015.jpg",
+    "http://photos.hotelbeds.com/giata/13/137828/137828a_hb_a_018.jpg",
+    "http://photos.hotelbeds.com/giata/13/137828/137828a_hb_l_001.jpg",
+    "http://photos.hotelbeds.com/giata/13/137828/137828a_hb_l_002.jpg"
+  ],
+  "HOTEL_ADDRESS_URL": "https://www.google.com/maps/dir/?api=1&destination=4234 S 48th St,PHOENIX,AZ,US,",
+  "EMAIL": "office@bb.com",
+  "CHECK_IN_TIME": "18:00",
+  "FEES": [
+    {
+      "AMOUNT": 15.47,
+      "NAME": "TAXESANDFEES",
+      "QUANTITY": 1
+    },
+    {
+      "AMOUNT": 5.00,
+      "NAME": "TAX"
+    }
+  ],
+  "PAY_LATER_FEES": 20,
+  "GUEST_FIRST_NAME": "Mircea",
+  "HOTEL_NAME": "GreenTree Inn & Suites Phoenix Sky Harbor",
+  "CHILD_COUNT": 1,
+  "ROOM_COUNT": 1,
+  "PAYMENT_DATE": "06 January 2022 12:47",
+  "CHECK_IN": "Saturday, February 05 2022",
+  "ROOM_TYPE": "Room KING SIZE BED",
+  "PAYMENT_CURRENCY_SYMBOL": "$",
+  "NIGHTS_COUNT": 1,
+  "ADULT_COUNT": 1,
+  "GUEST_COUNT": 2,
+  "MEAL_PLAN": "Breakfast for two guests",
+  "HOTEL_ADDRESS": "4234 S 48th St,PHOENIX,AZ,US,",
+  "LAST_4_CARD_DIGITS": "1111",
+  "PAYMENT_TOTAL_AMOUNT": 138.51,
+  "PAYMENT_AMOUNT": 138.51,
+  "RATING": "4.5",
+  "ORDER_NUMBER": 2640,
+  "CHECK_OUT": "Sunday, February 06 2022",
+  "TENANT_URL": "https://ticketmaster.ui.test.lifestyle.shipyardlabs.io",
+  "CANCELATION_POLICIES": [
+    {
+      "COST": 0,
+      "DATE": "02 February 2022 11:59",
+      "TYPE": "UNTIL"
+    },
+    {
+      "COST": 135.46,
+      "DATE": "02 February 2022 11:59",
+      "TYPE": "AFTER"
+    }
+  ],
+  "IS_BUNDLE": false
+}

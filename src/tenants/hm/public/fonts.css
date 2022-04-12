@@ -1,0 +1,179 @@
+@font-face {
+    font-weight: bold;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-Bold.eot');
+    src: url('fonts/MarkPro-Bold.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Bold.woff2') format( 'woff2'), url('fonts/MarkPro-Bold.woff') format( 'woff'), url('fonts/MarkPro-Bold.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 900;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-Black.eot');
+    src: url('fonts/MarkPro-Black.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Black.woff2') format( 'woff2'), url('fonts/MarkPro-Black.woff') format( 'woff'), url('fonts/MarkPro-Black.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 900;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-BlackItalic.eot');
+    src: url('fonts/MarkPro-BlackItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-BlackItalic.woff2') format( 'woff2'), url('fonts/MarkPro-BlackItalic.woff') format( 'woff'), url('fonts/MarkPro-BlackItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'MarkPro-HairlineItalic';
+    src: url('fonts/MarkPro-HairlineItalic.eot');
+    src: url('fonts/MarkPro-HairlineItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-HairlineItalic.woff2') format( 'woff2'), url('fonts/MarkPro-HairlineItalic.woff') format( 'woff'), url('fonts/MarkPro-HairlineItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'MarkPro-Book';
+    src: url('fonts/MarkPro-Book.eot');
+    src: url('fonts/MarkPro-Book.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Book.woff2') format( 'woff2'), url('fonts/MarkPro-Book.woff') format( 'woff'), url('fonts/MarkPro-Book.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'MarkPro-Hairline';
+    src: url('fonts/MarkPro-Hairline.eot');
+    src: url('fonts/MarkPro-Hairline.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Hairline.woff2') format( 'woff2'), url('fonts/MarkPro-Hairline.woff') format( 'woff'), url('fonts/MarkPro-Hairline.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-BoldItalic.eot');
+    src: url('fonts/MarkPro-BoldItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-BoldItalic.woff2') format( 'woff2'), url('fonts/MarkPro-BoldItalic.woff') format( 'woff'), url('fonts/MarkPro-BoldItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 900;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-Heavy.eot');
+    src: url('fonts/MarkPro-Heavy.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Heavy.woff2') format( 'woff2'), url('fonts/MarkPro-Heavy.woff') format( 'woff'), url('fonts/MarkPro-Heavy.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-Medium.eot');
+    src: url('fonts/MarkPro-Medium.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Medium.woff2') format( 'woff2'), url('fonts/MarkPro-Medium.woff') format( 'woff'), url('fonts/MarkPro-Medium.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 200;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-ExtraLightItalic.eot');
+    src: url('fonts/MarkPro-ExtraLightItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-ExtraLightItalic.woff2') format( 'woff2'), url('fonts/MarkPro-ExtraLightItalic.woff') format( 'woff'), url('fonts/MarkPro-ExtraLightItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-Italic.eot');
+    src: url('fonts/MarkPro-Italic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Italic.woff2') format( 'woff2'), url('fonts/MarkPro-Italic.woff') format( 'woff'), url('fonts/MarkPro-Italic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-Light.eot');
+    src: url('fonts/MarkPro-Light.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Light.woff2') format( 'woff2'), url('fonts/MarkPro-Light.woff') format( 'woff'), url('fonts/MarkPro-Light.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 200;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-ExtraLight.eot');
+    src: url('fonts/MarkPro-ExtraLight.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-ExtraLight.woff2') format( 'woff2'), url('fonts/MarkPro-ExtraLight.woff') format( 'woff'), url('fonts/MarkPro-ExtraLight.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 100;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-Thin.eot');
+    src: url('fonts/MarkPro-Thin.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-Thin.woff2') format( 'woff2'), url('fonts/MarkPro-Thin.woff') format( 'woff'), url('fonts/MarkPro-Thin.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 100;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-ThinItalic.eot');
+    src: url('fonts/MarkPro-ThinItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-ThinItalic.woff2') format( 'woff2'), url('fonts/MarkPro-ThinItalic.woff') format( 'woff'), url('fonts/MarkPro-ThinItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'MarkPro-BookItalic';
+    src: url('fonts/MarkPro-BookItalic.eot');
+    src: url('fonts/MarkPro-BookItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-BookItalic.woff2') format( 'woff2'), url('fonts/MarkPro-BookItalic.woff') format( 'woff'), url('fonts/MarkPro-BookItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 900;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-HeavyItalic.eot');
+    src: url('fonts/MarkPro-HeavyItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-HeavyItalic.woff2') format( 'woff2'), url('fonts/MarkPro-HeavyItalic.woff') format( 'woff'), url('fonts/MarkPro-HeavyItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro.eot');
+    src: url('fonts/MarkPro.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro.woff2') format( 'woff2'), url('fonts/MarkPro.woff') format( 'woff'), url('fonts/MarkPro.ttf') format( 'truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-LightItalic.eot');
+    src: url('fonts/MarkPro-LightItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-LightItalic.woff2') format( 'woff2'), url('fonts/MarkPro-LightItalic.woff') format( 'woff'), url('fonts/MarkPro-LightItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'MarkPro';
+    src: url('fonts/MarkPro-MediumItalic.eot');
+    src: url('fonts/MarkPro-MediumItalic.eot?#iefix') format( 'embedded-opentype'), url('fonts/MarkPro-MediumItalic.woff2') format( 'woff2'), url('fonts/MarkPro-MediumItalic.woff') format( 'woff'), url('fonts/MarkPro-MediumItalic.ttf') format( 'truetype');
+    font-style: italic;
+    font-display: swap;
+}

@@ -1,0 +1,11 @@
+.gst-card-icon-container.gst-ticket-offer-price-icon {
+    .gst-ticket-offer-price-icon__price {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-weight: font-weight( 'bold' ) !important;
+    }
+
+    .gst-ticket-offer-price-icon__bonus-points-chip {
+        background-color: theme-color( 'secondary' ) !important;
+    }
+}

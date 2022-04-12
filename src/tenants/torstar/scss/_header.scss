@@ -1,0 +1,7 @@
+@include mobile-only {
+    .gst-header .gst-tenant-logo__link svg,
+    .gst-steps-progress__icon-logo svg,
+    .gst-checkout-confirmation__icon-logo svg {
+        max-width: 148px;
+    }
+}

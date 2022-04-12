@@ -1,0 +1,14 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsHomeBanner": {
+                "title": "Get tickets, Earn Bonus Points. Simple as that."
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "copyright": "Copyright {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

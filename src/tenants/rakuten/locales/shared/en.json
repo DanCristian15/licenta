@@ -1,0 +1,17 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} Cash Back",
+                "pointWithCount_plural": "{{ formattedCount }} Cash Back"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} Cash Back",
+                "pointWithCount_plural": "{{ formattedCount }} Cash Back"
+            },
+            "bonusPointsHomeBanner": {
+                "titleMoney": "Get Tickets, Earn Bonus Cash Back. Simple as that."
+            }
+        }
+    }
+}

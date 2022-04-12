@@ -1,0 +1,6 @@
+{
+  "docker" : {
+    "image_repository" : "gstregistry.azurecr.io/gst-lifestyle/gst-lifestyle-ui"
+  },
+  "version": "0.0.1"
+}

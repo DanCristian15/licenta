@@ -1,0 +1,12 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Lifestyle",
+            "title": "About Lifestyle"
+        }
+    },
+    "terms": {
+        "bonusPointMoney": "Circle Earnings Rewards",
+        "bonusPointMoneyCurrencySymbol": "Earnings"
+    }
+}

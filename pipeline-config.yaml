@@ -1,0 +1,15 @@
+docker:
+  # update with valid Docker Container Registry URL
+  imageRepository: gstregistry.azurecr.io/gst-lifestyle/gst-lifestyle-ui
+helm:
+  # must match the directory under the `charts` directory
+  name: lifestyle-ui
+  deploymentEnvironments:
+    # the application will be deployed in the `default` namespace
+    # if you want to host multiple environments in the same cluster you can deploy each environment in a different namespace
+    test:
+      namespace: default
+    uat:
+      namespace: default
+    prod:
+      namespace: default

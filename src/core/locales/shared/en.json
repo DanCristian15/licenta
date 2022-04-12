@@ -1,0 +1,205 @@
+{
+    "common": {
+        "buttons": {
+            "cancel": "Cancel"
+        },
+        "languages": {
+            "en": {
+                "name": "English - EN"
+            },
+            "fr": {
+                "name": "French - FR"
+            }
+        }
+    },
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} $t(_common:terms.bonusPoint)",
+                "pointWithCount_plural": "{{ formattedCount }} $t(_common:terms.bonusPoint_plural)",
+                "title": "You have earned",
+                "tooltip": "Your points will be added to your account after the event occurs."
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} $t(_common:terms.bonusPoint)",
+                "pointWithCount_plural": "{{ formattedCount }} $t(_common:terms.bonusPoint_plural)",
+                "title": "You will earn"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} $t(_common:terms.bonusPointLong)",
+                "titleMoney": "{{points}} $t(_common:terms.bonusPointMoneyCurrencySymbol)",
+                "titleMoney_0": "Earn $t(_common:terms.bonusPointMoneyCurrencySymbol)",
+                "title_0": "Earn $t(_common:terms.bonusPointLong_plural)",
+                "title_plural": "{{points}} $t(_common:terms.bonusPointLong_plural)"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn $t(_common:terms.bonusPointLong_plural). Simple as that.",
+                "titleMoney": "Get Tickets, Earn {{ earnRatePercent }} $t(_common:terms.bonusPointMoney). Simple as that.",
+                "url": "Find out how it works"
+            }
+        },
+        "buttons": {
+            "search": "Search",
+            "seeAll": "See All Results",
+            "seeMore": "See More"
+        },
+        "date": {
+            "datePicker": {
+                "headers": {
+                    "datePicker": "Pick a range"
+                },
+                "labels": {
+                    "allDates": "All Dates",
+                    "cancel": "Cancel",
+                    "clear": "All dates",
+                    "confirm": "Confirm",
+                    "reset": "Reset",
+                    "weekend": "This Weekend"
+                },
+                "placeholder": "All dates",
+                "placeholderEndDate": "End Date",
+                "placeholderStartDate": "Start Date"
+            }
+        },
+        "event": {
+            "eventCardVariant6": {
+                "_components": {
+                    "eventCardVariant6Details": {
+                        "buttons": {
+                            "plusMore": "+{{ count }} more",
+                            "seeTickets": "See tickets"
+                        },
+                        "titles": {
+                            "lineUp": "Lineup",
+                            "venue": "Venue"
+                        }
+                    }
+                }
+            },
+            "eventStatusChip": {
+                "cancelled": "Cancelled",
+                "postponed": "Postponed",
+                "rescheduled": "Rescheduled"
+            }
+        },
+        "input": {
+            "_common": {
+                "cityDropDown": {
+                    "inputPlaceholder": "Search for a city",
+                    "labels": {
+                        "clear": "All cities"
+                    },
+                    "messages": {
+                        "noData": "City not found"
+                    },
+                    "placeholder": "All cities"
+                }
+            },
+            "priceRange": {
+                "labels": {
+                    "max": "Price Range Maximum",
+                    "min": "Price Range Minimum"
+                }
+            }
+        },
+        "misc": {
+            "noData": {
+                "message": "No item found"
+            },
+            "priceIcon": {
+                "labels": {
+                    "money": "{{points}} $t(_common:terms.bonusPointMoneyCurrencySymbol)",
+                    "points": "You get {{points}} $t(_common:terms.bonusPoint_plural, 'lowercase')",
+                    "priceSuffix": "/ea",
+                    "titleChip_0": "Earn $t(_common:terms.bonusPoint_plural)",
+                    "titleNoPrice": "Tickets Available"
+                }
+            }
+        },
+        "modals": {
+            "login": {
+                "messages": {
+                    "noEmail": "Please enter a registered email"
+                }
+            }
+        },
+        "notifications": {
+            "paymentProviderDownWarningContainer": {
+                "message": "Please try again later to purchase tickets to this event.",
+                "title": "The payment system is temporarily down"
+            }
+        },
+        "search": {
+            "eventsSearchBy": {
+                "messages": {
+                    "noData": "No events found."
+                }
+            },
+            "searchCity": {
+                "labels": {
+                    "noRecent": "No Recent Cities",
+                    "noResults": "City not found",
+                    "recent": "Recent",
+                    "results": "Results"
+                },
+                "placeholder": "All cities"
+            },
+            "searchFieldBanner": {
+                "placeholder": "Search artists, events, venues..."
+            },
+            "searchResultList": {
+                "headers": {
+                    "attractions": "Artist & Teams",
+                    "events": "Events",
+                    "venues": "Venues"
+                },
+                "messages": {
+                    "noData": "No Events found in the area"
+                }
+            }
+        },
+        "similarAttractions": {
+            "title": "Similar to your interests"
+        },
+        "subscribe": {
+            "alerts": {
+                "successfullyRegistered": "Successfully registered"
+            },
+            "placeholders": {
+                "name": "Your name"
+            },
+            "subscribeButton": "Subscribe",
+            "subtitle": "We're always working on new deals. Subscribe to our newsletter. <br> Don't worry, we don't spam.😉 ",
+            "title": "Don't miss a thing!"
+        },
+        "ticket": {
+            "accessibility": "Accessibility",
+            "ticketGuarantee": {
+                "description": "You’re 100% covered by the Ticketmaster Buyer’s Guarantee. We guarantee you’ll get the tickets you ordered on time.",
+                "title": "Buyer’s Guarantee"
+            },
+            "ticketOfferCardSmall": {
+                "labels": {
+                    "extraFee": " taxes and fees",
+                    "priceSuffix": ""
+                }
+            },
+            "ticketOfferTypeIcon": {
+                "labels": {
+                    "resale": "Verified Resale",
+                    "standard": "Standard Ticket"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

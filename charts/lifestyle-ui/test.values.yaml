@@ -1,0 +1,90 @@
+frontend:
+  replicaCount: 1
+  env:
+    - name: "KEYCLOAK_URL"
+      value: "https://iam.test.lifestyle.shipyardlabs.io"
+    - name: "COMPOSITE_SERVICE_NAME"
+      value: "gst-composite-http.default.svc.cluster.local"
+
+  ingress:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-production
+      nginx.ingress.kubernetes.io/proxy-connect-timeout: "15"
+      nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+      nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+      nginx.ingress.kubernetes.io/proxy-body-size: 10m
+    hosts:
+      - ui.test.lifestyle.shipyardlabs.io
+      - branding-test.ui.test.lifestyle.shipyardlabs.io
+      - aircanada.ui.test.lifestyle.shipyardlabs.io
+      - airfrance.ui.test.lifestyle.shipyardlabs.io
+      - alaskaairlines.ui.test.lifestyle.shipyardlabs.io
+      - albertsons.ui.test.lifestyle.shipyardlabs.io
+      - albertheijn.ui.test.lifestyle.shipyardlabs.io
+      - airmiles.ui.test.lifestyle.shipyardlabs.io
+      - adidas.ui.test.lifestyle.shipyardlabs.io
+      - americanairlines.ui.test.lifestyle.shipyardlabs.io
+      - astonlark.ui.test.lifestyle.shipyardlabs.io
+      - avianca.ui.test.lifestyle.shipyardlabs.io
+      - amtrak.ui.test.lifestyle.shipyardlabs.io
+      - axa.ui.test.lifestyle.shipyardlabs.io
+      - britishairways.ui.test.lifestyle.shipyardlabs.io
+      - costco.ui.test.lifestyle.shipyardlabs.io
+      - copaairline.ui.test.lifestyle.shipyardlabs.io
+      - delta.ui.test.lifestyle.shipyardlabs.io
+      - dufry.ui.test.lifestyle.shipyardlabs.io
+      - emirates.ui.test.lifestyle.shipyardlabs.io
+      - etihad.ui.test.lifestyle.shipyardlabs.io
+      - exxonmobil.ui.test.lifestyle.shipyardlabs.io
+      - finnair.ui.test.lifestyle.shipyardlabs.io
+      - flyfrontier.ui.test.lifestyle.shipyardlabs.io
+      - flyingblue.ui.test.lifestyle.shipyardlabs.io
+      - hawaiianairlines.ui.test.lifestyle.shipyardlabs.io
+      - hilton.ui.test.lifestyle.shipyardlabs.io
+      - homedepot.ui.test.lifestyle.shipyardlabs.io
+      - icelandair.ui.test.lifestyle.shipyardlabs.io
+      - jambajuice.ui.test.lifestyle.shipyardlabs.io
+      - hm.ui.test.lifestyle.shipyardlabs.io
+      - jetblue.ui.test.lifestyle.shipyardlabs.io
+      - klm.ui.test.lifestyle.shipyardlabs.io
+      - marksandspencer.ui.test.lifestyle.shipyardlabs.io
+      - mastercard.ui.test.lifestyle.shipyardlabs.io
+      - milesandmore.ui.test.lifestyle.shipyardlabs.io
+      - mcdonalds.ui.test.lifestyle.shipyardlabs.io
+      - pc.ui.test.lifestyle.shipyardlabs.io
+      - qatar.ui.test.lifestyle.shipyardlabs.io
+      - rakuten.ui.test.lifestyle.shipyardlabs.io
+      - scene.ui.test.lifestyle.shipyardlabs.io
+      - scotiabank.ui.test.lifestyle.shipyardlabs.io
+      - samsung.ui.test.lifestyle.shipyardlabs.io
+      - santander.ui.test.lifestyle.shipyardlabs.io
+      - shell.ui.test.lifestyle.shipyardlabs.io
+      - skyuk.ui.test.lifestyle.shipyardlabs.io
+      - southwest.ui.test.lifestyle.shipyardlabs.io
+      - spirit.ui.test.lifestyle.shipyardlabs.io
+      - target.ui.test.lifestyle.shipyardlabs.io
+      - torstar.ui.test.lifestyle.shipyardlabs.io
+      - tractorsupply.ui.test.lifestyle.shipyardlabs.io
+      - trenitalia.ui.test.lifestyle.shipyardlabs.io
+      - ticketmaster.ui.test.lifestyle.shipyardlabs.io
+      - timhortons.ui.test.lifestyle.shipyardlabs.io
+      - turkishairlines.ui.test.lifestyle.shipyardlabs.io
+      - united.ui.test.lifestyle.shipyardlabs.io
+      - vans.ui.test.lifestyle.shipyardlabs.io
+      - verizon.ui.test.lifestyle.shipyardlabs.io
+      - virginatlantic.ui.test.lifestyle.shipyardlabs.io
+      - virginred.ui.test.lifestyle.shipyardlabs.io
+      - visa.ui.test.lifestyle.shipyardlabs.io
+      - volvo.ui.test.lifestyle.shipyardlabs.io
+      - vodafone.ui.test.lifestyle.shipyardlabs.io
+      - westjet.ui.test.lifestyle.shipyardlabs.io
+    tls:
+      - hosts:
+          - ui.test.lifestyle.shipyardlabs.io
+          - '*.ui.test.lifestyle.shipyardlabs.io'
+        secretName: ui-test-lifestyle-shipyardlabs-io
+
+  prometheus:
+    operator:
+      enabled: false

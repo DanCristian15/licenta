@@ -1,0 +1,44 @@
+$theme-colors-hex: (
+    'primary':                              #000000,
+    'secondary':                            #008000,
+    'tertiary':                             #757575,
+    'quaternary':                           #333333,
+    'quinary':                              #F0F0F0,
+    'senary':                               #CCCCCC,
+    'septenary':                            #D6DBE0,
+    'accent':                               #008000,
+    'anchor':                               #000000,
+    'error':                                #E92505,
+    'success':                              #60B403,
+    'warning':                              #FFC203,
+    'info':                                 #E50010,
+    'overlay':                              #000000,
+    'shadow':                               #D5DADF,
+    'gradient-primary-1':                   #E97068,
+    'gradient-primary-2':                   #EA766E,
+    'gradient-secondary-1':                 #EA766E,
+    'gradient-secondary-2':                 #EA766E,
+    'gradient-radial-1':                    #02B5FF,
+    'gradient-radial-2':                    #FF9F00,
+    'home-banner-gradient-start':           #F5F5F5,
+    'home-banner-gradient-end':             #F5F5F5,
+    'home-banner-search-button-bg-color':   #BDD755,
+    'footer-gradient-start':                #161616,
+    'footer-gradient-end':                  #161616,
+    'calendar':                             #EA766E,
+    'background-timer':                     #000000,
+    'background-success':                   #60B403,
+    'bonus-points-chip-bg-color':           #BDD755,
+    'bonus-points-chip-color':              #000000,
+    'favorite-marked':                      #F80445,
+    'favorite-unmarked':                    #FFFFFF,
+    'event-status-chip-cancelled':          #EE2E24,
+    'event-status-chip-postponed':          #FF7203,
+    'event-status-chip-rescheduled':        #D011C9
+);
+
+$theme-colors-variants: (
+    'primary-lighten-3': lighten( map-get( $theme-colors-hex, 'primary' ), 20 ),
+);
+
+$theme-colors-hex: map-merge( $theme-colors-hex, $theme-colors-variants );

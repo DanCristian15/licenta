@@ -1,0 +1,101 @@
+.gst-event-ticket-detail-content--sidebar {
+    .gst-ticket-card-variant-three__seat-location {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-card-variant-three__seats {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-venue-info {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-date-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-bonus-points-cart-checkout-summary {
+        min-height: 40px;
+
+        .gst-bonus-points-cart-checkout-summary__title {
+            line-height: line-height( 'm' );
+            font-size: font-size( 'xxs' ) !important;
+        }
+
+        .gst-bonus-points-cart-checkout-summary__bonus-points {
+            line-height: line-height( 'xxxl' );
+            font-size: font-size( 'l' ) !important;
+        }
+    }
+
+    .gst-event-ticket-detail-content__subtotal {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-event-ticket-detail-content__offer-card {
+        .gst-ticket-offer-card-variant-one__ticket-type {
+            span {
+                color: theme-color( 'accent' ) !important;
+                font-weight: font-weight( 'medium' ) !important;
+            }
+
+            .gst-svg-icon {
+                fill: theme-color( 'accent' ) !important;
+            }
+        }
+    }
+}
+
+.gst-event-ticket-modal {
+    .gst-ticket-card-variant-three__seat-location {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-card-variant-three__seats {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-date-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-venue-info {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-offer-type-icon {
+        font-weight: font-weight( 'medium' ) !important;
+    }
+
+    .gst-event-ticket-modal__subtotal {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-bonus-points-cart-checkout-summary {
+        .gst-bonus-points-cart-checkout-summary__bonus-points {
+            font-size: font-size( 'xxxl' ) !important;
+        }
+    }
+}
+
+.gst-ticket-date-icon svg,
+.gst-ticket-location-icon svg {
+    opacity: 1 !important;
+}
+
+@include mobile-only {
+    .gst-event-ticket-modal {
+        .gst-ticket-offer-card-variant-one {
+            .gst-ticket-offer-type-icon {
+                span {
+                    color: theme-color( 'accent' );
+                }
+
+                .gst-svg-icon {
+                    fill: theme-color( 'accent' ) !important;
+                }
+            }
+        }
+    }
+}

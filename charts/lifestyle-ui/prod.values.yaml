@@ -1,0 +1,89 @@
+frontend:
+  replicaCount: 1
+  env:
+    - name: "KEYCLOAK_URL"
+      value: "https://iam.prod.lifestylesolutionsteam.com"
+    - name: "COMPOSITE_SERVICE_NAME"
+      value: "gst-composite-http.default.svc.cluster.local"
+
+  ingress:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-production
+      nginx.ingress.kubernetes.io/proxy-connect-timeout: "15"
+      nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+      nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+      nginx.ingress.kubernetes.io/proxy-body-size: 10m
+    hosts:
+      - ui.prod.lifestylesolutionsteam.com
+      - aircanada.ui.prod.lifestylesolutionsteam.com
+      - airfrance.ui.prod.lifestylesolutionsteam.com
+      - airmiles.ui.prod.lifestylesolutionsteam.com
+      - adidas.ui.prod.lifestylesolutionsteam.com
+      - alaskaairlines.ui.prod.lifestylesolutionsteam.com
+      - albertsons.ui.prod.lifestylesolutionsteam.com
+      - albertheijn.ui.prod.lifestylesolutionsteam.com
+      - americanairlines.ui.prod.lifestylesolutionsteam.com
+      - astonlark.ui.prod.lifestylesolutionsteam.com
+      - avianca.ui.prod.lifestylesolutionsteam.com
+      - amtrak.ui.prod.lifestylesolutionsteam.com
+      - axa.ui.prod.lifestylesolutionsteam.com
+      - britishairways.ui.prod.lifestylesolutionsteam.com
+      - costco.ui.prod.lifestylesolutionsteam.com
+      - copaairline.ui.prod.lifestylesolutionsteam.com
+      - delta.ui.prod.lifestylesolutionsteam.com
+      - dufry.ui.prod.lifestylesolutionsteam.com
+      - emirates.ui.prod.lifestylesolutionsteam.com
+      - etihad.ui.prod.lifestylesolutionsteam.com
+      - exxonmobil.ui.prod.lifestylesolutionsteam.com
+      - finnair.ui.prod.lifestylesolutionsteam.com
+      - flyfrontier.ui.prod.lifestylesolutionsteam.com
+      - flyingblue.ui.prod.lifestylesolutionsteam.com
+      - hawaiianairlines.ui.prod.lifestylesolutionsteam.com
+      - hilton.ui.prod.lifestylesolutionsteam.com
+      - homedepot.ui.prod.lifestylesolutionsteam.com
+      - icelandair.ui.prod.lifestylesolutionsteam.com
+      - jambajuice.ui.prod.lifestylesolutionsteam.com
+      - hm.ui.prod.lifestylesolutionsteam.com
+      - jetblue.ui.prod.lifestylesolutionsteam.com
+      - klm.ui.prod.lifestylesolutionsteam.com
+      - marksandspencer.ui.prod.lifestylesolutionsteam.com
+      - mastercard.ui.prod.lifestylesolutionsteam.com
+      - milesandmore.ui.prod.lifestylesolutionsteam.com
+      - mcdonalds.ui.prod.lifestylesolutionsteam.com
+      - pc.ui.prod.lifestylesolutionsteam.com
+      - qatar.ui.prod.lifestylesolutionsteam.com
+      - rakuten.ui.prod.lifestylesolutionsteam.com
+      - scene.ui.prod.lifestylesolutionsteam.com
+      - scotiabank.ui.prod.lifestylesolutionsteam.com
+      - samsung.ui.prod.lifestylesolutionsteam.com
+      - santander.ui.prod.lifestylesolutionsteam.com
+      - shell.ui.prod.lifestylesolutionsteam.com
+      - skyuk.ui.prod.lifestylesolutionsteam.com
+      - southwest.ui.prod.lifestylesolutionsteam.com
+      - spirit.ui.prod.lifestylesolutionsteam.com
+      - target.ui.prod.lifestylesolutionsteam.com
+      - torstar.ui.prod.lifestylesolutionsteam.com
+      - tractorsupply.ui.prod.lifestylesolutionsteam.com
+      - trenitalia.ui.prod.lifestylesolutionsteam.com
+      - ticketmaster.ui.prod.lifestylesolutionsteam.com
+      - timhortons.ui.prod.lifestylesolutionsteam.com
+      - turkishairlines.ui.prod.lifestylesolutionsteam.com
+      - united.ui.prod.lifestylesolutionsteam.com
+      - vans.ui.prod.lifestylesolutionsteam.com
+      - verizon.ui.prod.lifestylesolutionsteam.com
+      - virginatlantic.ui.prod.lifestylesolutionsteam.com
+      - virginred.ui.prod.lifestylesolutionsteam.com
+      - visa.ui.prod.lifestylesolutionsteam.com
+      - volvo.ui.prod.lifestylesolutionsteam.com
+      - vodafone.ui.prod.lifestylesolutionsteam.com
+      - westjet.ui.prod.lifestylesolutionsteam.com
+    tls:
+      - hosts:
+          - ui.prod.lifestylesolutionsteam.com
+          - '*.ui.prod.lifestylesolutionsteam.com'
+        secretName: ui-prod-lifestylesolutionsteam-com
+
+  prometheus:
+    operator:
+      enabled: false

@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Us",
+            "title": "About Us"
+        }
+    },
+    "terms": {
+        "bonusPoint": "Rapid Reward",
+        "bonusPointLong": "Rapid Reward",
+        "bonusPointLong_plural": "Rapid Rewards",
+        "bonusPoint_plural": "Rapid Rewards"
+    }
+}

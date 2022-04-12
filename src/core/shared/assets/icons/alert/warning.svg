@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>alert / warning</title>
+    <desc>Created with Sketch.</desc>
+    <g id="alert-/-warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="toast-/-negative">
+            <g>
+                <g id="Group-3">
+                    <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                    <path class="gst-svg-icon" d="M4.88979533,20 L19.1102047,20 C20.5643501,20 21.4708304,18.4289284 20.7437577,17.1777157 L13.633553,4.93840953 C12.9064803,3.68719682 11.0935197,3.68719682 10.366447,4.93840953 L3.25624234,17.1777157 C2.52916961,18.4289284 3.43564989,20 4.88979533,20 Z M12,13.41467 C11.4806623,13.41467 11.0557497,12.9913274 11.0557497,12.4739086 L11.0557497,10.5923857 C11.0557497,10.0749669 11.4806623,9.65162428 12,9.65162428 C12.5193377,9.65162428 12.9442503,10.0749669 12.9442503,10.5923857 L12.9442503,12.4739086 C12.9442503,12.9913274 12.5193377,13.41467 12,13.41467 Z M12.9442503,17.1777157 L11.0557497,17.1777157 L11.0557497,15.2961929 L12.9442503,15.2961929 L12.9442503,17.1777157 Z" id="Shape" fill="#23262D" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

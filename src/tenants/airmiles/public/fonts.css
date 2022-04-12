@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/Omnes-Bold.eot');
+    src: url('fonts/Omnes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Omnes-Bold.woff2') format('woff2'),
+        url('fonts/Omnes-Bold.woff') format('woff'),
+        url('fonts/Omnes-Bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Cond';
+    src: url('fonts/OmnesCond-Bold.eot');
+    src: url('fonts/OmnesCond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesCond-Bold.woff2') format('woff2'),
+        url('fonts/OmnesCond-Bold.woff') format('woff'),
+        url('fonts/OmnesCond-Bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Cond';
+    src: url('fonts/OmnesCond-BoldItalic.eot');
+    src: url('fonts/OmnesCond-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesCond-BoldItalic.woff2') format('woff2'),
+        url('fonts/OmnesCond-BoldItalic.woff') format('woff'),
+        url('fonts/OmnesCond-BoldItalic.ttf') format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Cond';
+    src: url('fonts/OmnesCond-Thin.eot');
+    src: url('fonts/OmnesCond-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesCond-Thin.woff2') format('woff2'),
+        url('fonts/OmnesCond-Thin.woff') format('woff'),
+        url('fonts/OmnesCond-Thin.ttf') format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/Omnes-Regular.eot');
+    src: url('fonts/Omnes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Omnes-Regular.woff2') format('woff2'),
+        url('fonts/Omnes-Regular.woff') format('woff'),
+        url('fonts/Omnes-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes SemiCond';
+    src: url('fonts/OmnesSemiCond-ThinItalic.eot');
+    src: url('fonts/OmnesSemiCond-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesSemiCond-ThinItalic.woff2') format('woff2'),
+        url('fonts/OmnesSemiCond-ThinItalic.woff') format('woff'),
+        url('fonts/OmnesSemiCond-ThinItalic.ttf') format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Narrow';
+    src: url('fonts/OmnesNarrow-Bold.eot');
+    src: url('fonts/OmnesNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesNarrow-Bold.woff2') format('woff2'),
+        url('fonts/OmnesNarrow-Bold.woff') format('woff'),
+        url('fonts/OmnesNarrow-Bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Narrow';
+    src: url('fonts/OmnesNarrow-Regular.eot');
+    src: url('fonts/OmnesNarrow-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesNarrow-Regular.woff2') format('woff2'),
+        url('fonts/OmnesNarrow-Regular.woff') format('woff'),
+        url('fonts/OmnesNarrow-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/Omnes-SemiBold.eot');
+    src: url('fonts/Omnes-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Omnes-SemiBold.woff2') format('woff2'),
+        url('fonts/Omnes-SemiBold.woff') format('woff'),
+        url('fonts/Omnes-SemiBold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Cond';
+    src: url('fonts/OmnesCond-Regular.eot');
+    src: url('fonts/OmnesCond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesCond-Regular.woff2') format('woff2'),
+        url('fonts/OmnesCond-Regular.woff') format('woff'),
+        url('fonts/OmnesCond-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Narrow';
+    src: url('fonts/OmnesNarrow-Medium.eot');
+    src: url('fonts/OmnesNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesNarrow-Medium.woff2') format('woff2'),
+        url('fonts/OmnesNarrow-Medium.woff') format('woff'),
+        url('fonts/OmnesNarrow-Medium.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/Omnes-Thin.eot');
+    src: url('fonts/Omnes-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Omnes-Thin.woff2') format('woff2'),
+        url('fonts/Omnes-Thin.woff') format('woff'),
+        url('fonts/Omnes-Thin.ttf') format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/Omnes-Italic.eot');
+    src: url('fonts/Omnes-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Omnes-Italic.woff2') format('woff2'),
+        url('fonts/Omnes-Italic.woff') format('woff'),
+        url('fonts/Omnes-Italic.ttf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/OmnesLight-Italic.eot');
+    src: url('fonts/OmnesLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesLight-Italic.woff2') format('woff2'),
+        url('fonts/OmnesLight-Italic.woff') format('woff'),
+        url('fonts/OmnesLight-Italic.ttf') format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Cond';
+    src: url('fonts/OmnesCond-Italic.eot');
+    src: url('fonts/OmnesCond-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesCond-Italic.woff2') format('woff2'),
+        url('fonts/OmnesCond-Italic.woff') format('woff'),
+        url('fonts/OmnesCond-Italic.ttf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes SemiCond';
+    src: url('fonts/OmnesSemiCond-BoldItalic.eot');
+    src: url('fonts/OmnesSemiCond-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesSemiCond-BoldItalic.woff2') format('woff2'),
+        url('fonts/OmnesSemiCond-BoldItalic.woff') format('woff'),
+        url('fonts/OmnesSemiCond-BoldItalic.ttf') format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Narrow';
+    src: url('fonts/OmnesNarrow-Thin.eot');
+    src: url('fonts/OmnesNarrow-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesNarrow-Thin.woff2') format('woff2'),
+        url('fonts/OmnesNarrow-Thin.woff') format('woff'),
+        url('fonts/OmnesNarrow-Thin.ttf') format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Narrow';
+    src: url('fonts/OmnesNarrow-ThinItalic.eot');
+    src: url('fonts/OmnesNarrow-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesNarrow-ThinItalic.woff2') format('woff2'),
+        url('fonts/OmnesNarrow-ThinItalic.woff') format('woff'),
+        url('fonts/OmnesNarrow-ThinItalic.ttf') format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes SemiCond';
+    src: url('fonts/OmnesSemiCond-Italic.eot');
+    src: url('fonts/OmnesSemiCond-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesSemiCond-Italic.woff2') format('woff2'),
+        url('fonts/OmnesSemiCond-Italic.woff') format('woff'),
+        url('fonts/OmnesSemiCond-Italic.ttf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/Omnes-Light.eot');
+    src: url('fonts/Omnes-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Omnes-Light.woff2') format('woff2'),
+        url('fonts/Omnes-Light.woff') format('woff'),
+        url('fonts/Omnes-Light.ttf') format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Cond';
+    src: url('fonts/OmnesCond-ThinItalic.eot');
+    src: url('fonts/OmnesCond-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesCond-ThinItalic.woff2') format('woff2'),
+        url('fonts/OmnesCond-ThinItalic.woff') format('woff'),
+        url('fonts/OmnesCond-ThinItalic.ttf') format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes SemiCond';
+    src: url('fonts/OmnesSemiCond-Regular.eot');
+    src: url('fonts/OmnesSemiCond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesSemiCond-Regular.woff2') format('woff2'),
+        url('fonts/OmnesSemiCond-Regular.woff') format('woff'),
+        url('fonts/OmnesSemiCond-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/Omnes-SemiBoldItalic.eot');
+    src: url('fonts/Omnes-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Omnes-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/Omnes-SemiBoldItalic.woff') format('woff'),
+        url('fonts/Omnes-SemiBoldItalic.ttf') format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes SemiCond';
+    src: url('fonts/OmnesSemiCond-Bold.eot');
+    src: url('fonts/OmnesSemiCond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesSemiCond-Bold.woff2') format('woff2'),
+        url('fonts/OmnesSemiCond-Bold.woff') format('woff'),
+        url('fonts/OmnesSemiCond-Bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Narrow';
+    src: url('fonts/OmnesNarrow-BoldItalic.eot');
+    src: url('fonts/OmnesNarrow-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesNarrow-BoldItalic.woff2') format('woff2'),
+        url('fonts/OmnesNarrow-BoldItalic.woff') format('woff'),
+        url('fonts/OmnesNarrow-BoldItalic.ttf') format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes SemiCond';
+    src: url('fonts/OmnesSemiCond-Thin.eot');
+    src: url('fonts/OmnesSemiCond-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesSemiCond-Thin.woff2') format('woff2'),
+        url('fonts/OmnesSemiCond-Thin.woff') format('woff'),
+        url('fonts/OmnesSemiCond-Thin.ttf') format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('fonts/Omnes-ThinItalic.eot');
+    src: url('fonts/Omnes-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Omnes-ThinItalic.woff2') format('woff2'),
+        url('fonts/Omnes-ThinItalic.woff') format('woff'),
+        url('fonts/Omnes-ThinItalic.ttf') format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Omnes Narrow';
+    src: url('fonts/OmnesNarrow-Italic.eot');
+    src: url('fonts/OmnesNarrow-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OmnesNarrow-Italic.woff2') format('woff2'),
+        url('fonts/OmnesNarrow-Italic.woff') format('woff'),
+        url('fonts/OmnesNarrow-Italic.ttf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}

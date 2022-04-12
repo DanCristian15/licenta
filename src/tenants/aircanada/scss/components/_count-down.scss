@@ -1,0 +1,15 @@
+.gst-header-with-count-down__count-down {
+    > div {
+        border-color: #F01428 !important;
+
+        &::after {
+            background: #F01428 !important;
+        }
+
+        svg {
+            .gst-svg-icon {
+                fill: #F01428 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Delta SkyMiles Number"
+                            }
+                        }
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem SkyMiles®"
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "subtitle": "Earn 1 mile per <b>$1*</b> on eligible Ticketmaster® purchases for events in the U.S. and Canada",
+                "title": "EARN MILES ON EVENTS YOU LOVE"
+            }
+        }
+    }
+}

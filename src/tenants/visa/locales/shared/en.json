@@ -1,0 +1,31 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} cash back",
+                "pointWithCount_plural": "{{ formattedCount }} cash back"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} cash back",
+                "pointWithCount_plural": "{{ formattedCount }} cash back"
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "money": "{{points}} CASH BACK"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

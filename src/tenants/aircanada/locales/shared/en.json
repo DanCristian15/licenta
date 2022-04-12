@@ -1,0 +1,28 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} POINTS",
+                "pointWithCount_plural": "{{ formattedCount }} POINTS"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} POINTS",
+                "pointWithCount_plural": "{{ formattedCount }} POINTS"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} POINT",
+                "title_plural": "{{points}} POINTS"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn Bonus Points. Simple as that."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} POINTS"
+                }
+            }
+        }
+    }
+}

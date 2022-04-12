@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Slate Pro Black Condensed';
+    src: url('fonts/SlatePro-BlackCondensed.eot');
+    src: url('fonts/SlatePro-BlackCondensed.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-BlackCondensed.woff2') format('woff2'), url('fonts/SlatePro-BlackCondensed.woff') format('woff'), url('fonts/SlatePro-BlackCondensed.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro Condensed';
+    src: url('fonts/SlatePro-Condensed.eot');
+    src: url('fonts/SlatePro-Condensed.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-Condensed.woff2') format('woff2'), url('fonts/SlatePro-Condensed.woff') format('woff'), url('fonts/SlatePro-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro Condensed';
+    src: url('fonts/SlatePro-BoldCondensed.eot');
+    src: url('fonts/SlatePro-BoldCondensed.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-BoldCondensed.woff2') format('woff2'), url('fonts/SlatePro-BoldCondensed.woff') format('woff'), url('fonts/SlatePro-BoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro Medium Condensed';
+    src: url('fonts/SlatePro-MediumCondensed.eot');
+    src: url('fonts/SlatePro-MediumCondensed.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-MediumCondensed.woff2') format('woff2'), url('fonts/SlatePro-MediumCondensed.woff') format('woff'), url('fonts/SlatePro-MediumCondensed.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-Italic.eot');
+    src: url('fonts/SlatePro-Italic.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-Italic.woff2') format('woff2'), url('fonts/SlatePro-Italic.woff') format('woff'), url('fonts/SlatePro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-BoldItalic.eot');
+    src: url('fonts/SlatePro-BoldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-BoldItalic.woff2') format('woff2'), url('fonts/SlatePro-BoldItalic.woff') format('woff'), url('fonts/SlatePro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-Black.eot');
+    src: url('fonts/SlatePro-Black.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-Black.woff2') format('woff2'), url('fonts/SlatePro-Black.woff') format('woff'), url('fonts/SlatePro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-Bold.eot');
+    src: url('fonts/SlatePro-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-Bold.woff2') format('woff2'), url('fonts/SlatePro-Bold.woff') format('woff'), url('fonts/SlatePro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro Bk';
+    src: url('fonts/SlatePro-BkItalic.eot');
+    src: url('fonts/SlatePro-BkItalic.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-BkItalic.woff2') format('woff2'), url('fonts/SlatePro-BkItalic.woff') format('woff'), url('fonts/SlatePro-BkItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro.eot');
+    src: url('fonts/SlatePro.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro.woff2') format('woff2'), url('fonts/SlatePro.woff') format('woff'), url('fonts/SlatePro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-BlackItalic.eot');
+    src: url('fonts/SlatePro-BlackItalic.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-BlackItalic.woff2') format('woff2'), url('fonts/SlatePro-BlackItalic.woff') format('woff'), url('fonts/SlatePro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro Light Condensed';
+    src: url('fonts/SlatePro-LightCondensed.eot');
+    src: url('fonts/SlatePro-LightCondensed.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-LightCondensed.woff2') format('woff2'), url('fonts/SlatePro-LightCondensed.woff') format('woff'), url('fonts/SlatePro-LightCondensed.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro Bk Condensed';
+    src: url('fonts/SlatePro-BkCondensed.eot');
+    src: url('fonts/SlatePro-BkCondensed.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-BkCondensed.woff2') format('woff2'), url('fonts/SlatePro-BkCondensed.woff') format('woff'), url('fonts/SlatePro-BkCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-MediumItalic.eot');
+    src: url('fonts/SlatePro-MediumItalic.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-MediumItalic.woff2') format('woff2'), url('fonts/SlatePro-MediumItalic.woff') format('woff'), url('fonts/SlatePro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-Light.eot');
+    src: url('fonts/SlatePro-Light.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-Light.woff2') format('woff2'), url('fonts/SlatePro-Light.woff') format('woff'), url('fonts/SlatePro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro Bk';
+    src: url('fonts/SlatePro-Bk.eot');
+    src: url('fonts/SlatePro-Bk.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-Bk.woff2') format('woff2'), url('fonts/SlatePro-Bk.woff') format('woff'), url('fonts/SlatePro-Bk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-LightItalic.eot');
+    src: url('fonts/SlatePro-LightItalic.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-LightItalic.woff2') format('woff2'), url('fonts/SlatePro-LightItalic.woff') format('woff'), url('fonts/SlatePro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Slate Pro';
+    src: url('fonts/SlatePro-Medium.eot');
+    src: url('fonts/SlatePro-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/SlatePro-Medium.woff2') format('woff2'), url('fonts/SlatePro-Medium.woff') format('woff'), url('fonts/SlatePro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

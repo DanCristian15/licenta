@@ -1,0 +1,10 @@
+[disabled="disabled"],
+.v-btn-toggle > .v-btn.v-btn[disabled="disabled"],
+.theme--light.v-btn.v-btn--disabled {
+    color: theme-color( 'primary' ) !important;
+    opacity: 0.4;
+}
+
+.v-btn-toggle > .v-btn.v-btn[disabled=disabled].gst-ticket-filter-quantity__btn {
+    color: theme-color( 'tertiary' ) !important;
+}

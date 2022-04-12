@@ -1,0 +1,36 @@
+.gst-tabs.v-tabs {
+    border-bottom: 1px solid theme-color( 'quinary' );
+
+    .v-slide-group__prev {
+        display: none !important;
+    }
+
+    .v-tab {
+        padding: 0;
+        margin: 0 16px 0 0;
+        font-size: font-size( 'l' );
+        letter-spacing: -0.47px;
+        text-transform: none;
+        min-width: auto;
+    }
+
+    .v-tabs-bar .v-tab:not(.v-tab--active) {
+        color: theme-color( 'tertiary' );
+    }
+}
+
+.gst-tabs-item.v-tabs-items {
+    max-width: 100%;
+    
+    .gst-tabs-item_item {
+        border-bottom: 1px solid theme-color( 'quinary' );
+    }
+}
+
+.gst-tabs-content-narrow {
+    max-width: 70%;
+
+    @include mobile-only {
+        max-width: 100%;
+    }
+}

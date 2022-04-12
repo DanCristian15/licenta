@@ -1,0 +1,25 @@
+$color-white: #FFFFFF;
+
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__subtitle {
+            color: $color-white;
+            font-size: font-size( 's' );
+            font-weight: font-weight( 'regular' );
+            letter-spacing: -0.3px;
+        }
+
+        @media (max-width: 959px) {
+            .gst-home__title {
+                font-size: 48px;
+            }
+        }
+    }
+
+    .gst-top-events-card-list {
+        h4 {
+            font-weight: font-weight( 'regular' );
+            letter-spacing: -0.4px;
+        }
+    }
+}

@@ -1,0 +1,3 @@
+@import '@core/scss/tenants/__utility_tenant_mixins';
+
+@include checkout-wizard-checkbox-step-indicator('secondary', 'black');

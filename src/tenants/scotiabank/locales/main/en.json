@@ -1,0 +1,33 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "Scene+ Account"
+                            }
+                        }
+                    },
+                    "containerItemPriceDetailCard": {
+                        "labels": {
+                            "bonusPointsRedeem": "Redeem SCENE points"
+                        }
+                    },
+                    "step3Payment": {
+                        "labels": {
+                            "radio1": "Pay with {{bonusPoints}} ( available {{ bonusPointsAvailable }} $t(_common:terms.bonusPoint_plural ))"
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Events & Experiences",
+                "subtitle": "More content. More Scene+ points. More adventures."
+            }
+        }
+    }
+}

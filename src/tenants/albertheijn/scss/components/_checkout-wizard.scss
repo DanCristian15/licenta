@@ -1,0 +1,109 @@
+.gst-input.v-input.gst-input--secondary.v-text-field--outlined label {
+    color: theme-color( 'primary' );
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+div.braintree-form__field-group .braintree-form__label {
+    color: theme-color( 'primary' ) !important;
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+.gst-checkbox.gst-input.gst-input--secondary.v-input--selection-controls.v-input--checkbox {
+    svg.gst-icon-checked .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.gst-checkout-step-2-form__field-terms-conditions.v-input--selection-controls.v-input--checkbox {
+    svg.gst-icon-checked .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.gst-checkout-step-2-form__field-healthcheck.v-input--selection-controls.v-input--checkbox {
+    svg.gst-icon-checked .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.v-input--selection-controls.v-input--radio-group.v-input--radio-group--column {
+    svg.gst-icon-checked .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.gst-checkwiz-step-payment__icon-check .gst-svg-icon {
+    fill: theme-color( 'accent' ) !important;
+}
+
+.gst-ticket-date-icon,
+.gst-ticket-location-icon {
+    color: theme-color( 'quaternary' );
+}
+
+.gst-expansion-panel,
+.gst-expansion-panel .v-expansion-panel-header {
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+.v-application .gst-faq-card > p {
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+.gst-checkout-step-1 {
+    .gst-ticket-date-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-venue-info {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+}
+
+.gst-checkout-step-2 {
+    .gst-input label {
+        font-size: font-size( 'xxs' ) !important;
+    }
+
+    .gst-checkbox label {
+        font-size: font-size( 's' ) !important;
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-checkout-step-2-form__field-terms-conditions label {
+        font-weight: font-weight( 'light' ) !important;
+    }
+
+    .gst-btn--invert span {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+}
+
+.gst-checkwiz-step-payment {
+    .v-item--active label {
+        color: theme-color( 'quaternary' );
+    }
+
+    .v-input--radio-group__input label {
+        font-size: font-size( 's' ) !important;
+    }
+
+    .braintree-form__label {
+        font-size: font-size( 'xxs' ) !important;
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-btn--invert span {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+}
+
+.gst-checkout-confirmation__container {
+    .gst-ticket-date-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-location-icon {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+}

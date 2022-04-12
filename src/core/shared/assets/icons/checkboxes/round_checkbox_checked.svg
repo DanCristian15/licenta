@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>round checkbox check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="round-checkbox-check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons-/-check">
+            <g>
+                <rect id="Rectangle-Copy-7" stroke="#979797" fill="#D8D8D8" opacity="0" transform="translate(12.000000, 12.000000) rotate(-360.000000) translate(-12.000000, -12.000000) " x="0.5" y="0.5" width="23" height="23"></rect>
+                <rect id="Rectangle-Copy-7" class="gst-svg-icon" fill="#00B4E2" transform="translate(12.000000, 12.000000) rotate(-360.000000) translate(-12.000000, -12.000000) " x="2" y="2" width="20" height="20" rx="10"></rect>
+                <path d="M16.6260609,8.37608152 C16.1274753,7.87463949 15.319423,7.87463949 14.8208374,8.37608152 L10.30731,12.9044415 L9.17916256,11.7723515 C8.68057705,11.2739858 7.87221206,11.2739858 7.37393914,11.7723515 C6.87535362,12.2737935 6.87535362,13.085945 7.37393914,13.5843107 L9.40485457,15.6239185 C9.90344008,16.1253605 10.7114925,16.1253605 11.210078,15.6239185 L16.6260609,10.1880408 C17.1246464,9.68659873 17.1246464,8.87444722 16.6260609,8.37608152" id="checkmark-copy" fill="#FFFFFF" transform="translate(12.000000, 12.000000) rotate(-360.000000) translate(-12.000000, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+.gst-card-icon-container.gst-ticket-offer-price-icon {
+    .gst-ticket-offer-price-icon__price {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-weight: font-weight( 'bold' ) !important;
+        border-radius: border-radius( 'none' );
+
+        span {
+            font-weight: font-weight( 'bold' ) !important;
+        }
+    }
+}
+
+.gst-card-icon-container.gst-ticket-offer-price-icon.v-card {
+    border-radius: border-radius( 'xxs' ) !important;
+}
+
+.gst-ticket-offer-card-variant-one.v-sheet.v-card {
+    border-radius: border-radius( 'xxs' ) !important;
+}

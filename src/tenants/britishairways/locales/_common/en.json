@@ -1,0 +1,14 @@
+{
+    "terms": {
+        "bonusPoint": "Avios",
+        "bonusPointLong": "Avios",
+        "bonusPointLong_plural": "Avios",
+        "bonusPoint_plural": "Avios"
+    },
+    "pages": {
+        "about": {
+            "menu": "About Us",
+            "title": "About Us"
+        }
+    }
+}

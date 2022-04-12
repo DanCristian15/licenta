@@ -1,0 +1,13 @@
+@import "@scssMixins";
+@import "@scssVariables";
+@import "home";
+@import "header";
+@import "footer";
+@import "components/user-menu";
+@import "components/checkout-wizard";
+@import "components/bonus-chip";
+@import "components/ticket-offer-card";
+
+.gst-ticket-guarantee {
+    color: theme-color( 'anchor' ) !important;
+}

@@ -1,0 +1,47 @@
+@import "@scssMixins";
+@import "@scssVariables";
+@import "home";
+@import "header";
+@import "footer";
+@import "components/user-menu";
+@import "components/event-ticket-detail-sidebar";
+@import "components/event-ticket-filter";
+@import "components/bonus-chip";
+@import "components/date-card";
+@import "components/event-banner";
+@import "components/checkout-wizard";
+@import "components/ticket-offer-card";
+@import "components/step-indicator";
+
+$font-family: "Fontfabric", sans-serif;
+
+.v-application {
+    font-family: $font-family !important;
+
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4,
+    .headline,
+    .title,
+    .subtitle-1,
+    .subtitle-2,
+    .body-1,
+    .body-2,
+    .caption,
+    .overline {
+        font-family: $font-family !important;
+    }
+}
+
+.gst-notification-container {
+    font-family: $font-family !important;
+}
+
+.gst-ticket-guarantee {
+    color: theme-color( 'anchor' ) !important;
+}
+
+.gst-btn.v-btn {
+    font-weight: font-weight( 'bold' );
+}

@@ -1,0 +1,23 @@
+{
+    "views": {
+        "cart": {
+            "theCheckoutWizard": {
+                "_components": {
+                    "step2Delivery": {
+                        "form": {
+                            "labels": {
+                                "loyalty": "QAccount Number"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "home": {
+            "theHome": {
+                "title": "Privilege Club Lifestyle",
+                "subtitle": "More content. More Qmiles. More adventures."
+            }
+        }
+    }
+}

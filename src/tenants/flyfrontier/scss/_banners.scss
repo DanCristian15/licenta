@@ -1,0 +1,68 @@
+.gst-bonus-points-home-banner {
+    h3 {
+        padding-left: 160px;
+        color: #FFFFFF !important;
+
+        @include mobile-only {
+            padding-left: 60px;
+        }
+
+        @include mobile-xs-only {
+            padding-left: unset;
+            margin-top: -60px;
+        }
+    }
+    
+    a {
+        padding-left: 160px;
+        margin-top: -20px;
+        color: #FFFFFF !important;
+
+        @include mobile-only {
+            padding-left: 60px;
+        }
+
+        @include mobile-xs-only {
+            padding-left: unset;
+            margin-top: 20px;
+        }
+    }
+
+    .v-icon.primary--text {
+        color: #FFFFFF !important;
+    }
+}
+
+.gst-bonus-points-cart-checkout-summary {
+    color: #FFFFFF !important;
+
+    h4 {
+        color: #FFFFFF !important;
+        text-transform: capitalize;
+    }
+}
+
+.gst-bonus-points-cart-checkout-confirmation {
+    p.tertiary--text {
+        padding-left: 230px;
+        color: #FFFFFF !important;
+
+        @include mobile-xs-only {
+            padding-left: 100px;
+        }
+    }
+
+    h4.quaternary--text {
+        padding-left: 200px;
+        color: #FFFFFF !important;
+        text-transform: unset;
+
+        @include mobile-xs-only {
+            padding-left: 70px;
+        }
+    }
+}
+
+.gst-bp-chip {
+    text-transform: unset !important;
+}

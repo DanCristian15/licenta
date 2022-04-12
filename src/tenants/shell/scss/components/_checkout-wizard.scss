@@ -1,0 +1,5 @@
+@import '@core/scss/tenants/__utility_tenant_mixins';
+
+@include checkout-wizard-checkbox-icon;
+@include checkout-wizard-checkbox-form-label('primary');
+@include checkout-wizard-checkbox-step-indicator;

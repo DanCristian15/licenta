@@ -1,0 +1,19 @@
+.gst-footer {
+    color: theme-color( 'primary' ) !important;
+
+    .gst-menu-link {
+        color: theme-color( 'primary' ) !important;
+
+        &:hover {
+            color: theme-color( 'primary' );
+        }
+    }
+    
+    .gst-menu-link--white {
+        color: theme-color( 'primary' ) !important;
+
+        &:hover {
+            color: theme-color( 'primary' ) !important;
+        }
+    }
+}

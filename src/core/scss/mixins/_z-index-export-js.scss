@@ -1,0 +1,10 @@
+@import 'z-index';
+
+:export {
+    primary: $z-index-primary;
+    header: $z-index-primary + 4;
+    dialog: $z-index-dialog;
+    notification: $z-index-notification;
+    overlayApp: $z-index-overlay-app;
+    highest: $z-index-highest;
+}

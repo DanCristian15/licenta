@@ -1,0 +1,21 @@
+{
+    "components": {
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "Earn {{points}} $t(_common:terms.bonusPoint_plural)"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

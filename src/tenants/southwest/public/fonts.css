@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Southwest Sans';
+    src: url('fonts/SouthwestSans-Regular.eot');
+    src: url('fonts/SouthwestSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SouthwestSans-Regular.woff2') format('woff2'),
+        url('fonts/SouthwestSans-Regular.woff') format('woff'),
+        url('fonts/SouthwestSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Southwest Sans';
+    src: url('fonts/SouthwestSans-Bold.eot');
+    src: url('fonts/SouthwestSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SouthwestSans-Bold.woff2') format('woff2'),
+        url('fonts/SouthwestSans-Bold.woff') format('woff'),
+        url('fonts/SouthwestSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Southwest Sans';
+    src: url('fonts/SouthwestSans-Black.eot');
+    src: url('fonts/SouthwestSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SouthwestSans-Black.woff2') format('woff2'),
+        url('fonts/SouthwestSans-Black.woff') format('woff'),
+        url('fonts/SouthwestSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

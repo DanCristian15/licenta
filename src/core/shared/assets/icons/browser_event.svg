@@ -1,0 +1,8 @@
+<svg width="91" height="65" viewBox="0 0 91 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5 14.5H24.5V64.5H5C2.51472 64.5 0.5 62.4853 0.5 60V14.5Z" fill="#FEFEFE" stroke="#F0F2F4"/>
+<path d="M24.5 14.5H90.5V60C90.5 62.4853 88.4853 64.5 86 64.5H24.5V14.5Z" fill="white" stroke="#F0F2F3"/>
+<path d="M0 5C0 2.23858 2.23858 0 5 0H86C88.7614 0 91 2.23858 91 5V14H0V5Z" fill="#F0F2F3"/>
+<rect class="gst-svg-icon" x="4" y="3" width="8" height="8" rx="4" fill="#00B4E2"/>
+<rect class="gst-svg-icon" x="15" y="4" width="30.064" height="2" rx="1" fill="#00B4E2"/>
+<rect class="gst-svg-icon" x="15" y="8" width="43.5017" height="2" rx="1" fill="#00B4E2"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="379" height="207" viewBox="0 0 379 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="tenant_circles_large_paint0_linear" x1="0" y1="0" x2="0" y2="206.447" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E1163C"/>
+            <stop offset="1" stop-color="#A11453"/>
+            <stop offset="1" stop-color="#A11453"/>
+        </linearGradient>
+        <linearGradient id="tenant_circles_large_paint1_linear" x1="86.2765" y1="0" x2="86.2765" y2="206.447" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#A8A8A8"/>
+            <stop offset="1" stop-color="#616161"/>
+        </linearGradient>
+            <linearGradient id="tenant_circles_large_paint2_linear" x1="172.553" y1="0" x2="172.553" y2="206.447" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0C282"/>
+            <stop offset="1" stop-color="#A67C3B"/>
+        </linearGradient>
+    </defs>
+    <circle cx="103.224" cy="103.224" r="102.724" fill="url(#tenant_circles_large_paint0_linear)" stroke="white"/>
+    <circle cx="189.5" cy="103.224" r="102.724" fill="url(#tenant_circles_large_paint1_linear)" stroke="white"/>
+    <circle cx="275.776" cy="103.224" r="102.724" fill="url(#tenant_circles_large_paint2_linear)" stroke="white"/>
+</svg>

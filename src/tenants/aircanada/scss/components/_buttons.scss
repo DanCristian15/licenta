@@ -1,0 +1,9 @@
+.gst-btn.v-btn {
+    font-weight: font-weight( 'bold' );
+}
+
+@include mobile-only {
+    .gst-btn.v-btn {
+        font-weight: font-weight( 'regular' );
+    }
+}

@@ -1,0 +1,20 @@
+.gst-event-banner {
+    .gst-event-banner__name,
+    .gst-venue-info {
+        color: theme-color( 'white' ) !important;
+    }
+
+    .gst-icon-info-round {
+        path:last-child {
+            fill: theme-color( 'white' );
+        }
+    }
+}
+
+@include mobile-only {
+    .gst-event-banner {
+        .gst-event-banner__name {
+            font-weight: font-weight( 'large' ) !important;
+        }
+    }
+}

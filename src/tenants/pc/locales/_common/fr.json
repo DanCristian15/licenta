@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "about": {
+            "menu": "A propos de PC Optimum",
+            "title": "A propos de PC Optimum"
+        }
+    },
+    "terms": {
+        "bonusPoint": "PointPC Optimum",
+        "bonusPointLong": "Point PC Optimum",
+        "bonusPointLong_plural": "Points PC Optimum",
+        "bonusPoint_plural": "Points PC Optimum"
+    }
+}

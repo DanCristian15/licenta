@@ -1,0 +1,59 @@
+a {
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+h1 {
+    font-size: font-size( 'xxxxxxl' );
+
+    @include mobile-only {
+        font-size: font-size( 'xxxxxl' );
+    }
+}
+
+h2 {
+    @include heading(2);
+
+    @include mobile-only {
+        @include heading(2);
+    }
+
+    &.bigger {
+        font-size: font-size( 'xxxxxl' );
+    }
+}
+
+h3 {
+    @include heading(3);
+}
+
+h4 {
+    @include heading(4);
+}
+
+h5 {
+    @include heading(5);
+}
+
+h6 {
+    @include heading(6);
+}
+
+.v-application {
+    font-size: font-size( 's' );
+    font-family: $font-family;
+
+    .v-application--wrap {
+        background-color: theme-color( 'white' );
+        transition: background-color 0.5s ease;
+
+        @include mobile-only {
+            background-color: theme-color( 'white' );
+        }
+    }
+}
+
+.content-max-width {
+    margin: 0 auto;
+    max-width: $content-max-width;
+}

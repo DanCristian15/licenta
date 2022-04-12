@@ -1,0 +1,29 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }}",
+                "pointWithCount_plural": "{{ formattedCount }}",
+                "title": "You have donated"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }}",
+                "pointWithCount_plural": "{{ formattedCount }}",
+                "title": "You will donate"
+            },
+            "bonusPointsHomeBanner": {
+                "titleMoney": "Get Tickets, Give a Donation. Simple as that."
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

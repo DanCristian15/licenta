@@ -1,0 +1,308 @@
+{
+    "buttons": {
+        "add": "Ajouter",
+        "applyFilters": "Appliquer les filtres",
+        "back": "Retourner",
+        "backToHome": "Retour à la page d'accueil",
+        "cancel": "Annuler",
+        "clearAll": "Tout effacer",
+        "close": "Fermer",
+        "confirm": "Confirmer",
+        "continue": "Continuer",
+        "continueWith": "Continuer avec ces {{ entity }}",
+        "filters": "Filtres",
+        "getDirections": "Obtenir des directions",
+        "iAgree": "Je suis d'accord",
+        "learnMore": "Apprendre encore plus",
+        "loadMore": "Charger plus",
+        "login": "Connexion",
+        "next": "Suivant",
+        "placeOrder": "Soumettre l'achat",
+        "remove": "Supprimer",
+        "reset": "Remettre",
+        "resetFilters": "Réinitialiser les filtres"
+    },
+    "entities": {
+        "eventCategory": {
+            "list": {
+                "arts": "Théâtre et humour",
+                "concerts": "Concerts",
+                "family": "Famille",
+                "otherEvents": "Autres",
+                "sports": "Sports"
+            }
+        },
+        "fee": {
+            "labelForEntityScope": "{{ type }} par {{ scope }}",
+            "labelForEntityTaxScope": "taxe de {{ type }}",
+            "labelForOrderScope": "frais de {{ type }}",
+            "type": {
+                "base": "Prix",
+                "base_tax": "Billet",
+                "distance": "Distance",
+                "facility": "Établissement",
+                "order": "Commande",
+                "service": "Service"
+            }
+        },
+        "seat": {
+            "noSeats": "Admission Générale",
+            "row": "Rangée",
+            "seat": "Siège",
+            "seatWithCount": "{{ count }} Siège",
+            "seatWithCount_plural": "{{ count }} Sièges",
+            "seat_plural": "Sièges",
+            "section": "Section",
+            "section_abv": "Sec"
+        }
+    },
+    "form": {
+        "labels": {
+            "address": "Adresse",
+            "agree": "je suis d'accord avec le ",
+            "city": "Ville",
+            "country": "Pays",
+            "electronic": "Billet électronique",
+            "email": "Adresse courriel",
+            "firstName": "Prénom",
+            "lastName": "Nom de famille",
+            "loyalty": "Numéro de Compte Fidélité",
+            "name": "Nom",
+            "phone": "Numéro de téléphone",
+            "state": "État / Province",
+            "terms": "Termes et conditions",
+            "zip": "Zip / code postal"
+        }
+    },
+    "formErrors": {
+        "between": "Field doit être comprise entre  {{ min }}  et {{ max }}",
+        "betweenField": "{{ field }} doit être comprise entre {{ min }}  et {{ max }}",
+        "email": "Doit être un e-mail valide.",
+        "invalidCardCVV": "Ce code de sécurité n'est pas valide.",
+        "invalidCardExpire": "Cette date d'expiration n'est pas valide.",
+        "invalidCardNumber": "Ce numéro de carte n'est pas valide.",
+        "matchFields": "{{  fields }} doivent correspondre",
+        "maxLength": "Doit contenir un maximum de {{ length }} caractères.",
+        "minLength": "Doit contenir un minimum de {{ length }} caractères.",
+        "numeric": "Doit être un numéro valide.",
+        "phone": "Doit être un téléphone valide ( ###-###-#### ).",
+        "required": "l'information est requise.",
+        "requiredField": "{{ field }} est requis.",
+        "zip": "Doit être un format valide (LNL NLN or LNLNLN)."
+    },
+    "labels": {
+        "additionalFilters": "Filtres supplémentaires",
+        "priceRange": "Échelle des prix"
+    },
+    "messageServerErrorCodes": {
+        "20001": {
+            "detail": "Le système de billetterie n'est pas disponible. Merci d'essayer plus tard.",
+            "title": "Service indisponible"
+        },
+        "20002": {
+            "detail": "Les informations de carte que vous avez fournies ne semblent pas exactes. Veuillez vérifier vos informations et réessayer.",
+            "title": "Mauvaise Demande"
+        },
+        "20010": {
+            "detail": "L'état actuel du chariot ne permet pas la tentative d'opération.",
+            "title": "Mauvaise Demande"
+        },
+        "20118": "Les informations de facturation que vous avez fournies ne semblent pas exactes. Veuillez vérifier vos informations et réessayer.",
+        "20226": {
+            "detail": "Commande non traitée. Veuillez vérifier les informations de votre carte et réessayer.",
+            "title": "Erreur interne du serveur"
+        },
+        "20231": {
+            "detail": "Désolé, la quantité que vous avez sélectionnée pour un ou plusieurs billets n'est pas disponible. Veuillez ajuster vos quantités et réessayer.",
+            "title": "Mauvaise Demande"
+        }
+    },
+    "messages": {
+        "apiMapLocationContactingError": "Erreur de contact avec le fournisseur de localisation. Veuillez contacter l'administrateur",
+        "apiMapLocationError": "Impossible de récupérer l'emplacement",
+        "apiPaymentClientContactingError": "Erreur de contact avec le fournisseur de paiement. Veuillez contacter l'administrateur",
+        "browserLocationError": "Impossible de récupérer l'emplacement",
+        "browserLocationPermissionError": "Veuillez vérifier les paramètres de votre navigateur pour obtenir l'autorisation et réessayer",
+        "cartExpired": "Votre panier a expiré",
+        "eventState": {
+            "inactive": {
+                "message": "Veuillez vérifier plus tard!",
+                "title": "Cet événement n'est pas en vente."
+            },
+            "noDate": {
+                "message": "Nous préparons les détails de leur vente – veuillez verifier bientôt!",
+                "title": "Cet événement n'est pas actuellement en vente."
+            },
+            "onSaleDateFuture": {
+                "messageWithDate": "Ils seront disponible le {{date}}",
+                "messageWithTime": "Ils seront disponible le {{time}}",
+                "title": "Cet événement n'est pas encore en vente."
+            },
+            "past": {
+                "message": "Cet événement a déjà eu lieu et n’est plus disponible.",
+                "title": "Évènement passé."
+            }
+        },
+        "eventStatus": {
+            "cancelled": {
+                "message": "Si vous avez déjà acheté des billets pour cet événement, veuillez contacter Ticketmaster pour plus d’information.",
+                "title": "Désolé, cet événement a été annulé."
+            }
+        },
+        "eventTicketStatus": {
+            "fewAvailable": {
+                "message": "Il ne reste que quelques billets"
+            },
+            "notAvailable": {
+                "message": "Veuillez vérifier plus tard car des nouveaux billets peuvent devenir disponibles sous peu.",
+                "title": "Désolé, les billets ne sont pas actuellement disponibles."
+            }
+        },
+        "internalError": "Erreur interne. Veuillez contacter l'administrateur",
+        "leaveRouteConfirm": "Êtes-vous sûr de vouloir quitter? Toutes les modifications que vous avez apportées ne seront pas enregistrées.",
+        "leaveRouteDuringReservationConfirm": "Êtes-vous sûr de vouloir quitter? Vous perdrez vos sièges sélectionnés.",
+        "noFilterDataPrefix": "Essayez un autre filtre, ou",
+        "noSeats": {
+            "text": "Nous y travaillons!",
+            "title": "Le plan de salle n'est pas disponible."
+        },
+        "noTickets": "Aucun produit disponible pour les critères de recherche spécifiés",
+        "searchWarning": "Veuillez saisir au moins un critère de recherche",
+        "ticketsMaximumQuantityWarning": "Le nombre maximum de billets dépassé"
+    },
+    "notificationTitles": {
+        "error": "Erreur",
+        "info": "Info",
+        "success": "Succès",
+        "warning": "Désolée!"
+    },
+    "pages": {
+        "about": {
+            "menu": "A propos de Lifestyle",
+            "title": "A propos de nous"
+        },
+        "config": {
+            "menu": "Config",
+            "title": "Config"
+        },
+        "contact": {
+            "menu": "Contactez-nous",
+            "title": "Contactez-nous"
+        },
+        "faq": {
+            "menu": "FAQ",
+            "title": "FAQ"
+        },
+        "help": {
+            "menu": "Mode d'emploi",
+            "title": "Mode d'emploi"
+        },
+        "myFavorites": {
+            "menu": "Mes favoris",
+            "title": "Mes favoris"
+        },
+        "myTickets": {
+            "menu": "Mes billets",
+            "title": "Mes billets"
+        },
+        "termsAgreement": {
+            "menu": "Termes et Conditions",
+            "title": "Conditions d'utilisation"
+        }
+    },
+    "terms": {
+        "accessibility": "Accessibilité",
+        "all": "Toute",
+        "allCategory": "Toutes Catégories",
+        "allEntity": "Toute {{entity}}",
+        "and": "et",
+        "artist": "Artiste",
+        "artistWithCount": "{{ count }} Artiste",
+        "artistWithCount_plural": "{{ count }} Artistes",
+        "artist_plural": "Artiste",
+        "bonusPoint": "Point",
+        "bonusPointLong": "Point Bonus",
+        "bonusPointLong_plural": "Points Bonus",
+        "bonusPointMoney": "Remise en argent",
+        "bonusPointMoneyCurrencySymbol": "Remise en {{ currencySymbol }}",
+        "bonusPointWithCount": "{{ formattedCount }} $t(_common:terms.bonusPoint)",
+        "bonusPointWithCount_plural": "{{ formattedCount }} $t(_common:terms.bonusPoint_plural)",
+        "bonusPoint_plural": "Points",
+        "category": "Catégorie",
+        "category_plural": "Catégories",
+        "changeDate": "Changer les dates",
+        "currentOfTotal": "{{current}} sur {{total}}",
+        "dateAndTimeAt": "{{ date }} à {{ time }}",
+        "dateAndTimeToBeDetermined": "Date et heure AED",
+        "delivery": "Livraison",
+        "distanceFrom_km": "A {{distance}} kilomètres de {{from}}",
+        "distanceFrom_miles": "{{distance}} milles from {{from}}",
+        "distance_kilometer": "{{distance}} km",
+        "distance_miles": "{{distance}} miles",
+        "email": "E-mail",
+        "email_plural": "E-mails",
+        "error": "Erreur",
+        "event": "l'événement",
+        "eventWithCount": "{{ count }} l'événement",
+        "eventWithCount_plural": "{{ count }} Événements",
+        "event_plural": "Événements",
+        "fee": "frais",
+        "feeWithTaxes": "frais, taxes incluses",
+        "feeWithTaxes_plural": "frais, taxes comprises",
+        "fee_plural": "honoraires",
+        "filter": "Filter",
+        "filter_plural": "Filters",
+        "final": "Finale",
+        "from": "à partir de",
+        "includingTaxes": "taxes incluses",
+        "location": "Emplacement",
+        "logout": "Déconnexion",
+        "myCurrentLocation": "Ma Emplacement Actuelle",
+        "plusTaxesAndFees": " + Taxes et frais",
+        "price": "Prix",
+        "priceWithCount": "{{ count }} Prix",
+        "priceWithCount_plural": "{{ count }} Prix",
+        "price_plural": "Prix",
+        "quality": "Qualité",
+        "quantity": "Quantité",
+        "reset": "Réinitialiser",
+        "row": "Rangée",
+        "rowWithCount": "{{ count }} Rangées",
+        "rowWithCount_plural": "{{ count }} Rangées",
+        "row_plural": "Rangées",
+        "seat": "Siège",
+        "seatWithCount": "{{ count }} Siège",
+        "seatWithCount_plural": "{{ count }} Sièges",
+        "seat_plural": "Sièges",
+        "selectTicketType": "Sélectionnez le type de ticket",
+        "sort": "Trier",
+        "sortAlphabeticalDesc_abv": "Z-A",
+        "sortAlphabetical_abv": "A-Z",
+        "sortByDate": "Date",
+        "sortByPrice": "Prix",
+        "subTotal": "Sous-total",
+        "success": "Succès",
+        "termsAndConditions": "Termes et Conditions",
+        "termsOfUse": "Conditions d'utilisation",
+        "ticket": "Billet",
+        "ticketAvailableWithCount": "{{ count }} Billet Disponible",
+        "ticketAvailableWithCount_plural": "{{ count }} Billets disponibles",
+        "ticketWithCount": "{{ count }} Billet",
+        "ticketWithCount_plural": "{{ count }} Billets",
+        "ticket_plural": "Billets",
+        "toBeDetermined_abv": "AED",
+        "total": "Totale",
+        "undo": "Annuler",
+        "until": "Jusqu'à",
+        "upcomingEvent": "Upcoming Event",
+        "upcomingEventWithCount": "{{ count }} évènement à venir",
+        "upcomingEventWithCount_plural": "{{ count }} évènements à venir",
+        "upcomingEvent_plural": "Upcoming Events",
+        "useMyCurrentLocation": "Utiliser mon emplacement courant",
+        "venue": "Lieu",
+        "venueThe": "Le Venue",
+        "venueWithCount": "{{ count }} Lieu",
+        "venueWithCount_plural": "{{ count }} Lieux",
+        "venue_plural": "Lieux"
+    }
+}

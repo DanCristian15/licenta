@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Us",
+            "title": "About Us"
+        }
+    },
+    "terms": {
+        "bonusPoint": "stamp",
+        "bonusPointLong": "stamp",
+        "bonusPointLong_plural": "stamps",
+        "bonusPoint_plural": "stamps"
+    }
+}

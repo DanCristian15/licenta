@@ -1,0 +1,40 @@
+@import 'theme-colors';
+
+:export {
+    primary: map-get( $theme-colors-hex, 'primary' );
+    secondary: map-get( $theme-colors-hex, 'secondary' );
+    tertiary: map-get( $theme-colors-hex, 'tertiary' );
+    quaternary: map-get( $theme-colors-hex, 'quaternary' );
+    quinary: map-get( $theme-colors-hex, 'quinary' );
+    senary: map-get( $theme-colors-hex, 'senary' );
+    septenary: map-get( $theme-colors-hex, 'septenary' );
+    error: map-get( $theme-colors-hex, 'error' );
+    success: map-get( $theme-colors-hex, 'success' );
+    warning: map-get( $theme-colors-hex, 'warning' );
+    info: map-get( $theme-colors-hex, 'info' );
+    gradientPrimary1: map-get( $theme-colors-hex, 'gradient-primary-1' );
+    gradientPrimary2: map-get( $theme-colors-hex, 'gradient-primary-2' );
+    gradientSecondary1: map-get( $theme-colors-hex, 'gradient-secondary-1' );
+    gradientSecondary2: map-get( $theme-colors-hex, 'gradient-secondary-2' );
+    gradientRadial1: map-get( $theme-colors-hex, 'gradient-radial-1' );
+    gradientRadial2: map-get( $theme-colors-hex, 'gradient-radial-2' );
+    accent: map-get( $theme-colors-hex, 'accent' );
+    anchor: map-get( $theme-colors-hex, 'anchor' );
+    homeBannerGradientStart: map-get( $theme-colors-hex, 'home-banner-gradient-start' );
+    homeBannerGradientEnd: map-get( $theme-colors-hex, 'home-banner-gradient-end' );
+    homeBannerSearchButtonBgColor: map-get( $theme-colors-hex, 'home-banner-search-button-bg-color' );
+    footerGradientStart: map-get( $theme-colors-hex, 'footer-gradient-start' );
+    footerGradientEnd: map-get( $theme-colors-hex, 'footer-gradient-end' );
+    calendar: map-get( $theme-colors-hex, 'calendar' );
+    backgroundTimer: map-get( $theme-colors-hex, 'background-timer' );
+    backgroundSuccess: map-get( $theme-colors-hex, 'background-success' );
+    overlay: map-get( $theme-colors-hex, 'overlay' );
+    shadow: map-get( $theme-colors-hex, 'shadow' );
+    bonusPointsChipBgColor: map-get( $theme-colors-hex, 'bonus-points-chip-bg-color' );
+    bonusPointsChipColor: map-get( $theme-colors-hex, 'bonus-points-chip-color' );
+    favoriteMarked: map-get( $theme-colors-hex, 'favorite-marked' );
+    favoriteUnMarked: map-get( $theme-colors-hex, 'favorite-unmarked' );
+    eventStatusChipCancelled: map-get( $theme-colors-hex, 'event-status-chip-cancelled' );
+    eventStatusChipPostponed: map-get( $theme-colors-hex, 'event-status-chip-postponed' );
+    eventStatusChipRescheduled: map-get( $theme-colors-hex, 'event-status-chip-rescheduled' );
+}

@@ -1,0 +1,53 @@
+@import '@core/scss/tenants/__utility_tenant_mixins';
+
+@include checkout-wizard-checkbox-icon;
+@include checkout-wizard-checkbox-form-label('primary', 'large');
+@include checkout-wizard-checkbox-step-indicator;
+
+.gst-input.v-input.gst-input--secondary.v-text-field--outlined input {
+    font-weight: font-weight( 'large' );
+}
+
+.gst-checkbox.gst-input.gst-input--secondary.v-input--selection-controls.v-input--checkbox {
+    label {
+        font-weight: font-weight( 'large' );
+    }
+}
+
+.v-input--selection-controls.v-input--radio-group.v-input--radio-group--column {
+    label {
+        color: theme-color( 'tertiary' );
+        font-weight: font-weight( 'large' );
+    }
+}
+
+.gst-input.v-input.gst-input--secondary.v-select .v-select__selections .v-select__selection--comma {
+    font-weight: font-weight( 'large' ) !important;
+}
+
+.gst-checkwiz-step-payment__info-card {
+    font-weight: font-weight( 'large' ) !important;
+
+    .gst-checkwiz-step-payment__icon-check .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.gst-section-title {
+    font-weight: font-weight( 'bold' ) !important;
+}
+
+.gst-ticket-date-icon,
+.gst-ticket-location-icon {
+    color: theme-color( 'quaternary' );
+    font-weight: font-weight( 'large' ) !important;
+}
+
+.gst-ticket-date-icon svg,
+.gst-ticket-location-icon svg {
+    opacity: 1 !important;
+}
+
+.gst-checkwiz-step-payment__total {
+    color: theme-color( 'quaternary' );
+}

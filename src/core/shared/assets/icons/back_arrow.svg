@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icons / back arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons-/-back-arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle-Copy-85" stroke="#D4D7DC" fill-opacity="0" fill="#EAEDF2" x="0.5" y="0.5" width="23" height="23" rx="11.5"></rect>
+            <path class="gst-svg-icon" d="M15.70725,10.29325 L12.70725,7.29325 C12.31625,6.90225 11.68425,6.90225 11.29325,7.29325 L8.29325,10.29325 C7.90225,10.68425 7.90225,11.31625 8.29325,11.70725 C8.68425,12.09825 9.31625,12.09825 9.70725,11.70725 L11.00025,10.41425 L11.00025,16.00025 C11.00025,16.55225 11.44725,17.00025 12.00025,17.00025 C12.55325,17.00025 13.00025,16.55225 13.00025,16.00025 L13.00025,10.41425 L14.29325,11.70725 C14.48825,11.90225 14.74425,12.00025 15.00025,12.00025 C15.25625,12.00025 15.51225,11.90225 15.70725,11.70725 C16.09825,11.31625 16.09825,10.68425 15.70725,10.29325 Z" id="Fill-1" fill="#23262D" transform="translate(12.000250, 12.000125) scale(1, -1) rotate(-90.000000) translate(-12.000250, -12.000125) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,55 @@
+@import "@scssMixins";
+@import "@scssVariables";
+
+.gst-btn.v-btn {
+    //TODO: try refactor to not use important
+
+    height: auto !important;
+    width: auto;
+    padding: 16px !important;
+    border: 1px solid theme-color( 'primary' ) !important;
+    background-color: theme-color( 'primary' ) !important;
+    color: theme-color( 'white' );
+    font-size: font-size( 'l' );
+    font-weight: font-weight( 'medium' );
+    letter-spacing: normal;
+    border-radius: border-radius( 'm' ) !important;
+    transition: all 0.5s ease;
+    border-color: theme-color( 'primary' ) !important;
+    text-transform: none;
+
+    &.gst-btn--invert {
+        background-color: theme-color( 'white' ) !important;
+        color: theme-color( 'primary' ) !important;
+    }
+
+    &.gst-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):not(.gst-btn-disabled-default) {
+        background-color: theme-color( 'primary' ) !important;
+        color: theme-color( 'white' ) !important;
+        opacity: 0.4;
+    }
+
+    &.gst-btn--disabled::before {
+        opacity: 0 !important;
+    }
+
+    &.gst-btn--search {
+        padding: 13px 30px !important;
+        background-color: theme-color( 'home-banner-search-button-bg-color' ) !important;
+        border-radius: border-radius( 'xl' ) !important;
+        border-color: theme-color( 'home-banner-search-button-bg-color' ) !important;
+    }
+
+    &.gst-btn--see-more {
+        padding: 13px 40px;
+        font-weight: font-weight( 'medium' );
+    }
+
+    .gst-btn-icon {
+        margin-right: 5px;
+
+        .gst-svg-icon {
+            fill: theme-color( 'tertiary' );
+        }
+    }
+}

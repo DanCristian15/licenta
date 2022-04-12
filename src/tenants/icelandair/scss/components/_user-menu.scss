@@ -1,0 +1,17 @@
+// TODO Temporary fix: this should be removed when GL-808 is implemented
+.gst-user-menu__banner {
+    background: theme-color( 'primary' ) !important;
+}
+
+.gst-user-dropdown-menu .v-list-item.gst-menu-list__item:not(.gst-menu-list__item--id) .v-list-item__title,
+.gst-user-dropdown .v-btn.v-btn--outlined.v-btn--text.gst-user-dropdown__activator,
+.gst-user-menu__list div.gst-user-menu__link,
+.gst-user-menu__activator .gst-user-menu__name {
+    color: theme-color( 'quaternary' );
+}
+
+.gst-user-dropdown .v-btn.v-btn--outlined.v-btn--text.gst-user-dropdown__activator {
+    font-weight: font-weight( 'medium' ) !important;
+    font-weight: 14px !important;
+    letter-spacing: -0.4px;
+}

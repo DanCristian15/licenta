@@ -1,0 +1,9 @@
+.gst-ticket-offer-type-icon.gst-ticket-offer-type-icon--standard {
+    color: theme-color( 'accent' ) !important;
+
+    svg {
+        .gst-svg-icon {
+            fill: theme-color( 'accent' ) !important;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "terms": {
+        "bonusPoint": "point",
+        "bonusPointLong": "point",
+        "bonusPointLong_plural": "points",
+        "bonusPoint_plural": "points"
+    }
+}

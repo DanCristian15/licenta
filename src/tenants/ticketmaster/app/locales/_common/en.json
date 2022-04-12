@@ -1,0 +1,125 @@
+{
+    "buttons": {
+        "apply": "Apply",
+        "seeLess": "See Less",
+        "seeMore": "See More",
+        "select": "Select",
+        "tryAgain": "Try Again"
+    },
+    "entities": {
+        "roomRateFee": {
+            "chargeTypes": {
+                "PerPersonPerNight": "Per person per night",
+                "PerPersonPerStay": "Per person per stay",
+                "PerRoomPerNight": "Per room per night",
+                "PerRoomPerStay": "Per room per stay",
+                "PerRoomTypePerStay": ""
+            }
+        }
+    },
+    "messageServerErrorCodes": {
+        "50020": {
+            "title": "Hotel room not available",
+            "detail": "Sorry, it looks like the hotel room you requested is not available any more. Please select a different room or hotel and try again."
+        }
+    },
+    "messageServerErrorCodesFromContext": {
+        "reserve": {
+            "50020": {
+                "title": "Hotel room not available",
+                "detail": "Sorry, it looks like the hotel room you requested is not available any more. Please select a different room or hotel and try again."
+            },
+            "hotelProviderDefault": {
+                "title": "System issue",
+                "detail": "Sorry, it looks like the reservation system has an issue. Please try again later."
+            }
+        },
+        "purchase": {
+            "50020": {
+                "title": "Hotel room not available",
+                "detail": "Sorry, it looks like the hotel room you requested is not available any more. Please select a different room or hotel and try again."
+            },
+            "hotelProviderDefault": {
+                "title": "System issue",
+                "detail": "Sorry, it looks like the reservation system has an issue. Please try again later."
+            }
+        }
+    },
+    "messages": {
+        "eventState": {
+            "inactive": {
+                "title": "This event is not on sale. Please check back later!"
+            },
+            "noDate": {
+                "title": "On sale date and time are in the works - please check back!"
+            },
+            "onSaleDateFuture": {
+                "messageWithDate": "It will be available for sale on {{date}}",
+                "messageWithTime": "It will be available for sale in {{time}}",
+                "title": "This event is not on sale, yet."
+            },
+            "past": {
+                "title": "Past event. This event occurred in the past and is no longer on sale"
+            }
+        },
+        "eventTicketStatus": {
+            "notAvailable": {
+                "title": "Tickets are sold out now. Check back soon."
+            }
+        },
+        "eventPackageOffersStatus": {
+            "notAvailable": {
+                "subtitle": "Ticket only purchases might still be available",
+                "title": "Packages for this event are now sold out.",
+                "button": "here"
+            }
+        }
+    },
+    "terms": {
+         "estimatedWalkDistance": "Estimated {{duration}} min walk to {{location}}",
+        "addHotel": "Add Hotel",
+        "adult": "Adult",
+        "adultWithCount": "{{count}} Adult",
+        "adultWithCount_plural": "{{count}} Adults",
+        "adult_plural": "Adults",
+        "bestSeats": "Best Seats",
+        "bundleTicketsHotel": "Tickets + Hotel Bundle",
+        "changeDates": "Change Dates",
+        "children": "Children",
+        "childrenWithCount": "{{count}} Child",
+        "childrenWithCount_plural": "{{count}} Children",
+        "chooseRoom": "Choose room",
+        "eachSeat_abv": "ea",
+        "excluded": "Excluded",
+        "freeCancellation": "Free cancellation",
+        "freeCancellationBefore": "Free cancellation until {{time}} on {{date}}",
+        "freeCancellationCharge": "A {{amount}} charge applies to cancellations after {{date}} {{time}}",
+        "from": "From",
+        "guest": "Guest",
+        "guestWithCount": "{{ count }} Guest",
+        "guestWithCount_plural": "{{ count }} Guests",
+        "guest_plural": "Guests",
+        "hotel": "Hotel",
+        "hotel_plural": "Hotels",
+        "likelyToSellOut": "Likely to sell out",
+        "lowestPrice": "Lowest Price",
+        "more": "more",
+        "moreFilters": "More Filters",
+        "nightStayWithCount": "{{count}} Night Stay",
+        "nightStayWithCount_plural": "{{count}} Night Stays",
+        "nightWithCount": "{{count}} Night",
+        "nightWithCount_plural": "{{count}} Nights",
+        "oneNightStayInDoubleRoom": "1-Night stay in a double room",
+        "perPackage": "/per package",
+        "room": "Room",
+        "roomWithCount": "{{count}} Room",
+        "roomWithCount_plural": "{{count}} Rooms",
+        "room_plural": "Rooms",
+        "selectDate": "Select date",
+        "termsOfUse": "Terms of Use",
+        "twoStandardTickets": "2 Standard tickets"
+    },
+    "abbreviations": {
+        "section": "Sec"
+    }
+}

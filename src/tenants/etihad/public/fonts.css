@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Etihad Altis';
+    src: url('fonts/EtihadAltis-Light.eot');
+    src: url('fonts/EtihadAltis-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/EtihadAltis-Light.woff2') format('woff2'),
+        url('fonts/EtihadAltis-Light.woff') format('woff'),
+        url('fonts/EtihadAltis-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Etihad Altis';
+    src: url('fonts/EtihadAltis-Book.eot');
+    src: url('fonts/EtihadAltis-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/EtihadAltis-Book.woff2') format('woff2'),
+        url('fonts/EtihadAltis-Book.woff') format('woff'),
+        url('fonts/EtihadAltis-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Etihad Altis';
+    src: url('fonts/EtihadAltis-Medium.eot');
+    src: url('fonts/EtihadAltis-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/EtihadAltis-Medium.woff2') format('woff2'),
+        url('fonts/EtihadAltis-Medium.woff') format('woff'),
+        url('fonts/EtihadAltis-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

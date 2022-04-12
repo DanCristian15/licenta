@@ -1,0 +1,49 @@
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__title {
+            font-weight: font-weight( 'bold' ) !important;
+        }
+    }
+
+    .gst-top-events-card-list {
+        .gst-city-search-store-dropdown__target {
+            color: #0462E6 !important;
+        }
+
+        .gst-dropdown-icon-svg .gst-svg-icon {
+            fill: #0462E6 !important;
+        }
+    }
+
+    .gst-btn.v-btn.gst-btn--see-more {
+        line-height: line-height( 'xxxl' );
+        padding: 10px !important;
+        color: theme-color( 'primary' ) !important;
+        font-size: font-size( 's' );
+        font-weight: font-weight( 'regular' );
+        border-color: theme-color( 'primary' ) !important;
+        min-width: 140px;
+    }
+}
+
+@include mobile-xs-only {
+    .gst-home {
+        .gst-banner.gst-banner--home {
+            .gst-home__title,
+            .gst-home__subtitle {
+                padding: 0 12px;
+                text-align: left;
+            }
+
+            .gst-home__title {
+                line-height: line-height( 'xxxxxxxl' );
+                font-size: font-size( 'xxxxxl' );
+            }
+
+            .gst-home__subtitle {
+                line-height: line-height( 'xxxxl' );
+                font-size: font-size( 'm' );
+            }
+        }
+    }
+}

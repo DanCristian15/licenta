@@ -1,0 +1,205 @@
+{
+    "common": {
+        "buttons": {
+            "cancel": "Annuler"
+        },
+        "languages": {
+            "en": {
+                "name": "Anglais - EN"
+            },
+            "fr": {
+                "name": "Français - FR"
+            }
+        }
+    },
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} $t(_common:terms.bonusPoint)",
+                "pointWithCount_plural": "{{ formattedCount }} $t(_common:terms.bonusPoint_plural)",
+                "title": "Vous avez accumulé",
+                "tooltip": "Vos points de fidélités seront ajoutés après l'événement."
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} $t(_common:terms.bonusPoint)",
+                "pointWithCount_plural": "{{ formattedCount }} $t(_common:terms.bonusPoint_plural)",
+                "title": "Vous accumulerez"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} $t(_common:terms.bonusPointLong)",
+                "titleMoney": "{{points}} $t(_common:terms.bonusPointMoneyCurrencySymbol)",
+                "titleMoney_0": "Mériter une $t(_common:terms.bonusPointMoney)",
+                "title_0": "Mériter des $t(_common:terms.bonusPointLong_plural)",
+                "title_plural": "{{points}} $t(_common:terms.bonusPointLong_plural, lowercase)"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Obtiens des billets, mériter des $t(_common:terms.bonusPointLong_plural, lowercase). Facile.",
+                "titleMoney": "Obtiens des billets, mériter des {{ earnRatePercent }} $t(_common:terms.bonusPointMoney). Facile.",
+                "url": "Découvrez comment ça fonctionne"
+            }
+        },
+        "buttons": {
+            "search": "Recherchez",
+            "seeAll": "Voir tous",
+            "seeMore": "Voir plus"
+        },
+        "date": {
+            "datePicker": {
+                "headers": {
+                    "datePicker": "Choisissez une période"
+                },
+                "labels": {
+                    "allDates": "Toutes les dates",
+                    "cancel": "$t(_common:buttons.cancel)",
+                    "clear": "Toutes les dates",
+                    "confirm": "$t(_common:buttons.confirm)",
+                    "reset": "$t(_common:buttons.reset)",
+                    "weekend": "Cette fin de semaine"
+                },
+                "placeholder": "Toutes les dates",
+                "placeholderEndDate": "Date de fin",
+                "placeholderStartDate": "Date de début"
+            }
+        },
+        "event": {
+            "eventCardVariant6": {
+                "_components": {
+                    "eventCardVariant6Details": {
+                        "buttons": {
+                            "plusMore": "+{{ count }} de plus",
+                            "seeTickets": "Voir les billets"
+                        },
+                        "titles": {
+                            "lineUp": "S'aligner",
+                            "venue": "Lieu"
+                        }
+                    }
+                }
+            },
+            "eventStatusChip": {
+                "cancelled": "Annulé",
+                "postponed": "Reporté",
+                "rescheduled": "Reprogrammé"
+            }
+        },
+        "input": {
+            "_common": {
+                "cityDropDown": {
+                    "inputPlaceholder": "Rechercher une ville",
+                    "labels": {
+                        "clear": "Toutes les villes"
+                    },
+                    "messages": {
+                        "noData": "Ville non trouvée"
+                    },
+                    "placeholder": "Villes"
+                }
+            },
+            "priceRange": {
+                "labels": {
+                    "max": "La fourchette de prix maximale",
+                    "min": "La fourchette de prix minimum"
+                }
+            }
+        },
+        "misc": {
+            "noData": {
+                "message": "Aucun disponible"
+            },
+            "priceIcon": {
+                "labels": {
+                    "money": "{{points}} $t(_common:terms.bonusPointMoneyCurrencySymbol)",
+                    "points": "{{points}} $t(_common:terms.bonusPoint_plural, lowercase)",
+                    "priceSuffix": "/ea",
+                    "titleChip_0": "Mériter des $t(_common:terms.bonusPoint_plural)",
+                    "titleNoPrice": "Billets disponibles"
+                }
+            }
+        },
+        "modals": {
+            "login": {
+                "messages": {
+                    "noEmail": "Veuillez rentrer un courriel enregistré"
+                }
+            }
+        },
+        "notifications": {
+            "paymentProviderDownWarningContainer": {
+                "message": "Veuillez réessayer plus tard pour acheter des billets pour cet événement.",
+                "title": "Le système de paiement est temporairement pas disponible"
+            }
+        },
+        "search": {
+            "eventsSearchBy": {
+                "messages": {
+                    "noData": "Aucun événement trouvé."
+                }
+            },
+            "searchCity": {
+                "labels": {
+                    "noRecent": "",
+                    "noResults": "Ville non trouvée",
+                    "recent": "Récent",
+                    "results": "Resultats"
+                },
+                "placeholder": "Villes"
+            },
+            "searchFieldBanner": {
+                "placeholder": "Événement, Artiste, Salle"
+            },
+            "searchResultList": {
+                "headers": {
+                    "attractions": "Artiste et Équipes",
+                    "events": "Événement",
+                    "venues": "Lieu"
+                },
+                "messages": {
+                    "noData": "Aucun événement trouvé dans la région"
+                }
+            }
+        },
+        "similarAttractions": {
+            "title": "Similaire à vos intérêts"
+        },
+        "subscribe": {
+            "alerts": {
+                "successfullyRegistered": "Enregistré avec succès"
+            },
+            "placeholders": {
+                "name": "Votre nom"
+            },
+            "subscribeButton": "S'abonner",
+            "subtitle": "Nous travaillons toujours sur de nouvelles offres. Abonnez-vous à notre newsletter.<br> Ne vous inquiétez pas, nous ne spammons pas.😉",
+            "title": "Ne manquez rien !"
+        },
+        "ticket": {
+            "accessibility": "Accessibilité",
+            "ticketGuarantee": {
+                "description": "Vous êtes couvert à 100% par le garantie de l’acheteur Ticketmaster. Nous vous garantie que vous alons obtiendre les billets que vous avez commandé à temps.",
+                "title": "Garantie de l'acheteur"
+            },
+            "ticketOfferCardSmall": {
+                "labels": {
+                    "extraFee": "taxes et frais",
+                    "priceSuffix": ""
+                }
+            },
+            "ticketOfferTypeIcon": {
+                "labels": {
+                    "resale": "Revente vérifié",
+                    "standard": "Billet standard"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. Tous droits réservés"
+        }
+    }
+}

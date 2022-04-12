@@ -1,0 +1,99 @@
+.gst-input.v-input {
+    @include font-size('s');
+    @include border-radius('xl');
+
+    label {
+        @include font-size('s');
+    }
+
+    &.gst-input--secondary {
+        @include border-radius('xs');
+
+        .v-text-field__details,
+        .v-messages,
+        .v-messages__wrapper {
+            height: auto;
+            padding: 0;
+            min-height: auto;
+        }
+
+        .v-messages {
+            height: auto;
+            min-height: auto;
+        }
+
+        &.v-select .v-select__selections {
+            padding: 0;
+        }
+
+        &.v-select .v-select__selections .v-select__selection--comma {
+            @include font-weight('medium');
+
+            margin-top: 20px;
+        }
+
+        &.v-text-field--outlined {
+            .v-input__slot {
+                margin-bottom: 4px;
+            }
+
+            fieldset {
+                top: 0;
+                border-color: theme-color( 'quinary' );
+                border-width: 1px;
+            }
+
+            label {
+                @include font-weight('medium');
+
+                top: 18px;
+                color: theme-color( 'tertiary' );
+            }
+
+            input {
+                @include font-weight('medium');
+
+                padding: 3px 0;
+                margin-top: 15px;
+                color: theme-color( 'quaternary' );
+            }
+
+            legend {
+                display: none;
+            }
+
+            .v-label--active {
+                -webkit-transform: translateY( -8px ) scale( 0.75 );
+                transform: translateY( -8px ) scale( 0.75 );
+            }
+        }
+
+        &.v-text-field--outlined.v-input--is-focused fieldset {
+            border-color: theme-color( 'quinary' );
+            border-width: 1px;
+        }
+
+        &.v-text-field--outlined.v-input--has-state fieldset {
+            border-color: currentColor;
+            border-width: 1px;
+        }
+
+        &.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover fieldset {
+            border-color: theme-color( 'quinary' );
+            border-width: 1px;
+        }
+    }
+}
+
+.gst-checkbox {
+    .v-label {
+        @include font-size('s');
+        @include font-weight('medium');
+
+        color: theme-color( 'quaternary' );
+    }
+
+    .gst-checkbox.v-input--selection-controls:not(.v-input--hide-details) .v-input__slot {
+        margin-bottom: 0;
+    }
+}

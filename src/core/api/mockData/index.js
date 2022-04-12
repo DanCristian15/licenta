@@ -1,0 +1,11 @@
+export { default as attractionsMockData }       from './attractions';
+export { default as categoriesMockData }        from './categories';
+export { default as citiesMockData }            from './cities';
+export { default as cartMockData }              from './cart';
+export { default as eventsMockData }            from './events';
+export { default as ticketsMockData }           from './tickets';
+export { default as venuesMockData }            from './venues';
+export { default as statesMockData }            from './states';
+export { default as countriesMockData }         from './countries';
+export { default as shippingOptionsMockData }   from './shippingOptions';
+export { default as hotelsMockData }            from './hotels';

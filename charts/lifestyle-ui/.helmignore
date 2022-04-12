@@ -1,0 +1,5 @@
+.DS_Store
+test.values.yaml
+prod.values.yaml
+# avoid packaging previously generated packages - e.g. on CI with dirty workspace
+/*.tgz

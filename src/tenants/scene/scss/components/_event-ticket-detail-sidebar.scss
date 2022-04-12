@@ -1,0 +1,30 @@
+.gst-event-ticket-detail-content--sidebar {
+    .gst-bonus-points-cart-checkout-summary {
+        .gst-bonus-points-cart-checkout-summary__title {
+            line-height: line-height( 'm' ) !important;
+            font-size: font-size( 'xxs' ) !important;
+        }
+
+        .gst-bonus-points-cart-checkout-summary__bonus-points {
+            line-height: line-height( 'xxxl' ) !important;
+            font-size: font-size( 'l' ) !important;
+        }
+    }
+}
+
+.gst-event-ticket-modal {
+    .gst-bonus-points-cart-checkout-summary {
+        .gst-bonus-points-cart-checkout-summary__bonus-points {
+            font-size: font-size( 'xxxl' ) !important;
+        }
+    }
+
+    .gst-event-ticket-modal__subtotal {
+        font-weight: font-weight( 'medium' ) !important;
+    }
+}
+
+.gst-ticket-date-icon svg,
+.gst-ticket-location-icon svg {
+    opacity: 1 !important;
+}

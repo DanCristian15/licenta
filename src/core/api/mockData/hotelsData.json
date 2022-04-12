@@ -1,0 +1,230 @@
+{
+  "items": [
+    {
+      "propertyId": 22444,
+      "hotelName": "Hilton Waikoloa Village",
+      "hotelShortName": "HWV",
+      "hotelDescription": "A Waikoloa Hawaii Hotel Resort Unlike Any Other - Situated along a nine-mile long stretch of sunny shoreline known as the Kohala coast Hilton provides the ultimate luxury resort - the Hilton Waikoloa Village hotel",
+      "image": {
+        "category": "1",
+        "caption": "Bar Lounge",
+        "items": [
+          {
+            "height": 260,
+            "url": "http://www.cfmedia.vfmleonardo.com/imageRepo/4/0/80/401/103/auhal_phototour19_J.jpg",
+            "width": 390
+          }
+        ]
+      },
+      "images": [
+        {
+          "category": "1",
+          "caption": "Bar Lounge",
+          "items": [
+            {
+              "height": 260,
+              "url": "http://www.cfmedia.vfmleonardo.com/imageRepo/4/0/80/401/103/auhal_phototour19_J.jpg",
+              "width": 390
+            }
+          ]
+        }
+      ],
+      "latitude": 43.654686,
+      "longitude": -79.386172,
+      "distance": 0.5,
+      "awards": [
+        {
+          "provider": "AAADiamond",
+          "rating": "3",
+          "ratingSymbol": "Star"
+        }
+      ],
+      "address": {
+        "addressLine": "69-425 Waikoloa Beach Drive",
+        "cityName": "Waikoloa",
+        "zipCode": "96738",
+        "stateCode": "HI",
+        "countryCode": "US"
+      },
+      "phones": [
+        {
+          "phoneType": "PHONEBOOKING",
+          "phoneNumber": "7135771272"
+        }
+      ],
+      "email": "fom@wenatcheecenter.com",
+      "services": [
+        {
+          "code": 260,
+          "amount": 50,
+          "currency": "USD",
+          "timeFrom": "64800",
+          "timeTo": "06:00:00",
+          "serviceName": "Elevators",
+          "quantity": 3
+        }
+      ],
+      "attractions": [
+        {
+          "attractionName": "Texas Governors Mansion",
+          "description": "This premier historic home has served as the official residence of TX governors and their families since 1856. It is the 4th oldest continuously occupied governor’s residence in the country and the oldest governor’s mansion west of the Mississippi.",
+          "distance": "0.3",
+          "latitude": 43.654686,
+          "longitude": -79.386172
+        }
+      ],
+      "recreations": [
+        {
+          "name": "Bicycling",
+          "detail": "Bike Trails",
+          "included": false
+        }
+      ],
+      "refPoints": [
+        {
+          "refPointName": "Barton Creek Square",
+          "description": "Barton Creek Square offers more than 170 specialty shops, ranging from fashion, jewelry to sporting goods including Nordstrom, Apple Store, Forever 21, Sephora, and Pottery Barn Kids.",
+          "distance": "7",
+          "cityCode": "GRK"
+        }
+      ],
+      "restaurants": [
+        {
+          "cuisine": "American",
+          "type": "Cafe",
+          "operationTime": [
+            {
+              "start": "720",
+              "end": "720",
+              "mon": true,
+              "tue": true,
+              "weds": true,
+              "thur": true,
+              "fri": true,
+              "sat": true,
+              "sun": false
+            }
+          ]
+        }
+      ],
+      "feePolicies": [
+        {
+          "policyName": "Extra person charge",
+          "amount": 25,
+          "percent": 6
+        }
+      ],
+      "cancelPenalty": {
+        "absoluteDeadline": 72,
+        "penaltyDescription": "Cancel by 4pm hotel time 72 hours prior to arrival."
+      },
+      "petsPolicy": {
+        "petsAllowedCode": "Pets Allowed",
+        "description": "1-6 nights, a $100 non-refundable pet fee will apply.  7-30 nights, a $200 non-refundable pet fee will apply. Only dogs weighing 50 lbs and under are permitted; two dogs allowed if not exceeding 75 lbs total.  Service Animals exempt from fees.",
+        "nonRefundableFee": 100
+      },
+      "policyInfo": {
+        "checkInTime": "960",
+        "checkOutTime": "660",
+        "description": "-Extra beds on request, use /SI- field -No rollaways allowed in two double bedded rooms. -Maximum 4 adults per room -Max of 3 rooms under one nameDo Not Disturb PolicyAt Hyatt, the welfare and safety of our guests and colleagues is a top priority.  It is Hyatt’s practice to enter any occupied guest room at a minimum of once within a 24 hour period, even if a guest has requested privacy.  Appropriate efforts are made to provide advance notice to the registered guest before entering an occupied guest room.",
+        "kidsStayFree": true,
+        "maxChildAge": 18,
+        "minGuestAge": "21"
+      },
+      "guestRooms": [
+        {
+          "roomCode": "A1K",
+          "roomType": "Deluxe",
+          "images": [
+            {
+              "category": "1",
+              "caption": "Bar Lounge",
+              "items": [
+                {
+                  "height": 260,
+                  "url": "http://www.cfmedia.vfmleonardo.com/imageRepo/4/0/80/401/103/auhal_phototour19_J.jpg",
+                  "width": 390
+                }
+              ]
+            }
+          ],
+          "bedTypeCode": "King",
+          "standardNumBeds": 1,
+          "nonSmoking": true,
+          "maxOccupancy": 2,
+          "roomRates": [
+            {
+              "rateId": "ODAD01",
+              "inventory": 2,
+              "currency": "USD",
+              "amountBeforeTax": [
+                100,
+                100,
+                120
+              ],
+              "amountAfterTax": [
+                110,
+                110,
+                130
+              ],
+              "mealPlan": "Room only/European plan",
+              "paymentType": "PayNow",
+              "rateType": "Used in the context of HotelBeds. Determines if can booked directly (BOOKABLE) or if it needs to be checked with the ‘CheckRate’ operation (RECHECK).",
+              "fees": [
+                {
+                  "dateRange": {
+                    "startDate": "2022-01-14",
+                    "endDate": "2022-01-14"
+                  },
+                  "fee": {
+                    "name": "Service Charge",
+                    "included": "PAY_NOW",
+                    "type": "TAX",
+                    "amount": 10,
+                    "amountType": "Percent",
+                    "chargeType": "PerRoomPerNight",
+                    "effectivePerson": 2
+                  }
+                }
+              ],
+              "cancellationPolicies": [
+                {
+                  "amount": 203.46,
+                  "from": "2022-06-13T03:59:00.000+00:00",
+                  "percent": 0,
+                  "numberOfNights": 0
+                }
+              ],
+              "packageOffer": {
+                "id": 0,
+                "ticketTypeId": "0000A8160004",
+                "basePrice": 0
+              }
+            }
+          ],
+          "amenities": [
+            {
+              "name": "Air Conditioning",
+              "quantity": 0
+            }
+          ]
+        }
+      ],
+      "terminals": [
+        {
+          "terminalDescription": "Airport",
+          "terminalName": "Toronto, Lester B Pearson Int. Airport",
+          "terminalCode": "YTZ",
+          "distance": 0
+        }
+      ],
+      "publicTransportation": [
+        {
+          "transportationDescription": "Bus/Train station",
+          "distance": 2
+        }
+      ]
+    }
+  ],
+  "offset": 0
+}

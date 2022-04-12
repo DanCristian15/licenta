@@ -1,0 +1,48 @@
+$theme-colors-hex: (
+    'primary':                              #EC0000,
+    'secondary':                            #000000,
+    'tertiary':                             #6C6C6C,
+    'quaternary':                           #333333,
+    'quinary':                              #F4F4F4,
+    'senary':                               #C2C2C2,
+    'septenary':                            #D6DBE0,
+    'accent':                               #1BB3BC,
+    'anchor':                               #EC0000,
+    'error':                                #E92505,
+    'success':                              #60B403,
+    'warning':                              #FFC203,
+    'info':                                 #EC0000,
+    'overlay':                              #000000,
+    'shadow':                               #D5DADF,
+    'gradient-primary-1':                   #EC0000,
+    'gradient-primary-2':                   #EC0000,
+    'gradient-secondary-1':                 #EC0000,
+    'gradient-secondary-2':                 #B60062,
+    'gradient-radial-1':                    #FFEE00,
+    'gradient-radial-2':                    #FF9F00,
+    'home-banner-gradient-start':           #EC0000,
+    'home-banner-gradient-end':             #EC0000,
+    'home-banner-search-button-bg-color':   #000000,
+    'footer-gradient-start':                #F7F7F7,
+    'footer-gradient-end':                  #F7F7F7,
+    'calendar':                             #EC0000,
+    'background-timer':                     #EC0000,
+    'background-success':                   #60B403,
+    'bonus-points-chip-bg-color':           #000000,
+    'bonus-points-chip-color':              #FFFFFF,
+    'favorite-marked':                      #F80445,
+    'favorite-unmarked':                    #FFFFFF,
+    'event-status-chip-cancelled':          #EE2E24,
+    'event-status-chip-postponed':          #FF7203,
+    'event-status-chip-rescheduled':        #D011C9
+);
+
+$theme-colors-variants: (
+    'primary-lighten-1': lighten( map-get( $theme-colors-hex, 'primary' ), 90 ),
+    'primary-lighten-2': lighten( map-get( $theme-colors-hex, 'primary' ), 70 ),
+    'primary-lighten-3': lighten( map-get( $theme-colors-hex, 'primary' ), 20 ),
+    'primary-darken-1': lighten( map-get( $theme-colors-hex, 'primary' ), 12 ),
+    'senary-darken-1': darken( map-get( $theme-colors-hex, 'senary' ), 32 ),
+);
+
+$theme-colors-hex: map-merge( $theme-colors-hex, $theme-colors-variants );

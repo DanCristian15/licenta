@@ -1,0 +1,38 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }}",
+                "pointWithCount_plural": "{{ formattedCount }}"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }}",
+                "pointWithCount_plural": "{{ formattedCount }}"
+            },
+            "bonusPointsChip": {
+                "title": "<b>{{points}}</b> Bonus PC Optimum Point*",
+                "title_plural": "<b>{{points}}</b> Bonus PC Optimum Points*"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Earn Bonus PC Optimum Points* on millions of events & experiences globally."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} Bonus PC Optimum Points*"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": "*When you pay with your President's Choice Financial Mastercard® credit card, get a bonus 10 PC Optimum points per dollar of your PC lifestyle services purchase (taxes included) in addition to the regular 10 PC Optimum points per dollar earned for all purchases on the card. Applies to new bookings only. Bonus PC Optimum points will be shown as \"PC™ Lifestyle Bonus Rewards\" on your PC Optimum points statement. All points associated with purchases during the promotional period will be withheld in the event of the products being cancelled or refunded. Offer subject to change. Minimum redemption is 10,000 PC Optimum points (worth $10 in rewards) and in increments of 10,000 PC Optimum points thereafter at participating grocery stores where President's Choice products are sold. Some redemption restrictions apply; visit <a href=\"http://pcoptimum.ca\">pcoptimum.ca</a> for details."
+                }
+            },
+            "copyright": "© {{ year }} PC Optimum. All rights reserved."
+        }
+    }
+}

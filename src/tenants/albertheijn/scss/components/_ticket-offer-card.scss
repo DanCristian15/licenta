@@ -1,0 +1,22 @@
+.gst-ticket-offer-small-card .gst-ticket-offer-small-card__price {
+    font-size: font-size( 'xxs' ) !important;
+}
+
+.gst-ticket-offer-small-card {
+    .gst-ticket-offer-type-icon {
+        color: theme-color( 'accent' ) !important;
+        font-weight: font-weight( 'medium' ) !important;
+
+        .gst-svg-icon {
+            fill: theme-color( 'accent' ) !important;
+        }
+    }
+
+    .gst-ticket-offer-small-card__seat {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+
+    .gst-ticket-offer-price-icon__price {
+        font-weight: font-weight( 'medium' ) !important;
+    }
+}

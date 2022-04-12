@@ -1,0 +1,38 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} TRUEBLUE Point",
+                "pointWithCount_plural": "{{ formattedCount }} TRUEBLUE Points"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} TRUEBLUE Point",
+                "pointWithCount_plural": "{{ formattedCount }} TRUEBLUE Points"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} TRUEBLUE Points",
+                "title_plural": "{{points}} TRUEBLUE Points"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn TRUEBLUE Points. Simple as that."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} TRUEBLUE Points"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

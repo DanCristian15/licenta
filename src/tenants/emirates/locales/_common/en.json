@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Us",
+            "title": "About Us"
+        }
+    },
+    "terms": {
+        "bonusPoint": "Skywards Mile",
+        "bonusPointLong": "Skywards Mile",
+        "bonusPointLong_plural": "Skywards Miles",
+        "bonusPoint_plural": "Skywards Miles"
+    }
+}

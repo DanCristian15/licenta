@@ -1,0 +1,61 @@
+
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__title {
+            font-size: 48px;
+            font-weight: font-weight( 'black' );
+        }
+
+        .gst-home__subtitle {
+            font-size: font-size( 'm' );
+            font-weight: font-weight( 'regular' );
+            letter-spacing: -0.3px;
+        }
+    }
+
+    .gst-just-for-user-entities {
+        background: linear-gradient( 270deg, theme-color( 'gradient-secondary-1' ) 0%, theme-color( 'gradient-secondary-2' ) 100% );
+    }
+
+    .gst-top-events-card-list {
+        h4 {
+            font-weight: font-weight( 'bold' );
+            letter-spacing: -0.4px;
+        }
+    }
+
+    .gst-btn-clasification__group {
+        button {
+            font-weight: font-weight( 'bold' );
+        }
+    }
+
+    @include mobile-only {
+        .gst-banner.gst-banner--home {
+            .gst-home__title {
+                padding-left: 20px;
+                font-size: font-size( 'xxxxxxl' );
+                text-align: left;
+            }
+
+            .gst-home__subtitle {
+                padding-left: 20px;
+                text-align: left;
+            }
+        }
+
+        .gst-recently-viewed-entities__title {
+            font-size: font-size( 'xxxl' );
+        }
+
+        .gst-just-for-user-entities {
+            background: linear-gradient( 270deg, theme-color( 'gradient-secondary-1' ) 0%, theme-color( 'gradient-secondary-2' ) 100% );
+        }
+
+        .gst-top-events-card-list {
+            h4 {
+                letter-spacing: -0.4px;
+            }
+        }
+    }
+}

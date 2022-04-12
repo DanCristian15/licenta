@@ -1,0 +1,80 @@
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__title {
+            line-height: line-height( 'xxxxxxxl' );
+            margin-bottom: 11px;
+            color: theme-color( 'white' );
+            font-size: 48px;
+            font-weight: font-weight( 'bold' ) !important;
+            letter-spacing: -0.85px;
+        }
+
+        .gst-home__subtitle {
+            line-height: line-height( 'xxxxxxxl' );
+            color: theme-color( 'white' );
+            font-size: font-size( 'm' );
+            font-weight: font-weight( 'regular' ) !important;
+            letter-spacing: -0.26px;
+        }
+    }
+
+    .gst-btn.v-btn.gst-btn--see-more {
+        line-height: line-height( 'xxxl' );
+        padding: 10px !important;
+        color: theme-color( 'primary' ) !important;
+        font-size: font-size( 's' );
+        font-weight: font-weight( 'regular' );
+        border-color: theme-color( 'primary' ) !important;
+        min-width: 140px;
+    }
+
+    .gst-top-events-card-list {
+        h4 {
+            font-weight: font-weight( 'regular' );
+            letter-spacing: -0.35px;
+        }
+
+        .gst-event-card-variant-2 {
+            .gst-event-card-variant-2__title {
+                line-height: line-height( 'xxxxxl' );
+                font-size: font-size( 'xxxxxl' );
+                font-weight: font-weight( 'bold' ) !important;
+                letter-spacing: -0.82px;
+            }
+        }
+    }
+}
+
+@include mobile-only {
+    .gst-home {
+        .gst-banner.gst-banner--home {
+            .gst-home__title,
+            .gst-home__subtitle {
+                padding: 0 12px 0 35px;
+                text-align: left;
+            }
+
+            .gst-home__title {
+                line-height: 22px;
+                font-size: font-size( 'xxxxxl' );
+                letter-spacing: -0.35px;
+            }
+
+            .gst-home__subtitle {
+                line-height: line-height( 'xxxxl' );
+                font-size: font-size( 'm' );
+                letter-spacing: -0.26px;
+            }
+        }
+
+        .gst-top-events-card-list {
+            .gst-event-card-variant-2 {
+                .gst-event-card-variant-2__title {
+                    line-height: line-height( 'xxxxxl' );
+                    font-size: font-size( 'xxxxxl' );
+                    letter-spacing: -0.88px;
+                }
+            }
+        }
+    }
+}

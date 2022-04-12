@@ -1,0 +1,27 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} Cash Back",
+                "pointWithCount_plural": "{{ formattedCount }} Cash Back"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} Cash Back",
+                "pointWithCount_plural": "{{ formattedCount }} Cash Back"
+            },
+            "bonusPointsHomeBanner": {
+                "titleMoney": "Get Tickets, Earn Bonus Cash Back. Simple as that."
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.v-application {
+    .gst-notification-container {
+        .danger {
+            border-left: 0 !important;
+
+            .title {
+                line-height: line-height( 'xxxl' );
+                color: theme-color( 'error' );
+                font-size: font-size( 'l' ) !important;
+                font-weight: font-weight( 'large' );
+            }
+
+            .card-text {
+                line-height: line-height( 'l' );
+                color: theme-color( 'quaternary' );
+                font-size: font-size( 's' ) !important;
+                font-weight: font-weight( 'regular' );
+            }
+        }
+
+        .warning {
+            background-color: theme-color( 'white' ) !important;
+            border-left: 0 !important;
+
+            .title,
+            .card-text {
+                line-height: line-height( 'l' );
+                font-size: font-size( 's' ) !important;
+                font-weight: font-weight( 'regular' );
+            }
+
+            .title {
+                color: theme-color( 'quaternary' );
+            }
+
+            .card-text {
+                color: theme-color( 'tertiary' );
+            }
+        }
+
+        @include mobile-only {
+            .danger {
+                .title {
+                    line-height: line-height( 'xl' );
+                    font-size: font-size( 's' ) !important;
+                    font-weight: font-weight( 'large' );
+                }
+
+                .card-text {
+                    line-height: line-height( 'm' );
+                    font-size: font-size( 'xxs' ) !important;
+                    font-weight: font-weight( 'regular' );
+                }
+            }
+
+            .warning {
+                .title {
+                    line-height: line-height( 'm' );
+                    font-size: font-size( 'xxs' ) !important;
+                    font-weight: font-weight( 'regular' );
+                }
+            }
+        }
+    }
+
+    .gst-notification-container-mobile {
+        top: 58px !important;
+
+        .danger,
+        .warning {
+            max-width: 90vw;
+        }
+    }
+}

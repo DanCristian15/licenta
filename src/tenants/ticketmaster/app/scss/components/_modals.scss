@@ -1,0 +1,32 @@
+.v-dialog.v-dialog__height-50 {
+    height: 50vh;
+    margin: 0;
+    max-height: none;
+}
+
+.v-dialog.v-dialog__height-70 {
+    height: 70vh;
+    margin: 0;
+    max-height: none;
+}
+
+.v-dialog.v-dialog__height-90 {
+    height: 90vh;
+    margin: 0;
+    max-height: none;
+}
+
+.v-dialog.v-dialog__height-98 {
+    height: 98vh;
+    margin: 0;
+    max-height: none;
+}
+
+.v-dialog.gst-v-dialog {
+    @include border-radius('s');
+}
+
+.v-dialog.gst-v-dialog-event-info,
+.v-dialog.gst-v-dialog-terms-agreement {
+    height: 75vh;
+}

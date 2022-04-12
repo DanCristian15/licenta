@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>checkbox / checked</title>
+    <desc>Created with Sketch.</desc>
+    <g id="checkbox-/-checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect class="gst-svg-icon" id="Rectangle-3" fill="#00B4E2" x="0" y="0" width="16" height="16" rx="3"></rect>
+            <path d="M7,9.24089879 L4.70710681,6.62044942 C4.52614237,6.41363293 4.27614237,6.28571429 4,6.28571429 C3.44771525,6.28571429 3,6.79738886 3,7.42857143 C3,7.74416271 3.11192881,8.029877 3.29289322,8.23669346 L6.29289322,11.6652649 C6.47385763,11.8720814 6.72385763,12 7,12 C7.27614237,12 7.52614237,11.8720814 7.70710678,11.6652649 L12.7071068,5.95097918 C12.8880712,5.74416271 13,5.45844843 13,5.14285714 C13,4.51167457 12.5522847,4 12,4 C11.7238576,4 11.4738576,4.12791864 11.2928932,4.33473511 L7,9.24089879 L7,9.24089879 Z" id="Icon" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

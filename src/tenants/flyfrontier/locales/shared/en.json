@@ -1,0 +1,38 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} FRONTIER Mile",
+                "pointWithCount_plural": "{{ formattedCount }} FRONTIER Miles"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} FRONTIER Mile",
+                "pointWithCount_plural": "{{ formattedCount }} FRONTIER Miles"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} FRONTIER Mile",
+                "title_plural": "{{points}} FRONTIER Miles"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn myFRONTIER Miles. Simple as that."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "points": "{{points}} FRONTIER Miles"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

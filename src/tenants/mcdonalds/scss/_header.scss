@@ -1,0 +1,19 @@
+.gst-header {
+    .gst-menu-list {
+        li a {
+            color: theme-color( 'quaternary' );
+        }
+    }
+}
+
+.gst-burger-menu_link {
+    font-weight: font-weight( 'light' ) !important;
+}
+
+@include mobile-only {
+    .gst-tenant-logo__content {
+        svg {
+            max-width: 150px !important;
+        }
+    }
+}

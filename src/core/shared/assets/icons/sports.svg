@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icons / events / sports</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons-/-events-/-sports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g id="Bounding_Box">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            </g>
+            <g id="Master" class="gst-svg-icon" transform="translate(3.000000, 3.000000)" fill="#23262D" fill-rule="nonzero">
+                <g id="Group">
+                    <path d="M0.02,12.62 C-0.06,15.04 0.34,16.96 0.69,17.31 C1.04,17.66 2.97,18.07 5.38,17.98 L0.02,12.62 Z" id="Path"></path>
+                    <path d="M10.08,0.28 C7.75,0.7 5.29,1.62 3.46,3.46 C1.63,5.3 0.7,7.75 0.28,10.08 L7.91,17.71 C10.25,17.3 12.7,16.37 14.53,14.53 C16.36,12.69 17.29,10.24 17.71,7.91 L10.08,0.28 Z M11.8,7.6 L7.6,11.8 C7.21,12.19 6.59,12.19 6.2,11.8 C5.81,11.41 5.81,10.79 6.2,10.4 L10.4,6.2 C10.79,5.81 11.41,5.81 11.8,6.2 C12.19,6.59 12.19,7.21 11.8,7.6 Z" id="Shape"></path>
+                    <path d="M17.98,5.38 C18.06,2.96 17.66,1.04 17.31,0.69 C16.96,0.34 15.03,-0.07 12.62,0.02 L17.98,5.38 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

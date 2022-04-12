@@ -1,0 +1,5 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24" r="23.5" fill="white" stroke="#F0F2F3"/>
+<rect opacity="0.01" x="12" y="12" width="24" height="24" fill="#D8D8D8" stroke="#979797"/>
+<path class="gst-svg-icon" fill-rule="evenodd" clip-rule="evenodd" d="M24 15C19.0275 15 15 19.0275 15 24C15 28.9725 19.0275 33 24 33C28.9725 33 33 28.9725 33 24C33 19.0275 28.9725 15 24 15ZM23.1 28.5V23.1H24.9V28.5H23.1ZM23.1 19.5V21.3H24.9V19.5H23.1Z" fill="#D6DBE0"/>
+</svg>

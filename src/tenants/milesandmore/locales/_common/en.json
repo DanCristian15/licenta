@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Us",
+            "title": "About Us"
+        }
+    },
+    "terms": {
+        "bonusPoint": "Mile",
+        "bonusPointLong": "Mile",
+        "bonusPointLong_plural": "Miles",
+        "bonusPoint_plural": "Miles"
+    }
+}

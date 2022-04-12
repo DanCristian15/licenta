@@ -1,0 +1,16 @@
+{
+    "views": {
+        "theEvent": { },
+        "cart": {
+          "theCheckout": {
+            "_components": {
+              "fieldsets": {
+                "shipmentFieldset": {
+                  "title": "Delivery"
+                }
+              }
+            }
+          }
+        }
+    }
+}

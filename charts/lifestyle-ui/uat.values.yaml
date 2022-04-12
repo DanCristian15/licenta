@@ -1,0 +1,89 @@
+frontend:
+  replicaCount: 1
+  env:
+    - name: "KEYCLOAK_URL"
+      value: "https://iam.uat.lifestylesolutionsteam.com"
+    - name: "COMPOSITE_SERVICE_NAME"
+      value: "gst-composite-http.default.svc.cluster.local"
+
+  ingress:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-production
+      nginx.ingress.kubernetes.io/proxy-connect-timeout: "15"
+      nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+      nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+      nginx.ingress.kubernetes.io/proxy-body-size: 10m
+    hosts:
+      - ui.uat.lifestylesolutionsteam.com
+      - aircanada.ui.uat.lifestylesolutionsteam.com
+      - airfrance.ui.uat.lifestylesolutionsteam.com
+      - airmiles.ui.uat.lifestylesolutionsteam.com
+      - adidas.ui.uat.lifestylesolutionsteam.com
+      - alaskaairlines.ui.uat.lifestylesolutionsteam.com
+      - albertsons.ui.uat.lifestylesolutionsteam.com
+      - albertheijn.ui.uat.lifestylesolutionsteam.com
+      - americanairlines.ui.uat.lifestylesolutionsteam.com
+      - astonlark.ui.uat.lifestylesolutionsteam.com
+      - avianca.ui.uat.lifestylesolutionsteam.com
+      - amtrak.ui.uat.lifestylesolutionsteam.com
+      - axa.ui.uat.lifestylesolutionsteam.com
+      - britishairways.ui.uat.lifestylesolutionsteam.com
+      - costco.ui.uat.lifestylesolutionsteam.com
+      - copaairline.ui.uat.lifestylesolutionsteam.com
+      - delta.ui.uat.lifestylesolutionsteam.com
+      - dufry.ui.uat.lifestylesolutionsteam.com
+      - emirates.ui.uat.lifestylesolutionsteam.com
+      - etihad.ui.uat.lifestylesolutionsteam.com
+      - exxonmobil.ui.uat.lifestylesolutionsteam.com
+      - finnair.ui.uat.lifestylesolutionsteam.com
+      - flyfrontier.ui.uat.lifestylesolutionsteam.com
+      - flyingblue.ui.uat.lifestylesolutionsteam.com
+      - hawaiianairlines.ui.uat.lifestylesolutionsteam.com
+      - hilton.ui.uat.lifestylesolutionsteam.com
+      - homedepot.ui.uat.lifestylesolutionsteam.com
+      - icelandair.ui.uat.lifestylesolutionsteam.com
+      - jambajuice.ui.uat.lifestylesolutionsteam.com
+      - hm.ui.uat.lifestylesolutionsteam.com
+      - jetblue.ui.uat.lifestylesolutionsteam.com
+      - klm.ui.uat.lifestylesolutionsteam.com
+      - marksandspencer.ui.uat.lifestylesolutionsteam.com
+      - mastercard.ui.uat.lifestylesolutionsteam.com
+      - milesandmore.ui.uat.lifestylesolutionsteam.com
+      - mcdonalds.ui.uat.lifestylesolutionsteam.com
+      - pc.ui.uat.lifestylesolutionsteam.com
+      - qatar.ui.uat.lifestylesolutionsteam.com
+      - rakuten.ui.uat.lifestylesolutionsteam.com
+      - santander.ui.uat.lifestylesolutionsteam.com
+      - scene.ui.uat.lifestylesolutionsteam.com
+      - scotiabank.ui.uat.lifestylesolutionsteam.com
+      - samsung.ui.uat.lifestylesolutionsteam.com
+      - shell.ui.uat.lifestylesolutionsteam.com
+      - skyuk.ui.uat.lifestylesolutionsteam.com
+      - southwest.ui.uat.lifestylesolutionsteam.com
+      - spirit.ui.uat.lifestylesolutionsteam.com
+      - target.ui.uat.lifestylesolutionsteam.com
+      - torstar.ui.uat.lifestylesolutionsteam.com
+      - tractorsupply.ui.uat.lifestylesolutionsteam.com
+      - trenitalia.ui.uat.lifestylesolutionsteam.com
+      - ticketmaster.ui.uat.lifestylesolutionsteam.com
+      - timhortons.ui.uat.lifestylesolutionsteam.com
+      - turkishairlines.ui.uat.lifestylesolutionsteam.com
+      - united.ui.uat.lifestylesolutionsteam.com
+      - vans.ui.uat.lifestylesolutionsteam.com
+      - verizon.ui.uat.lifestylesolutionsteam.com
+      - virginatlantic.ui.uat.lifestylesolutionsteam.com
+      - virginred.ui.uat.lifestylesolutionsteam.com
+      - visa.ui.uat.lifestylesolutionsteam.com
+      - volvo.ui.uat.lifestylesolutionsteam.com
+      - vodafone.ui.uat.lifestylesolutionsteam.com
+      - westjet.ui.uat.lifestylesolutionsteam.com
+    tls:
+      - hosts:
+          - ui.uat.lifestylesolutionsteam.com
+          - '*.ui.uat.lifestylesolutionsteam.com'
+        secretName: ui-uat-lifestylesolutionsteam-com
+
+  prometheus:
+    operator:
+      enabled: false

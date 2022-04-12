@@ -1,0 +1,12 @@
+$headings: (
+    1: 48px,
+    2: 28px,
+    3: 24px,
+    4: 20px,
+    5: 16px,
+    6: 14px
+);
+
+@mixin heading($level) {
+    font-size: map-get-strict( $headings, $level );
+}

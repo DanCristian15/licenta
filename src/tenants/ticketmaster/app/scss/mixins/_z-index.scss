@@ -1,0 +1,6 @@
+$z-index-primary: 1;
+$z-index-header: $z-index-primary + 4;
+$z-index-dialog: 200; // this is on the vuetify modal
+$z-index-notification: 5001;
+$z-index-overlay-app: 5002;
+$z-index-highest: 5003;

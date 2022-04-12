@@ -1,0 +1,55 @@
+@import "@scssVariables";
+@import "@scssMixins";
+@import "header";
+@import "footer";
+@import "views/home";
+@import "components/bonus-points";
+@import "components/event-card";
+@import "components/price-icon";
+@import "components/ticket-offer-card";
+@import "components/step-indicator";
+@import "components/checkout-confirmation";
+@import "components/date-card";
+@import "components/buttons";
+
+$font-family: "Roboto", sans-serif;
+
+.v-application {
+    font-family: $font-family !important;
+
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4,
+    .headline,
+    .title,
+    .subtitle-1,
+    .subtitle-2,
+    .body-1,
+    .body-2,
+    .caption,
+    .overline {
+        font-family: $font-family !important;
+    }
+}
+
+.gst-notification-container {
+    font-family: $font-family !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.gst-event-ticket-detail-content__subtotal {
+    font-weight: font-weight( 'regular' ) !important;
+}
+
+.v-input {
+    input,
+    .v-select__selection,
+    .v-label {
+        font-weight: font-weight( 'regular' ) !important;
+    }
+}

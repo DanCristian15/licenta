@@ -1,0 +1,35 @@
+.gst-switch.v-input--switch {
+    .v-input--switch__track {
+        top: 0;
+        height: 21px;
+        width: 34px;
+        color: theme-color( 'quinary' );
+        border-radius: border-radius( 'm' ) !important;
+    }
+
+    .v-input--switch__thumb {
+        top: 0;
+        height: 20px;
+        border: 1px solid theme-color( 'septenary' );
+        color: theme-color( 'white' ) !important;
+        caret-color: theme-color( 'white' ) !important;
+    }
+
+    .v-input--selection-controls__ripple {
+        top: calc( 50% - 23px );
+    }
+
+    .v-input--selection-controls__input {
+        height: 20px;
+    }
+}
+
+.v-application--is-ltr .v-input--switch.v-input--is-dirty.gst-switch .v-input--selection-controls__ripple,
+.v-application--is-ltr .v-input--switch.v-input--is-dirty.gst-switch .v-input--switch__thumb {
+    -webkit-transform: translate( 16px, 0 );
+    transform: translate( 16px, 0 );
+}
+
+.v-application--is-ltr .v-input--switch.v-input--is-dirty.gst-switch .v-input--switch__thumb {
+    border-color: theme-color( 'primary' );
+}

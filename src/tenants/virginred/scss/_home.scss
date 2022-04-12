@@ -1,0 +1,30 @@
+
+.gst-home {
+    .gst-banner.gst-banner--home {
+        .gst-home__subtitle {
+            line-height: line-height( 'xxxxxxxl' );
+            font-size: font-size( 'm' );
+            font-weight: font-weight( 'regular' );
+            letter-spacing: -0.26px;
+        }
+
+        .gst-home__title {
+            font-size: 48px;
+
+            span {
+                font-weight: font-weight( 'light' );
+            }
+        }
+
+        .gst-search-field-banner {
+            border: 1px solid rgba( 35, 38, 45, 0.14 );
+        }
+    }
+
+    .gst-top-events-card-list {
+        h4 {
+            font-weight: font-weight( 'regular' );
+            letter-spacing: -0.4px;
+        }
+    }
+}

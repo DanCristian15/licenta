@@ -1,0 +1,2 @@
+export { default as HealthCheckConfirmationModalDesktop } from './HealthCheckConfirmationModalDesktop.vue';
+export { default as HealthCheckConfirmationModalMobile } from './HealthCheckConfirmationModalMobile.vue';

@@ -1,0 +1,8 @@
+.gst-divider {
+    border-color: theme-color( 'quinary' ) !important;
+
+    .gst-divider--secondary {
+        opacity: 0.2;
+        border-color: theme-color( 'tertiary' ) !important;
+    }
+}

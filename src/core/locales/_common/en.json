@@ -1,0 +1,308 @@
+{
+    "buttons": {
+        "add": "Add",
+        "applyFilters": "Apply Filters",
+        "back": "Back",
+        "backToHome": "Back to Homepage",
+        "cancel": "Cancel",
+        "clearAll": "Clear all",
+        "close": "Close",
+        "confirm": "Confirm",
+        "continue": "Continue",
+        "continueWith": "Continue with these {{ entity }}",
+        "filters": "Filters",
+        "getDirections": "Get Directions",
+        "iAgree": "I Agree",
+        "learnMore": "Learn more",
+        "loadMore": "Load More",
+        "login": "Login",
+        "next": "Next",
+        "placeOrder": "Place order",
+        "remove": "Remove",
+        "reset": "Reset",
+        "resetFilters": "Reset Filters"
+    },
+    "entities": {
+        "eventCategory": {
+            "list": {
+                "arts": "Arts & Theater",
+                "concerts": "Concerts",
+                "family": "Family",
+                "otherEvents": "Other Events",
+                "sports": "Sports"
+            }
+        },
+        "fee": {
+            "labelForEntityScope": "{{ type }} per {{ scope }}",
+            "labelForEntityTaxScope": "{{ type }} tax",
+            "labelForOrderScope": "{{ type }} fee",
+            "type": {
+                "base": "Price",
+                "base_tax": "Ticket",
+                "distance": "Distance",
+                "facility": "Facility",
+                "order": "Order",
+                "service": "Service"
+            }
+        },
+        "seat": {
+            "noSeats": "General admission",
+            "row": "Row",
+            "seat": "Seat",
+            "seatWithCount": "{{ count }} Seat",
+            "seatWithCount_plural": "{{ count }} Seats",
+            "seat_plural": "Seats",
+            "section": "Section",
+            "section_abv": "Sec"
+        }
+    },
+    "form": {
+        "labels": {
+            "address": "Address",
+            "agree": "I agree to the ",
+            "city": "City",
+            "country": "Country",
+            "electronic": "Electronic Ticket",
+            "email": "Email Address",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "loyalty": "Loyalty Account Number",
+            "name": "Name",
+            "phone": "Phone Number",
+            "state": "State/Province",
+            "terms": "Terms and Conditions",
+            "zip": "ZIP/Postal Code"
+        }
+    },
+    "formErrors": {
+        "between": "Field should be between {{ min }}  and {{ max }}",
+        "betweenField": "{{ field }} should be between {{ min }}  and {{ max }}",
+        "email": "Must be valid e-mail.",
+        "invalidCardCVV": "This security code is not valid.",
+        "invalidCardExpire": "This expiration date is not valid.",
+        "invalidCardNumber": "This card number is not valid.",
+        "matchFields": "{{  fields }} must match",
+        "maxLength": "Must contain a maximum of {{ length }} characters.",
+        "minLength": "Must contain a minimum of {{ length }} characters.",
+        "numeric": "Must be a valid number.",
+        "phone": "Must be valid phone ( ###-###-#### ).",
+        "required": "Field is required.",
+        "requiredField": "{{ field }} is required.",
+        "zip": "Must have a valid format (LNL NLN or LNLNLN)."
+    },
+    "labels": {
+        "additionalFilters": "Additional filters",
+        "priceRange": "Price Range"
+    },
+    "messageServerErrorCodes": {
+        "20001": {
+            "detail": "Ticketing system is unavailable. Please try later.",
+            "title": "Service Unavailable"
+        },
+        "20002": {
+            "detail": "The card information that you supplied does not appear to be accurate. Please, verify your information and retry.",
+            "title": "Bad Request"
+        },
+        "20010": {
+            "detail": "Current state of the cart does not allow the attempted operation.",
+            "title": "Bad Request"
+        },
+        "20118": "The billing information that you supplied does not appear to be accurate. Please, verify your information and retry.",
+        "20226": {
+            "detail": "Command not processed. Please verify your card information and retry.",
+            "title": "Internal Server Error"
+        },
+        "20231": {
+            "detail": "Sorry, the quantity you selected for one or more tickets is not available. Please adjust your quantities and try again.",
+            "title": "Bad Request"
+        }
+    },
+    "messages": {
+        "apiMapLocationContactingError": "Error contacting location provider. Please contact the administrator",
+        "apiMapLocationError": "Unable to retrieve the location",
+        "apiPaymentClientContactingError": "Error contacting payment provider. Please contact the administrator",
+        "browserLocationError": "Unable to retrieve the location",
+        "browserLocationPermissionError": "Please check your browser settings for permission and try again",
+        "cartExpired": "Cart Expired",
+        "eventState": {
+            "inactive": {
+                "message": "Please check back later!",
+                "title": "This event is not on sale."
+            },
+            "noDate": {
+                "message": "On sale date and time are in the works - check back soon!",
+                "title": "This event is currently not on sale."
+            },
+            "onSaleDateFuture": {
+                "messageWithDate": "It will be available for sale on {{date}}",
+                "messageWithTime": "It will be available for sale in {{time}}",
+                "title": "This event is not on sale, yet."
+            },
+            "past": {
+                "message": "This event occured in the past and is no longer on sale.",
+                "title": "Past event."
+            }
+        },
+        "eventStatus": {
+            "cancelled": {
+                "message": "If you have already purchased tickets to this event, please contact Ticketmaster to inquire further.",
+                "title": "Sorry, this event has been canceled."
+            }
+        },
+        "eventTicketStatus": {
+            "fewAvailable": {
+                "message": "A Few Tickets Left"
+            },
+            "notAvailable": {
+                "message": "Please check back as new tickets may become available at a later time.",
+                "title": "Sorry, tickets are currently unavailable."
+            }
+        },
+        "internalError": "Internal Error. Please contact the administrator",
+        "leaveRouteConfirm": "Are you sure you want to leave? Any changes you made will not be saved.",
+        "leaveRouteDuringReservationConfirm": "Are you sure you want to leave? You will lose your selected seats.",
+        "noFilterDataPrefix": "Try another filter or",
+        "noSeats": {
+            "text": "We’re working on it!",
+            "title": "Seating chart unavailable."
+        },
+        "noTickets": "We could not find any seats for the search criteria specified",
+        "searchWarning": "Please enter at least one search criterion",
+        "ticketsMaximumQuantityWarning": "The maximum number of tickets exceeded"
+    },
+    "notificationTitles": {
+        "error": "Error",
+        "info": "Info",
+        "success": "Success",
+        "warning": "Sorry!"
+    },
+    "pages": {
+        "about": {
+            "menu": "About Lifestyle",
+            "title": "About Lifestyle"
+        },
+        "config": {
+            "menu": "Config",
+            "title": "Config"
+        },
+        "contact": {
+            "menu": "Contact Us",
+            "title": "Contact"
+        },
+        "faq": {
+            "menu": "FAQ",
+            "title": "FAQ"
+        },
+        "help": {
+            "menu": "How it Works",
+            "title": "How it Works"
+        },
+        "myFavorites": {
+            "menu": "My favorites",
+            "title": "My favorites"
+        },
+        "myTickets": {
+            "menu": "My tickets",
+            "title": "My tickets"
+        },
+        "termsAgreement": {
+            "menu": "Terms and Conditions",
+            "title": "Terms and Conditions"
+        }
+    },
+    "terms": {
+        "accessibility": "Accessibility",
+        "all": "All",
+        "allCategory": "All categories",
+        "allEntity": "All {{entity}}",
+        "and": "and",
+        "artist": "Artist",
+        "artistWithCount": "{{ count }} Artist",
+        "artistWithCount_plural": "{{ count }} Artists",
+        "artist_plural": "Artists",
+        "bonusPoint": "Point",
+        "bonusPointLong": "Bonus Point",
+        "bonusPointLong_plural": "Bonus Points",
+        "bonusPointMoney": "Cash Back",
+        "bonusPointMoneyCurrencySymbol": "Cash Back",
+        "bonusPointWithCount": "{{ formattedCount }} $t(_common:terms.bonusPoint)",
+        "bonusPointWithCount_plural": "{{ formattedCount }} $t(_common:terms.bonusPoint_plural)",
+        "bonusPoint_plural": "Points",
+        "category": "Category",
+        "category_plural": "Categories",
+        "changeDate": "Change dates",
+        "currentOfTotal": "{{current}} of {{total}}",
+        "dateAndTimeAt": "{{ date }} at {{ time }}",
+        "dateAndTimeToBeDetermined": "Date & Time TBD",
+        "delivery": "Delivery",
+        "distanceFrom_km": "{{distance}} kilometers from {{from}}",
+        "distanceFrom_miles": "{{distance}} miles from {{from}}",
+        "distance_kilometer": "{{distance}} km",
+        "distance_miles": "{{distance}} miles",
+        "email": "Email",
+        "email_plural": "Emails",
+        "error": "Error",
+        "event": "Event",
+        "eventWithCount": "{{ count }} Event",
+        "eventWithCount_plural": "{{ count }} Events",
+        "event_plural": "Events",
+        "fee": "fee",
+        "feeWithTaxes": "fee, including taxes",
+        "feeWithTaxes_plural": "fees, including taxes",
+        "fee_plural": "fees",
+        "filter": "Filter",
+        "filter_plural": "Filters",
+        "final": "Final",
+        "from": "From",
+        "includingTaxes": " including taxes",
+        "location": "Location",
+        "logout": "Logout",
+        "myCurrentLocation": "My Current Location",
+        "plusTaxesAndFees": " + Taxes and fees",
+        "price": "Price",
+        "priceWithCount": "{{ count }} Price",
+        "priceWithCount_plural": "{{ count }} Prices",
+        "price_plural": "Prices",
+        "quality": "Quality",
+        "quantity": "Quantity",
+        "reset": "Reset",
+        "row": "Row",
+        "rowWithCount": "{{ count }} Rows",
+        "rowWithCount_plural": "{{ count }} Rows",
+        "row_plural": "Rows",
+        "seat": "Seat",
+        "seatWithCount": "{{ count }} Seat",
+        "seatWithCount_plural": "{{ count }} Seats",
+        "seat_plural": "Seats",
+        "selectTicketType": "Select Ticket Type",
+        "sort": "Sort",
+        "sortAlphabeticalDesc_abv": "Z-A",
+        "sortAlphabetical_abv": "A-Z",
+        "sortByDate": "Date",
+        "sortByPrice": "Price",
+        "subTotal": "SubTotal",
+        "success": "Success",
+        "termsAndConditions": "Terms and Conditions",
+        "termsOfUse": "Terms Of Use",
+        "ticket": "Ticket",
+        "ticketAvailableWithCount": "{{ count }} Ticket Available",
+        "ticketAvailableWithCount_plural": "{{ count }} Tickets Available",
+        "ticketWithCount": "{{ count }} Ticket",
+        "ticketWithCount_plural": "{{ count }} Tickets",
+        "ticket_plural": "Tickets",
+        "toBeDetermined_abv": "TBD",
+        "total": "Total",
+        "undo": "Undo",
+        "until": "Until",
+        "upcomingEvent": "Upcoming Event",
+        "upcomingEventWithCount": "{{ count }} Upcoming Event",
+        "upcomingEventWithCount_plural": "{{ count }} Upcoming Events",
+        "upcomingEvent_plural": "Upcoming Events",
+        "useMyCurrentLocation": "Use my current location",
+        "venue": "Venue",
+        "venueThe": "The Venue",
+        "venueWithCount": "{{ count }} Venue",
+        "venueWithCount_plural": "{{ count }} Venues",
+        "venue_plural": "Venues"
+    }
+}

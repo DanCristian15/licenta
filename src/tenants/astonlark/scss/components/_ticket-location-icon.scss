@@ -1,0 +1,12 @@
+.gst-ticket-location-icon {
+    svg {
+        opacity: 1 !important;
+
+        .gst-svg-icon {
+            fill: theme-color( 'tertiary' ) !important;
+        }
+    }
+
+    color: theme-color( 'quaternary' ) !important;
+    fill: theme-color( 'quaternary' );
+}

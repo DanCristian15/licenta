@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Jotia';
+    src: url('fonts/Jotia-Light.eot');
+    src: url('fonts/Jotia-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Jotia-Light.woff2') format('woff2'),
+        url('fonts/Jotia-Light.woff') format('woff'),
+        url('fonts/Jotia-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jotia';
+    src: url('fonts/Jotia-Bold.eot');
+    src: url('fonts/Jotia-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Jotia-Bold.woff2') format('woff2'),
+        url('fonts/Jotia-Bold.woff') format('woff'),
+        url('fonts/Jotia-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jotia';
+    src: url('fonts/Jotia-Heavy.eot');
+    src: url('fonts/Jotia-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Jotia-Heavy.woff2') format('woff2'),
+        url('fonts/Jotia-Heavy.woff') format('woff'),
+        url('fonts/Jotia-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jotia';
+    src: url('fonts/Jotia-Regular.eot');
+    src: url('fonts/Jotia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Jotia-Regular.woff2') format('woff2'),
+        url('fonts/Jotia-Regular.woff') format('woff'),
+        url('fonts/Jotia-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jotia';
+    src: url('fonts/Jotia-Medium.eot');
+    src: url('fonts/Jotia-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Jotia-Medium.woff2') format('woff2'),
+        url('fonts/Jotia-Medium.woff') format('woff'),
+        url('fonts/Jotia-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jotia';
+    src: url('fonts/Jotia-Thin.eot');
+    src: url('fonts/Jotia-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Jotia-Thin.woff2') format('woff2'),
+        url('fonts/Jotia-Thin.woff') format('woff'),
+        url('fonts/Jotia-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

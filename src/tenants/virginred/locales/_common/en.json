@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "about": {
+            "menu": "About Us",
+            "title": "About Us"
+        }
+    },
+    "terms": {
+        "bonusPoint": "Virgin Point",
+        "bonusPointLong": "Virgin Point",
+        "bonusPointLong_plural": "Virgin Points",
+        "bonusPoint_plural": "Virgin Points"
+    }
+}

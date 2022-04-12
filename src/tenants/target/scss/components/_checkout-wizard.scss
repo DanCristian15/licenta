@@ -1,0 +1,70 @@
+.gst-input.v-input.gst-input--secondary.v-text-field--outlined label {
+    color: theme-color( 'primary' );
+}
+
+div.braintree-form__field-group .braintree-form__label {
+    color: theme-color( 'primary' ) !important;
+}
+
+.gst-checkbox.gst-input.gst-input--secondary.v-input--selection-controls.v-input--checkbox {
+    svg.gst-icon-checked .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.gst-checkout-step-2-form__field-terms-conditions.v-input--selection-controls.v-input--checkbox {
+    svg.gst-icon-checked .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.gst-checkout-step-2-form__field-healthcheck.v-input--selection-controls.v-input--checkbox {
+    svg.gst-icon-checked .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.v-input--selection-controls.v-input--radio-group.v-input--radio-group--column {
+    label {
+        color: theme-color( 'tertiary' );
+    }
+
+    svg.gst-icon-checked .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.gst-checkwiz-step-payment__info-card {
+    .gst-checkwiz-step-payment__icon-check .gst-svg-icon {
+        fill: theme-color( 'accent' ) !important;
+    }
+}
+
+.gst-section-title {
+    font-weight: font-weight( 'bold' ) !important;
+}
+
+.gst-ticket-date-icon,
+.gst-ticket-location-icon {
+    color: theme-color( 'quaternary' );
+}
+
+.gst-ticket-guarantee__description {
+    font-weight: font-weight( 'medium' );
+}
+
+.gst-ticket-date-icon svg,
+.gst-ticket-location-icon svg {
+    opacity: 1 !important;
+}
+
+.gst-checkwiz-step-payment__total {
+    color: theme-color( 'quaternary' );
+}
+
+.gst-checkout {
+    .gst-bp__badge__right,
+    .gst-bp__badge__right2 {
+        display: none;
+    }
+}

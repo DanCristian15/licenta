@@ -1,0 +1,35 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} SkyMile®",
+                "pointWithCount_plural": "{{ formattedCount }} SkyMiles®",
+                "title": "You have earned",
+                "tooltip": "The amount of SkyMiles® should be visible to your account in the following 3 days."
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} SkyMile®",
+                "pointWithCount_plural": "{{ formattedCount }} SkyMiles®"
+            },
+            "bonusPointsChip": {
+                "title": "{{points}} SkyMile®",
+                "title_plural": "{{points}} SkyMiles®"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn SkyMiles®. Simple as that."
+            }
+        },
+        "misc": {
+        "priceIcon": {
+            "labels": {
+                "points": "You get {{points}} SkyMiles®"
+            }
+        }
+    }
+    },
+    "layouts": {
+        "footer": {
+            "copyright": "© {{ year }} Delta SkyMiles. All rights reserved."
+        }
+    }
+}

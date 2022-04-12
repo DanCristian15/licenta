@@ -1,0 +1,35 @@
+{
+    "components": {
+        "bonusPoints": {
+            "bonusPointsCartCheckoutConfirmation": {
+                "pointWithCount": "{{ formattedCount }} in Circle Reward",
+                "pointWithCount_plural": "{{ formattedCount }} in Circle Rewards"
+            },
+            "bonusPointsCartCheckoutSummary": {
+                "pointWithCount": "{{ formattedCount }} in Circle Reward",
+                "pointWithCount_plural": "{{ formattedCount }} in Circle Rewards"
+            },
+            "bonusPointsHomeBanner": {
+                "title": "Get Tickets, Earn $t(_common:terms.bonusPointLong_plural). Simple as that.",
+                "titleMoney": "Buy tickets and get {{ earnRatePercent }} $t(_common:terms.bonusPointMoney). Simple as that."
+            }
+        },
+        "misc": {
+            "priceIcon": {
+                "labels": {
+                    "money": "{{points}} EARNINGS"
+                }
+            }
+        }
+    },
+    "layouts": {
+        "footer": {
+            "_components": {
+                "legalNotes": {
+                    "content": ""
+                }
+            },
+            "copyright": "© {{ year }} Lifestyle. All rights reserved."
+        }
+    }
+}

@@ -1,0 +1,9 @@
+export { default as CheckoutConfirmation }          from './CheckoutConfirmation.vue';
+export { default as ContainerItemPriceDetailCard }  from './ContainerItemPriceDetailCard.vue';
+export { default as HeaderWithCountDown }           from './HeaderWithCountDown.vue';
+export { default as Sidebar }                       from './Sidebar.vue';
+export { default as SidebarFaqCard }                from './SidebarFaqCard.vue';
+export { default as Step1Summary }                  from './Step1Summary.vue';
+export { default as Step2Delivery }                 from './Step2Delivery.vue';
+export { default as Step2DeliveryForm }             from './Step2DeliveryForm.vue';
+export { default as Step3Payment }                  from './Step3Payment.vue';

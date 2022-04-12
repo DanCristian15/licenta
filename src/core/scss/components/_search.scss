@@ -1,0 +1,54 @@
+.gst-search-icon-svg {
+    .gst-svg-icon {
+        fill: theme-color( 'tertiary' );
+    }
+}
+
+.gst-dropdown-icon-svg {
+    .gst-svg-icon {
+        fill: theme-color( 'primary' );
+    }
+}
+
+.gst-search-icon-cancel-svg {
+    .gst-svg-icon {
+        fill: theme-color( 'senary' );
+    }
+}
+
+.gst-search-input {
+    font-size: font-size( 's' );
+
+    .v-text-field__slot input::placeholder {
+        color: theme-color( 'tertiary' );
+    }
+
+    .v-text-field__slot {
+        input,
+        label {
+            color: theme-color( 'quaternary' ) !important;
+            letter-spacing: -0.25px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        label {
+            display: flex;
+            top: 0 !important;
+            height: 32px;
+            font-size: font-size( 's' );
+            min-width: 100px;
+            max-width: 100% !important;
+            align-items: center;
+
+            .gst-search-label {
+                text-overflow: ellipsis;
+                overflow: hidden;
+            
+                span {
+                    color: theme-color( 'tertiary' );
+                }
+            }
+        }
+    }
+}

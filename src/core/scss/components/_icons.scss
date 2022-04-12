@@ -1,0 +1,18 @@
+.gst-icon-svg {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    line-height: 1;
+    letter-spacing: normal;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-indent: 0;
+    -webkit-transition: 0.3s cubic-bezier( 0.25, 0.8, 0.5, 1 );
+    transition: 0.3s cubic-bezier( 0.25, 0.8, 0.5, 1 );
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
