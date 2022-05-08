@@ -16,7 +16,7 @@
                     <div class="characteristic-container ml-4">
                         Last bid
                         <p>
-                            {{ this.product.startBid }} $
+                            {{ this.product.lastBid }} $
                         </p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
             </div>
             <div class="product-details-page__additional-informations d-flex flex-column ml-6 align-center align-self-end">
                 <div class="product-details-page__additional-informations-timer u-width-100 d-flex justify-center pt-3">
-                    <p>23:24:52</p>
+                    <p>{{23 - this.remainingHours}}:{{ 59 - this.remainingMinutes}}:{{ 59 - this.remainingSeconds}} </p>
                 </div>
                 <div class="product-details-page__additional-informations-seller-profile u-height-100 u-width-100 d-flex flex-column align-center">
                     <div class="product-details-page__seller-profile-informations d-flex flex-column align-center pt-5 pb-5">
@@ -134,21 +134,42 @@
         data() {
             return {
                 product: {},
-                directlyBid: ''
+                directlyBid: '',
+                remainingTime: {
+                    type: Number
+                },
+                 remainingSeconds: {
+                    type: Number
+                },
+                remainingMinutes: {
+                    type: Number
+                },
+                remainingHours: {
+                    type: Number
+                }
             };
         },
         methods: {
+             updateRemainingTime() {
+
+                setInterval(() => {
+                    this.remainingSeconds = this.product.remainingSeconds % 60;
+                    this.remainingMinutes = this.product.remainingMinutes  % 60 ;
+                    this.remainingHours = this.product.remainingHours  % 24
+                }, 1000)
+
+            },
             goToBidPaymentQuick( bid ) {
                 // console.log( bid );
-                this.$router.push( { name: 'bidPayment', params: { bid: bid } } );
+                this.$router.push( { name: 'bidPayment', params: { bid: bid, productId: this.product.productId } } );
             },
             goToBidPaymentDirectly( bid ) {
-                // console.log( this.directlyBid );
-                this.$router.push( { name: 'bidPayment', params: { bid: this.directlyBid } } );
+                this.$router.push( { name: 'bidPayment', params: { bid: this.directlyBid, productId: this.product.productId  } } );
             }
         },
         created: function()  {
             this.product = this.$route.params.product;
+            this.updateRemainingTime()
         }
 
     } );

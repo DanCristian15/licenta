@@ -44,7 +44,7 @@ export default [
         }
     },
     {
-        path: '/productDetailsPage',
+        path: '/productDetailsPage/:productId',
         name: 'productDetailsPage',
         component: ProductDetailsPage,
         meta: {
@@ -87,7 +87,7 @@ export default [
         props: true
     },
     {
-        path: '/bidPayment',
+        path: '/bidPayment/:productId',
         name: 'bidPayment',
         component: BidPayment,
         meta: {

@@ -13,7 +13,7 @@
                 <div class="product-card-informations_price ">
                     <p>Current bid</p>
                     <p>
-                        {{ product.startBid }} $
+                        {{ product.lastBid }} $
                     </p>
                 </div>
                 <div class="product-card-informations_star-rating">
@@ -22,7 +22,9 @@
                 </div>
             </div>
             <div class="product-card_remaining-time">
-                <p>Remaining time: 23h 00m 01s</p>
+
+                <p v-if="this.isProductSoldOut"> Sold Out</p>
+                 <p v-else>Remaining time {{23 - this.remainingHours}}:{{ 59 - this.remainingMinutes}}:{{ 59 - this.remainingSeconds}} </p>
             </div>
         </div>
     </div>
@@ -30,10 +32,40 @@
 
 <script>
     import StarRating from '@core/shared/components/misc/StarRating.vue';
+    import Timer from '@core/shared/components/timer/Timer.vue'
+    import { mapActions} from 'vuex';
 
     export default ( {
+        data() {
+            return {
+                remainingSeconds: {
+                    type: Number
+                },
+                remainingMinutes: {
+                    type: Number
+                },
+                remainingHours: {
+                    type: Number
+                },
+                isProductSoldOut: false
+            }
+        },
+        watch: {
+            remainingSeconds: {
+                handler(value) {
+                    if (value >= 30) {
+                        this.isProductSoldOut = true;
+                    }
+                    if(value === 30) {
+                        this.commitSetUserNotifications(this.product)
+                    }
+                }
+            }
+
+        },
         components: {
-            StarRating
+            StarRating,
+            Timer
         },
         props: {
             product: {
@@ -46,9 +78,27 @@
             }
         },
         methods: {
+             ...mapActions({
+                commitSetProductBid: 'addProduct/commitSetProductBid',
+                commitSetLastBidder: 'addProduct/commitSetLastBidder',
+                commitSetUserNotifications: 'user/signUp/commitSetUserNotifications'
+            }),
+            updateRemainingTime() {
+
+                setInterval(() => {
+                    this.remainingSeconds = this.product.remainingSeconds % 60;
+                    this.remainingMinutes = this.product.remainingMinutes  % 60 ;
+                    this.remainingHours = this.product.remainingHours  % 24
+
+                }, 1000)
+            },
             ret() {
-                this.$router.push( { name: 'productDetailsPage', params: { product: this.product } } );
+                this.$router.push( { name: 'productDetailsPage', params: { product: this.product, productId: this.product.productId } } )
+                console.log(this.product)
             }
+        },
+         created: function()  {
+            this.updateRemainingTime()
         }
     } );
 </script>

@@ -187,7 +187,6 @@
                 } );
 
                 if ( !this.$v.$invalid && doesntMatch === true ) {
-
                     this.commitAddUser( { name: this.name, password: this.password, email: this.email, username: this.username } );
                     // this.$router.push( { name: 'home' } );
                     this.notificationSuccess( this.$t( 'alerts.successfullyRegistered' ) );

@@ -3,24 +3,27 @@
         <div class="d-flex justify-center  mb-10">
             <h1>User Profile</h1>
         </div>
+        <div class="user-profile-informations ml-10">
         <div class="d-flex align-center">
-            <h3 class="mr-2">
+            <p class="mr-2">
                 Name:
-            </h3>
-            <h3> {{ getLoggedUser.name }} </h3>
+            </p>
+            <p> {{ getLoggedUser.name }} </p>
         </div>
         <div class="d-flex align-center">
-            <h3 class="mr-2">
+            <p class="mr-2">
                 Email:
-            </h3>
-            <h3> {{ getLoggedUser.email }} </h3>
+            </p>
+            <p> {{ getLoggedUser.email }} </p>
         </div>
         <div class="d-flex align-center">
-            <h3 class="mr-2">
+            <p class="mr-2">
                 Username:
-            </h3>
-            <h3> {{ getLoggedUser.username }} </h3>
+            </p>
+            <p> {{ getLoggedUser.username }} </p>
         </div>
+        </div>
+
 
         <button @click="openEditProfile">
             Edit profile
@@ -64,3 +67,10 @@
         }
     } );
 </script>
+
+
+<style lang="scss" scoped>
+    .user-profile-informations {
+        font-size: 24px !important;
+    }
+</style>

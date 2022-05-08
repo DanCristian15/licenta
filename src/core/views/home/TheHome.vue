@@ -16,6 +16,7 @@
 
             eBid also offers competitive fees together with great selling features that bring your listing(s) to a very wide audience provided you have a seller plus account.
         </p>
+        <Timer />
         <p class="the-home-page__categories-title">
             CATEGORIES
         </p>
@@ -34,13 +35,15 @@
     import ImageMasonry from '@core/shared/components/images/ImageMasonry.vue';
     import HomePageBanner from '@core/shared/components/banners/HomePageBanner.vue';
     import Swiper from '@core/shared/components/images/Swiper.vue';
+    import Timer from '@core/shared/components/timer/Timer.vue'
 
 
     export default ( {
         components: {
             HomePageBanner,
             ImageMasonry,
-            Swiper
+            Swiper,
+            Timer
         },
         data: () => {
             return {

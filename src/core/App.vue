@@ -1,6 +1,7 @@
 <template>
     <v-app>
         <component :is="layout">
+            <!-- <p>{{this.dataDeAzi.getHours() + ':' + this.dataDeAzi.getMinutes() + ':' + this.dataDeAzi.getSeconds() }}</p> -->
             <router-view />
             <v-overlay :value="loadingOverlay" color="white" opacity="0.8" z-index="5002">
                 <DataLoading size="40" />
@@ -29,7 +30,7 @@
     /**
      * TODO HACK ionut
      * after we remove the pattern index.js we end up in a situatie where we have an css conflict order between chunks
-     * for now we will "hide" that and resurect ticket 
+     * for now we will "hide" that and resurect ticket
      * https://boatyardx.atlassian.net/browse/GL-1221
      */
     // eslint-disable-next-line no-unused-vars
@@ -40,6 +41,7 @@
     import EventHealthCheckWarningCardVariant1 from '@core/shared/components/notifications/EventHealthCheckWarningCardVariant1.vue';
     // eslint-disable-next-line no-unused-vars
     import EventHealthCheckWarningCardVariant2 from '@core/shared/components/notifications/EventHealthCheckWarningCardVariant2.vue';
+import date from './utils/constants/date';
 
     Vue.component( 'default-layout', DefaultLayout );
     Vue.component( 'blank-layout', BlankLayout );
@@ -55,11 +57,16 @@
             NotificationContainer,
             DataLoading
         },
+        data() {
+            return {
+                dataDeAzi: ''
+            }
+        },
         computed: {
             ...mapGetters( {
                 userEmail: 'user/profile/email',
                 userHasCurrentLocationPosition: 'user/location/hasCurrentPosition',
-                userCurrentCityLocation: 'user/location/currentCityLocation'
+                userCurrentCityLocation: 'user/location/currentCityLocation',
             } ),
             ...mapState( {
                 initialSearch: state => state[STORE_SEARCH_STATE].initial,
@@ -73,9 +80,18 @@
                 }
 
                 return 'default-layout';
-            }
+            },
         },
         methods: {
+            cons() {
+                setInterval(() => {
+                    this.dataDeAzi = new Date();
+                    this.commitSetThisMoment(this.dataDeAzi);
+                    this.commitRemainingTime()
+
+                }, 1000),
+                console.log(this.dataDeAzi)
+            },
             ...mapActions( {
                 clearCurrentSearchState:            `${STORE_SEARCH_STATE}/clearCurrent`,
                 getUserProfile:                     'user/profile/get',
@@ -84,7 +100,9 @@
                 updateInitialSearchState:           `${STORE_SEARCH_STATE}/updateInitial`,
                 updateCurrentSearchState:           `${STORE_SEARCH_STATE}/update`,
                 updateTopEventsFilter:              'topEvents/updateFilter',
-                getUserCurrentLocation:             'user/location/getCurrentLocation'
+                getUserCurrentLocation:             'user/location/getCurrentLocation',
+                commitSetThisMoment:                'addProduct/commitSetThisMoment',
+                commitRemainingTime:                'addProduct/commitSetRemainingTime'
             } ),
             loadInitialSearchFromQuery( query ) {
                 return this.updateInitialSearchState( searchUtilsNormalizeInitialStateFromQuery ( query ) );
@@ -106,16 +124,16 @@
                 this.$modal.show(
                     modalConfig.component,
                     Object.assign( {}, modalConfig.props, to.params ),
-                    Object.assign( 
+                    Object.assign(
                         {
                             'no-click-animation': true,
                             persistent: true,
                             scrollable: true,
                             'hide-overlay': true,
                             'retain-focus': false,
-                        }, 
-                        modalConfig.config, 
-                        this.$vuetify.breakpoint.mdAndUp ? modalConfig.configDesktop : modalConfig.configMobile 
+                        },
+                        modalConfig.config,
+                        this.$vuetify.breakpoint.mdAndUp ? modalConfig.configDesktop : modalConfig.configMobile
                     )
                 );
             },
@@ -133,7 +151,7 @@
                     if ( from.name === 'cartCheckout' && to.name !== 'cartCheckout' ) {
                         this.instantDeleteCurrentCart( );
                     }
-                    
+
                     if ( to.meta.type === 'modal' ) {
                         this.showModal( to );
                     } else {
@@ -148,6 +166,7 @@
             this.instantDeleteAllCartsIfExpired( );
             this.getUserProfile( this.userEmail );
             this.getUserCurrentLocation( { } );
+            this.cons();
 
             this.$router.onReady( () => {
                 this.loadInitialSearchFromQuery( this.$route.query );

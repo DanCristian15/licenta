@@ -10,7 +10,8 @@ export default  {
             name: '',
             email: '',
             password: '',
-            username: ''
+            username: '',
+            id: ''
         }
     },
     getters: {
@@ -27,6 +28,7 @@ export default  {
             state.loggedUser.email = payload.email;
             state.loggedUser.password = payload.password;
             state.loggedUser.username = payload.username;
+            state.loggedUser.id = payload.id
             state.isLogged = true;
         },
         unsetLoggedUser: ( state ) => {
@@ -34,6 +36,7 @@ export default  {
             state.loggedUser.email = '';
             state.loggedUser.password = '';
             state.loggedUser.username = '';
+            state.loggedUser.id = ''
             state.isLogged = false;
         },
 

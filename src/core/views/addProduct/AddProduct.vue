@@ -41,9 +41,9 @@
                     (All the prices will be condidered in USD)
                 </label>
                 <v-text-field
-                    v-model="startBid"
+                    v-model="lastBid"
                     :error-messages="[
-                        ...requiredError({ field: 'startBid' })
+                        ...requiredError({ field: 'lastBid' })
                     ]"
                     placeholder="Start bid" />
 
@@ -81,7 +81,7 @@
                 condition: '',
                 geographicOrigin: '',
                 years: '',
-                startBid: '',
+                lastBid: '',
                 category: '',
                 description: '',
                 categories: categories,
@@ -102,7 +102,7 @@
                 years: {
                     required,
                 },
-                startBid: {
+                lastBid: {
                     required,
                 },
                 category: {
@@ -131,20 +131,26 @@
             },
             validate( ) {
                 this.$v.$touch( );
+                let i = 100;
 
                 if ( !this.$v.$invalid ) {
+
+
                     console.log( this.$data, this.productName, this.category, this.years, this.description );
                     this.commitAddProduct( {
                         productName: this.productName,
                         condition: this.condition,
                         years: this.years,
                         geographicOrigin: this.geographicOrigin,
-                        startBid: this.startBid,
+                        lastBid: this.lastBid,
                         category: this.category,
                         description: this.description,
                         sellerEmail: this.getLoggedUser.email,
                         sellerName: this.getLoggedUser.name
+
+
                     } );
+
                     this.notificationSuccess( this.$t( 'alerts.successfullyRegistered' ) );
                 }
             },

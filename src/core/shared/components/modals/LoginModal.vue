@@ -151,7 +151,7 @@
                 users.forEach( user => {
                     if ( user.email === this.email &&  user.password === this.password ) {
                         match = true;
-                        this.commitSetLoggedUser( { name: user.name, password: user.password, username: user.username, email: user.email } );
+                        this.commitSetLoggedUser( { name: user.name, password: user.password, username: user.username, email: user.email , id: user.id} );
                     }
                 } );
 
