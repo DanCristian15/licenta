@@ -1,5 +1,4 @@
 const STORE_NAME = 'profile';
-import apiServiceUser from '@core/api/apiServiceUser';
 import mutationTypes from '@core/helpers/storeFactories/helpers/mutationTypes';
 import LogService from '@services/LogService';
 

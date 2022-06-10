@@ -57,6 +57,11 @@
                     v-model="description"
                     placeholder="Description"
                     hint="Hint text" />
+                <input
+                type="file"
+                @change="saveImage">
+
+
             </div>
             <BaseButton block :placeholder="$t('subscribeButton')" @click="validate" />
             <!-- <div> {{ getUsers() }} </div> -->
@@ -69,6 +74,7 @@
     import { mapActions, mapGetters } from 'vuex';
     import BaseButton from '@/core/shared/components/buttons/BaseButton.vue';
     import { categories } from '@core/shared/mockdata/categories.js';
+    import { addProduct } from '@core/services/userService.js'
 
     export default ( {
         name: 'AddProduct',
@@ -85,7 +91,8 @@
                 category: '',
                 description: '',
                 categories: categories,
-                seller: ''
+                seller: '',
+                image: ''
             };
         },
         validations( ) {
@@ -113,7 +120,8 @@
         computed: {
             ...mapGetters( {
                 getUsers: 'user/signUp/getUsers',
-                getLoggedUser: 'user/loggedUser/getLoggedUser'
+                getLoggedUser: 'user/loggedUser/getLoggedUser',
+                getToken: 'user/loggedUser/getToken'
 
             } ),
         },
@@ -123,9 +131,17 @@
                 commitAddProduct: 'addProduct/commitAddProduct'
             } ),
 
+            saveImage(e) {
+                const reader = new FileReader();
+                reader.readAsDataURL(e.target.files[0]);
+                reader.onload = () => {
+                     this.image= reader.result;
+                };
+            },
+
             requiredError( { field } ) {
                 let errors = [];
-                if ( !this.$v[field].$dirty ) return errors;
+                if ( !this.$v[field].$dirty ) return errors;ß
                 !this.$v[field].required   && errors.push ( this.$t( '_common:formErrors.requiredField', { field: this.$t( `_common:form.labels.${field}` ), interpolation : { escapeValue: false } } ) );
                 return errors;
             },
@@ -147,11 +163,20 @@
                         description: this.description,
                         sellerEmail: this.getLoggedUser.email,
                         sellerName: this.getLoggedUser.name
-
-
                     } );
 
-                    this.notificationSuccess( this.$t( 'alerts.successfullyRegistered' ) );
+                    addProduct({
+                        productName: this.productName,
+                        condition: this.condition.toUpperCase(),
+                        year: this.years,
+                        geographicOrigin: this.geographicOrigin,
+                        bid: this.lastBid,
+                        category: this.category,
+                        description: this.description,
+                        ownerUser: this.getLoggedUser.username,
+                        imageSrc: this.image
+                    }, this.getToken).then((res)=> console.log(res.data))
+                    this.notificationSuccess( 'Product successfully added');
                 }
             },
         }

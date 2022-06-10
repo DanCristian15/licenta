@@ -30,7 +30,8 @@ const ProductDetailsPage            = () => import( '@core/views/product/Product
 const SignUp                        = () => import( '@core/views/signUp/SignUp.vue' );
 const AddProduct                    = () => import( '@core/views/addProduct/AddProduct.vue' );
 const LoggedUserProfile             = () => import( '@core/views/loggedUserProfile/LoggedUserProfile.vue' );
-const BidPayment                    = () => import ( '@core/shared/components/bidPayment/BidPayment.vue' );
+const BidPayment                    = () => import( '@core/shared/components/bidPayment/BidPayment.vue' );
+const Notifications                    = () => import ( '@core/views/notifications/Notifications.vue' );
 
 const TheConfig                     = ( ) => import( '@views/app/TheConfig' );
 
@@ -81,6 +82,15 @@ export default [
         path: '/loggedUserProfile',
         name: 'loggedUserProfile',
         component: LoggedUserProfile,
+        meta: {
+            isPublic: true
+        },
+        props: true
+    },
+    {
+        path: '/notifications',
+        name: 'notifications',
+        component: Notifications,
         meta: {
             isPublic: true
         },

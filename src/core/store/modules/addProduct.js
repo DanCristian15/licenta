@@ -1,3 +1,4 @@
+import { intervalToDuration } from "date-fns";
 import { forEach } from "lodash";
 
 const STORE_NAME = 'addProduct';
@@ -15,7 +16,10 @@ export default {
         }
     },
     getters: {
-        getProducts: state => state.products
+        getProducts: state => state.products,
+        getProductById: ( state ) => id => {
+            return state.products.find( product => product.productId = id ).remainingSeconds;
+        }
     },
     mutations: {
         addProduct:( state, payload ) => {

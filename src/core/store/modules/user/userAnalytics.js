@@ -5,7 +5,6 @@ import {
     transformFromTypeApi as entityUtilsTransformFromTypeApi
 } from '@core/utils/entityUtils';
 import { isStoreOutDated as storeUtilsIsStoreOutDated } from '@core/utils/storeUtils';
-import apiServiceUser from '@core/api/apiServiceUser';
 import mutationTypes from '@core/helpers/storeFactories/helpers/mutationTypes';
 import { normalizeEvent } from '@core/data/response/normalizeEvent';
 import LogService from '@services/LogService';

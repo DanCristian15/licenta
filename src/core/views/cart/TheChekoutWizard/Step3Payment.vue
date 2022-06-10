@@ -93,7 +93,6 @@
         calculateAmountRemainingFromTotal as bonusPointsUtilsCalculateAmountRemainingFromTotal
     } from '@core/utils/bonusPointsUtils';
     import paymentConstants from '@utils/constants/payment';
-    import apiPaymentClient from '@core/api/apiPaymentClient';
     import DataLoadingOverlay from '@core/shared/components/loading/DataLoadingOverlay.vue';
     import PaymentProviderDownWarningContainer from '@core/shared/components/notifications/PaymentProviderDownWarningContainer.vue';
     import ButtonBack from '@core/shared/components/wizard/step/ButtonBack.vue';

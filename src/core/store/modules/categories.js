@@ -1,6 +1,5 @@
 import storeConstants from '@core/utils/constants/store';
 import { isStoreOutDated as storeUtilsIsStoreOutDated } from '@core/utils/storeUtils';
-import apiServiceCategories from '@core/api/apiServiceCategories';
 import LogService from '@services/LogService';
 
 const REFRESH_TIME = storeConstants.REFRESH_TIME;

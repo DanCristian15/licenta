@@ -1,5 +1,4 @@
 
-import apiServiceTickets from '@core/api/apiServiceTickets';
 import { normalizeTicketsList } from '@core/data/response/normalizeTicketList';
 import LogService from '@services/LogService';
 import ApiCancelService from '@services/ApiCancelService';

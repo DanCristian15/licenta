@@ -16,7 +16,6 @@
 
             eBid also offers competitive fees together with great selling features that bring your listing(s) to a very wide audience provided you have a seller plus account.
         </p>
-        <Timer />
         <p class="the-home-page__categories-title">
             CATEGORIES
         </p>
@@ -35,27 +34,55 @@
     import ImageMasonry from '@core/shared/components/images/ImageMasonry.vue';
     import HomePageBanner from '@core/shared/components/banners/HomePageBanner.vue';
     import Swiper from '@core/shared/components/images/Swiper.vue';
-    import Timer from '@core/shared/components/timer/Timer.vue'
+    import LoginModal from '@core/shared/components/modals/LoginModal.vue';
+    import {mapGetters,mapActions} from 'vuex';
 
 
     export default ( {
         components: {
             HomePageBanner,
             ImageMasonry,
-            Swiper,
-            Timer
+            Swiper
         },
         data: () => {
             return {
                 images: []
             };
         },
+
         methods: {
+             ...mapGetters( {
+                getLoggedUser: 'user/loggedUser/getLoggedUser'
+            } ),
+            ...mapActions( {
+                notificationWarning: 'notification/warning',
+            } ),
+
             goToAddProduct() {
+                if ( this.getLoggedUser().email !== '' )
                 this.$router.push( { name: 'addProduct' } );
+                else
+                {
+                    this.notificationWarning( 'You should be registered to add a product');
+                    this.$modal.show(
+                    LoginModal,
+                    {
+                        redirectRouteToAfterLogin: this.$route.params.redirectRouteToAfterLogin
+                    },
+                    {
+                        'no-click-animation': true,
+                        scrollable: true,
+                        fullscreen: false,
+                        persistent: true,
+                        'hide-overlay': false,
+                        'max-width': 500,
+                        'content-class': 'gst-v-dialog',
+                    }
+                );}
             },
             goToLoggedUserProfile() {
                 this.$router.push( { name: 'loggedUserProfile' } );
+
             }
         }
     } );

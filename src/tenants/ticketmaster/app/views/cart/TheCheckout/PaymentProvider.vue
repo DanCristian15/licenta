@@ -12,7 +12,6 @@
 
 <script>
     import { mapState } from 'vuex';
-    import apiPaymentClient from '@core/api/apiPaymentClient';
     import DataLoadingOverlay from '@/core/shared/components/loading/DataLoadingOverlay.vue';
 
     export default {

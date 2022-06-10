@@ -5,12 +5,14 @@ export default  {
     name: STORE_NAME,
     namespaced: true,
     state: {
+        token:"",
         isLogged: '',
         loggedUser: {
             name: '',
             email: '',
             password: '',
             username: '',
+            purchasedProducts: '',
             id: ''
         }
     },
@@ -21,6 +23,9 @@ export default  {
         getIsLogged( state ) {
             return state.isLogged;
         },
+        getToken( state ) {
+            return state.token;
+        }
     },
     mutations: {
         setLoggedUser: ( state, payload ) => {
@@ -29,6 +34,7 @@ export default  {
             state.loggedUser.password = payload.password;
             state.loggedUser.username = payload.username;
             state.loggedUser.id = payload.id
+            state.loggedUser.purchasedProducts = payload.purchasedProducts
             state.isLogged = true;
         },
         unsetLoggedUser: ( state ) => {
@@ -36,10 +42,13 @@ export default  {
             state.loggedUser.email = '';
             state.loggedUser.password = '';
             state.loggedUser.username = '';
-            state.loggedUser.id = ''
+            state.loggedUser.id = '',
+            state.loggedUser.purchasedProducts = []
             state.isLogged = false;
         },
-
+        addToken: ( state, payload ) => {
+            state.token = payload;
+        },
     },
     actions: {
         commitSetLoggedUser( { commit }, payload ) {
@@ -47,6 +56,9 @@ export default  {
         },
         commitUnsetLoggedUser( { commit } ) {
             commit( 'unsetLoggedUser' );
+        },
+        commitAddToken( { commit }, payload ) {
+            commit( 'addToken', payload)
         }
     }
 };

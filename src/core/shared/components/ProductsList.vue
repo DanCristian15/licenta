@@ -10,7 +10,7 @@
 <script>
     import { mapGetters } from 'vuex';
     import ProductCard from '@core/shared/components/cards/ProductCard.vue';
-
+    import {findProductByCategory} from '@core/services/userService.js'
 
     export default( {
         components: {
@@ -30,13 +30,15 @@
         },
         computed: {
             ...mapGetters( {
-                getProducts: 'addProduct/getProducts'
-
+                getProducts: 'addProduct/getProducts',
             } ),
         },
         created: function()  {
             this.category = this.$route.params.category ;
-            this.products  = this.getProducts;
+            console.log("Token",this.getToken)
+            findProductByCategory(this.$route.params.category).then((res)=>{
+                this.products = res.data;
+            })
         }
     } );
 </script>

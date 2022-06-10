@@ -61,6 +61,8 @@
     import { mapActions, mapGetters } from 'vuex';
     import HeaderVariant1 from '@core/shared/components/modals/layout/HeaderVariant1.vue';
     import CloseModalOnRouteChangeMixin from '@core/mixins/modals/CloseModalOnRouteChange';
+    import {authenticateUser, getOrdersByUser} from '@core/services/userService.js'
+    import jwtParser from '@core/utils/jwt/jwt.js'
 
     export default {
         name: 'LoginModal',
@@ -121,6 +123,7 @@
                 commitSetLoggedUser         : 'user/loggedUser/commitSetLoggedUser',
                 userLogin                   : 'user/login',
                 showLoadingOverlay          : 'appState/setLoading',
+                commitAddToken              : 'user/loggedUser/commitAddToken'
             } ),
             goToSignUpPage() {
                 this.$router.push( { name: 'signUp' } );
@@ -144,22 +147,9 @@
                 }
                 return errors;
             },
-            validate( ) {
+            validate() {
                 this.$v.$touch();
-                let users = this.getUsers;
-                let match = false;
-                users.forEach( user => {
-                    if ( user.email === this.email &&  user.password === this.password ) {
-                        match = true;
-                        this.commitSetLoggedUser( { name: user.name, password: user.password, username: user.username, email: user.email , id: user.id} );
-                    }
-                } );
-
-                if ( !match )
-                    return this.$v.invalid;
-                else
-                    return !this.$v.invalid;
-
+                return !this.$v.invalid;
 
             },
             async onLoginSubmit( event ) {
@@ -167,7 +157,29 @@
                 event.stopPropagation( );
 
                 if ( this.validate() ) {
+                    authenticateUser({
+                        email:this.email,
+                        password:this.password
+                    }).then((res)=>{
+                        if(res.data.token !== 'ERROR'){
+
+                            const userParsed = jwtParser(res.data.token)
+                            this.commitAddToken(res.data.token);
+                            getOrdersByUser(userParsed.sub, res.data.token).then((ress)=> {
+                                this.commitSetLoggedUser( { name: userParsed.name, password:"", username: userParsed.sub, email: userParsed.email , id: "", purchasedProducts: ress.data} );
+                                this.$emit( 'close' );
+                            })
+                        }
+                        else {
+                            alert('Invalid credentials');
+                        }
+                    }).catch((error)=> {
+                    console.log(error)
+                    alert('Invalid credentials');
+                    })
+
                     this.$router.push( { name: 'home' } );
+
                 } else {
                     this.showLoadingOverlay ( false );
                     this.$v.$reset();

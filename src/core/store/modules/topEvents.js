@@ -6,7 +6,6 @@ import {
     updateSearchWithCityLocationRange as searchObjectUtilsUpdateSearchWithCityLocationRange
 } from '@core/utils/searchObjectUtils';
 import { isStoreOutDated as storeUtilsIsStoreOutDated } from '@core/utils/storeUtils';
-import apiServiceTopEvents from '@core/api/apiServiceTopEvents';
 import { normalizeEvent } from '@core/data/response/normalizeEvent';
 import LogService from '@services/LogService';
 

@@ -1,6 +1,4 @@
-import apiConstants from '@core/utils/constants/api';
 import entityConstants from '@core/utils/constants/entity';
-import apiServiceVenues from '@core/api/apiServiceVenues';
 import LogService from '@services/LogService';
 import utils from './_utils';
 

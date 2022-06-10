@@ -16,7 +16,7 @@
                     <div class="characteristic-container ml-4">
                         Last bid
                         <p>
-                            {{ this.product.lastBid }} $
+                            {{ this.product.bid }} $
                         </p>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                     <div class="right-characteristic characteristic-container">
                         Year
                         <p>
-                            {{ this.product.years }}
+                            {{ this.product.year }}
                         </p>
                     </div>
                     <div class="characteristic-container ml-4">
@@ -34,19 +34,20 @@
                         </p>
                     </div>
                 </div>
-                <img class="product-details-page__image" :src="this.product.src" alt="" />
+                <img class="product-details-page__image" :src="`data:image/png;base64,${product.imageSrc}`" alt="" />
             </div>
             <div class="product-details-page__additional-informations d-flex flex-column ml-6 align-center align-self-end">
                 <div class="product-details-page__additional-informations-timer u-width-100 d-flex justify-center pt-3">
-                    <p>{{23 - this.remainingHours}}:{{ 59 - this.remainingMinutes}}:{{ 59 - this.remainingSeconds}} </p>
+                    <p v-if="product.isProductSoldOut"> Sold Out</p>
+                    <p v-else>Remaining time {{this.remainingHours}}:{{this.remainingMinutes}}:{{this.remainingSeconds}} </p>
                 </div>
                 <div class="product-details-page__additional-informations-seller-profile u-height-100 u-width-100 d-flex flex-column align-center">
                     <div class="product-details-page__seller-profile-informations d-flex flex-column align-center pt-5 pb-5">
                         <h3>Seller profile</h3>
                         <div class="product-details-page__seller-profile-image d-flex align-center mb-3">
-                            <img width="50" :src="product.src" alt="" />
+                            <img width="50" :src="`data:image/png;base64,${product.imageSrc}`" />
                             <p class="mt-3 ml-2">
-                                {{ product.sellerName }}
+                                {{ product.ownerUser.username }}
                             </p>
                         </div>
 
@@ -150,14 +151,24 @@
             };
         },
         methods: {
-             updateRemainingTime() {
-
-                setInterval(() => {
-                    this.remainingSeconds = this.product.remainingSeconds % 60;
-                    this.remainingMinutes = this.product.remainingMinutes  % 60 ;
-                    this.remainingHours = this.product.remainingHours  % 24
+           updateRemainingTime() {
+                const date = this.product.dateAdded.split('T')[0]
+                const time = this.product.dateAdded.split('T')[1].split(':')
+                let bidMoment = new Date(this.product.dateAdded.split('T')[0])
+                bidMoment.setSeconds(time[2])
+                bidMoment.setMinutes(time[1])
+                bidMoment.setHours(time[0])
+                console.log(bidMoment)
+                    setInterval(() => {
+                    let thisMoment = new Date();
+                    const difference = new Date(thisMoment - bidMoment);
+                    this.remainingSeconds =59 - difference.getSeconds();
+                    this.remainingMinutes = 59 - difference.getMinutes();
+                    this.remainingHours = 23 - difference.getUTCHours();
+                    if (this.remainingSeconds === 0 && this.remainingMinutes === 0 && this.remainingHours === 0) {
+                        this.isProductSoldOut = true
+                    }
                 }, 1000)
-
             },
             goToBidPaymentQuick( bid ) {
                 // console.log( bid );

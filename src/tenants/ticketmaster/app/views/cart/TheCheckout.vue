@@ -83,7 +83,6 @@
     import productsConstants from '@core/utils/constants/products';
     import apiConstants from '@core/utils/constants/api';
     import { getFromApiResponse as notificationUtilsGetFromApiResponse } from '@core/utils/notificationUtils';
-    import apiPaymentClient from '@core/api/apiPaymentClient';
     import apiServicePayments from '@core/api/apiServicePayments';
     import statesStoreModule from '@core/store/modules/states';
     import countriesStoreModule from '@core/store/modules/countries';

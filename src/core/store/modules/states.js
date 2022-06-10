@@ -1,4 +1,3 @@
-import apiServiceStates from '@core/api/apiServiceStates';
 import storeModuleFactory from '@core/helpers/storeModuleFactory';
 
 const STORE_NAME = 'states';

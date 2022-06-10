@@ -1,4 +1,3 @@
-import apiServiceCountries from '@core/api/apiServiceCountries';
 import { createModuleView } from '@core/helpers/storeFactories/read/readStoreAllItemsFactory';
 
 const STORE_NAME = 'countries';

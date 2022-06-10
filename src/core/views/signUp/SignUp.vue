@@ -65,7 +65,7 @@
                     ]"
                     placeholder="Confirm email" />
 
-                <BaseButton block :placeholder="$t('subscribeButton')" @click="validate" />
+                <BaseButton block :placeholder="$t('subscribeButton')" @click="onSignUpSubmitDo" />
                 <p> {{ getUsers }} </p>
             </div>
         </v-form>
@@ -76,6 +76,8 @@
     import { required, email, minLength, sameAs } from 'vuelidate/lib/validators';
     import { mapActions, mapGetters } from 'vuex';
     import BaseButton from '@/core/shared/components/buttons/BaseButton.vue';
+    import {registerUser} from '@core/services/userService.js'
+
 
     const validationNumber = ( value ) => /\d/.test( value );
     const startsWithCapitalLetter = ( value ) => value[0]=== value[0].toUpperCase();
@@ -179,19 +181,44 @@
                 this.$v.$touch( );
                 // console.log( this.getUsers );
                 let users = this.getUsers;
-                let doesntMatch = true;
-                users.forEach( user => {
-                    if ( this.email === user.email || this.username === user.username ) {
-                        doesntMatch = false;
-                    }
-                } );
 
-                if ( !this.$v.$invalid && doesntMatch === true ) {
-                    this.commitAddUser( { name: this.name, password: this.password, email: this.email, username: this.username } );
-                    // this.$router.push( { name: 'home' } );
-                    this.notificationSuccess( this.$t( 'alerts.successfullyRegistered' ) );
-                }
+                return !this.$v.invalid
+
+
+
+                // let doesntMatch = true;
+                // users.forEach( user => {
+                //     if ( this.email === user.email || this.username === user.username ) {
+                //         doesntMatch = false;
+                //     }
+                // } );
+
+                // if ( !this.$v.$invalid && doesntMatch === true ) {
+                //     this.commitAddUser( { name: this.name, password: this.password, email: this.email, username: this.username } );
+                //     // this.$router.push( { name: 'home' } );
+                //     this.notificationSuccess( 'Successfully registered user!' );
+
+                // }
             },
+            onSignUpSubmitDo() {
+                if (this.validate()) {
+                    registerUser({
+                        username:this.username,
+                        password:this.password,
+                        email:this.email,
+                        name:this.name
+                     }).then((res)=> {
+                        if(res.data === "SUCCESS"){
+                        this.$router.push( { name: 'home' } );
+                        this.notificationSuccess( 'Successfully registered user!' );
+                    }
+                }).catch(() => {
+                    alert('acest username sau email este deja folosit')
+                })
+                }
+                else
+                alert('nu-i bine')
+            }
         }
     } );
 </script>

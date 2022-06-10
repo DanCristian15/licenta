@@ -21,14 +21,16 @@ export default {
                 'password': payload.password,
                 'email': payload.email,
                 'username': payload.username,
-                'notifications': [],
-                'id': Math.random()
+                // 'notifications': [],
+                'id': Math.random(),
+                'purchasedProducts': []
             } );
         },
-        setUserNotifications: ( state, payload ) => {
+
+        setUserPurchasedProducts: ( state, payload ) => {
             state.users.forEach( user => {
                 if ( user.id === payload.lastBidder ) {
-                    user.notifications.push( `You got the the ${payload.productName} at price of ${payload.lastBid}` );
+                    user.purchasedProducts.push( payload)
                 }
             })
         }
@@ -37,8 +39,8 @@ export default {
         commitAddUser( { commit }, payload ) {
             commit( 'addUser', payload );
         },
-        commitSetUserNotifications( { commit }, payload ) {
-            commit( 'setUserNotifications', payload );
+        commitSetUserPurchasedProducts( { commit }, payload ) {
+            commit( 'setUserPurchasedProducts', payload );
         }
     }
 

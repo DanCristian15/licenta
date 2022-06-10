@@ -127,7 +127,8 @@
             }),
              ...mapActions({
                 commitSetProductBid: 'addProduct/commitSetProductBid',
-                commitSetLastBidder: 'addProduct/commitSetLastBidder'
+                commitSetLastBidder: 'addProduct/commitSetLastBidder',
+                notificationSuccess: 'notification/success',
             }),
             cons() {
                 console.log( this.name, this.cardNumber, this.cvv, this.month, this.year );
@@ -166,13 +167,14 @@
                 }
                 else {
                     this.commitSetProductBid(this.$route.params);
-                    this.commitSetLastBidder(lastBidderPayload)
+                    this.commitSetLastBidder(lastBidderPayload);
+                    this.notificationSuccess( 'Your bid was registered');
                 }
             }
         },
         computed: {
              ...mapGetters( {
-                getProducts: 'addProduct/getProducts'
+                getProducts: 'addProduct/getProducts',
             } ),
         },
         mounted() {
@@ -186,8 +188,11 @@
 
 <style lang="scss" scoped>
 .bid-payment {
-    height: 60vh;
-    width: 80%;
+    border-radius: 10px !important;
+    border: 1px solid #e2cece;
+    margin-top: 70px;
+    height: 37vh;
+    width: 61%;
     background: #F3F3F3;
 }
 </style>

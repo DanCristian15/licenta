@@ -1,5 +1,4 @@
 import { getFromApiResponse as notificationUtilsGetFromApiResponse } from '@core/utils/notificationUtils';
-import apiServiceCart from '@core/api/apiServiceCart';
 import { normalizeCart } from '@core/data/response/normalizeCart';
 import { normalizeShippingOption } from '@/core/data/response/normalizeShippingOption';
 import LogService from '@services/LogService';

@@ -3,7 +3,6 @@ import entityConstants from '@core/utils/constants/entity';
 import {
     transformToTypeApi as entityUtilsTransformToTypeApi
 } from '@core/utils/entityUtils';
-import apiServiceUser from '@core/api/apiServiceUser';
 import { normalizeEvent } from '@core/data/response/normalizeEvent';
 
 const MAX_LAST_CITIES = 4;

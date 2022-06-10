@@ -4,7 +4,6 @@ import memoize from 'lodash/memoize';
 import wrap from 'lodash/wrap';
 import property from 'lodash/property';
 import entityConstants from '@core/utils/constants/entity';
-import apiServiceFavourites from '@core/api/apiServiceFavourites';
 import { normalizeEvent } from '@core/data/response/normalizeEvent';
 import LogService from '@services/LogService';
 

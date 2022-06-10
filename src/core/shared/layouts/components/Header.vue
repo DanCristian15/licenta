@@ -21,7 +21,12 @@
         </v-fade-transition>
         <v-spacer />
         <template v-if="$vuetify.breakpoint.mdAndUp">
-            <MainMenu v-if="showMainMenu" />
+            <div @click="goToNotificationsPage" class="mr-auto" :class="getLoggedUser.purchasedProducts.length - this.openedNotifications !== 0 ? 'gst-pulse-animation': ''" >
+                <IconBell1  class="icon-bell mr-4"/>
+                 <div class="gst-notifications-number">{{getLoggedUser.purchasedProducts.length - this.openedNotifications}}</div>
+                 </div>
+
+            <!-- <MainMenu v-if="showMainMenu" /> -->
             <LoginButtonVariant1 v-if="!userIsAuth" :data-test-id="$testId('login')" @click.native="showModal" />
             <TenantUserDropdownMenu v-if="userIsAuth && userDetail" :user-detail="userDetail" />
         </template>
@@ -42,6 +47,7 @@
     import LoginButtonVariant1 from '@core/shared/components/buttons/LoginButtonVariant1.vue';
     import SearchKeywordWithAutocomplete from '@core/shared/components/search/SearchKeywordWithAutocomplete.vue';
     import LoginModal from '@core/shared/components/modals/LoginModal.vue';
+    import IconBell1 from '@core/shared/components/icons/IconBell1.vue';
 
     export default {
         name: 'TheHeader',
@@ -49,7 +55,8 @@
             BurgerMenu,
             MainMenu,
             LoginButtonVariant1,
-            SearchKeywordWithAutocomplete
+            SearchKeywordWithAutocomplete,
+            IconBell1
         },
         testIdOptions: {
             keyPrefix: 'layout.default.theHeader'
@@ -67,12 +74,15 @@
         data: () => ( {
             menuExpanded: false,
             userMenuExpanded: false,
-            isSearchFocused: false
+            isSearchFocused: false,
+            openedNotifications: 0
         } ),
         computed: {
             ...mapGetters( {
                 userIsAuth: 'user/profile/isAuth',
-                userDetail: 'user/profile/getDetail'
+                userDetail: 'user/profile/getDetail',
+                getProducts: 'addProduct/getProducts',
+                getLoggedUser: 'user/loggedUser/getLoggedUser'
             } ),
             keyword: {
                 get( ) {
@@ -92,8 +102,14 @@
             }
         },
         methods: {
+
+            goToNotificationsPage() {
+                this.$router.push({name: 'notifications'});
+                this.openedNotifications = this.getLoggedUser.purchasedProducts.length
+            },
             ...mapActions( {
-                updateSearch: 'searchState/update'
+                updateSearch: 'searchState/update',
+                commitSetUserPurchasedProducts: 'user/signUp/commitSetUserPurchasedProducts'
             } ),
             showModal() {
                 this.$modal.show(
@@ -125,12 +141,38 @@
             onBlurSearchDo() {
                 this.isSearchFocused = false;
             }
+        },
+        created() {
+            setInterval(()=> {
+                this.getProducts.forEach(product => {
+                    if (product.remainingSeconds > 29 ) {
+                        product.isProductSoldOut = true;
+                    }
+                    if (product.remainingSeconds === 29 ) {
+                        this.commitSetUserPurchasedProducts(product)
+                    }
+                });
+            }, 1000)
         }
     };
 </script>
 <style lang="scss">
     @import "@scssMixins";
     @import "@scssVariables";
+
+    @keyframes pulseAnimation {
+    0% {
+        transform: scale( 1 );
+    }
+
+    50% {
+        transform: scale( 1.12 );
+    }
+
+    100% {
+        transform: scale( 1 );
+    }
+}
 
     .gst-header {
         background: linear-gradient( to right, #FFFFFF 0%, #000000 100% ) !important;
@@ -141,6 +183,35 @@
                     max-width: 158px;
                 }
             }
+        }
+
+        .gst-notifications-number {
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 24px;
+            position: relative;
+            left: 12px;
+        }
+
+        .gst-pulse-animation {
+            animation: 0.75s pulseAnimation ease-out infinite;
+        }
+
+        .icon-bell {
+            fill: #f5f5cb;
+            top: 13px;
+            position: relative;
+        }
+
+        .icon-bell:hover {
+            fill: #eded73;
+            cursor: pointer;
         }
 
         .gst-header__search-keyword-with-autocomplete {

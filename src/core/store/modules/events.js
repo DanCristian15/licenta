@@ -1,7 +1,6 @@
 import apiConstants from '@core/utils/constants/api';
 import entityConstants from '@core/utils/constants/entity';
 import searchConstants from '@core/utils/constants/search';
-import apiServiceEvents from '@core/api/apiServiceEvents';
 import { normalizeEvent } from '@core/data/response/normalizeEvent';
 import { normalizeEventDetails } from '@core/data/response/normalizeEventDetails';
 import { normalizeEventInformationDetails } from '@core/data/response/normalizeEventInformationDetails';

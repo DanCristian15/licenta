@@ -1,7 +1,7 @@
 <template>
-    <div v-if="category === product.category" class="product-card" @click="ret">
+    <div v-if="category === product.category" class="product-card" :disabled="product.isProductSoldOut" :class="isProductSoldOut ? 'disabled' : ''"  @click="ret">
         <div class="product-card_image-container">
-            <img class="product-card_image" :src="product.src" alt="" />
+            <img class="product-card_image" :src="`data:image/png;base64,${product.imageSrc}`" alt="" />
         </div>
         <div class="product-card_name">
             <p>
@@ -13,18 +13,18 @@
                 <div class="product-card-informations_price ">
                     <p>Current bid</p>
                     <p>
-                        {{ product.lastBid }} $
+                        {{ product.bid }}
                     </p>
                 </div>
                 <div class="product-card-informations_star-rating">
                     <p>Seller rating</p>
-                    <StarRating :value="product.sellerRating" />
+                    <StarRating value="2" />
                 </div>
             </div>
             <div class="product-card_remaining-time">
 
-                <p v-if="this.isProductSoldOut"> Sold Out</p>
-                 <p v-else>Remaining time {{23 - this.remainingHours}}:{{ 59 - this.remainingMinutes}}:{{ 59 - this.remainingSeconds}} </p>
+                <p v-if="isProductSoldOut" class="soldOut"> Sold Out</p>
+                <p v-else>Remaining time {{this.remainingHours}}:{{this.remainingMinutes}}:{{this.remainingSeconds}} </p>
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
 <script>
     import StarRating from '@core/shared/components/misc/StarRating.vue';
     import Timer from '@core/shared/components/timer/Timer.vue'
-    import { mapActions} from 'vuex';
+    import { mapActions, mapGetters} from 'vuex';
 
     export default ( {
         data() {
@@ -50,19 +50,6 @@
                 isProductSoldOut: false
             }
         },
-        watch: {
-            remainingSeconds: {
-                handler(value) {
-                    if (value >= 30) {
-                        this.isProductSoldOut = true;
-                    }
-                    if(value === 30) {
-                        this.commitSetUserNotifications(this.product)
-                    }
-                }
-            }
-
-        },
         components: {
             StarRating,
             Timer
@@ -77,19 +64,34 @@
                 default: ''
             }
         },
+        computed: {
+            ...mapGetters({
+                getProductById: 'addProduct/getProductById'
+            }),
+
+        },
         methods: {
              ...mapActions({
                 commitSetProductBid: 'addProduct/commitSetProductBid',
-                commitSetLastBidder: 'addProduct/commitSetLastBidder',
-                commitSetUserNotifications: 'user/signUp/commitSetUserNotifications'
+                commitSetLastBidder: 'addProduct/commitSetLastBidder'
             }),
             updateRemainingTime() {
-
-                setInterval(() => {
-                    this.remainingSeconds = this.product.remainingSeconds % 60;
-                    this.remainingMinutes = this.product.remainingMinutes  % 60 ;
-                    this.remainingHours = this.product.remainingHours  % 24
-
+                const date = this.product.dateAdded.split('T')[0]
+                const time = this.product.dateAdded.split('T')[1].split(':')
+                let bidMoment = new Date(this.product.dateAdded.split('T')[0])
+                bidMoment.setSeconds(time[2])
+                bidMoment.setMinutes(time[1])
+                bidMoment.setHours(time[0])
+                console.log(bidMoment)
+                    setInterval(() => {
+                    let thisMoment = new Date();
+                    const difference = new Date(thisMoment - bidMoment);
+                    this.remainingSeconds =59 - difference.getSeconds();
+                    this.remainingMinutes = 59 - difference.getMinutes();
+                    this.remainingHours = 23 - difference.getUTCHours();
+                    if (this.remainingSeconds === 0 && this.remainingMinutes === 0 && this.remainingHours === 0) {
+                        this.isProductSoldOut = true
+                    }
                 }, 1000)
             },
             ret() {
@@ -98,6 +100,7 @@
             }
         },
          created: function()  {
+             console.log(this.product)
             this.updateRemainingTime()
         }
     } );
@@ -114,6 +117,18 @@
     background-color: #F1F1EE;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-direction: column;
+}
+
+.disabled {
+    pointer-events: none;
+
+    .soldOut {
+        color: red
+    }
+
+    p {
+        color: red;
+    }
 }
 
 .product-card:hover {

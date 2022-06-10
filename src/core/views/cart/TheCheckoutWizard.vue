@@ -88,8 +88,7 @@
         sort as shippingOptionsUtilsSort,
         findOneElectronicTicketItem as shippingOptionsUtilsFindOneElectronicTicketItem
     } from '@core/utils/shippingOptionsUtils';
-    import apiPaymentClient from '@core/api/apiPaymentClient';
-    import apiServicePayments from '@core/api/apiServicePayments';
+
     import statesStoreModule from '@core/store/modules/states';
     import countriesStoreModule from '@core/store/modules/countries';
     import WizardControl from '@core/shared/components/wizard/Control.vue';
