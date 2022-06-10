@@ -11,7 +11,9 @@ const authHeader = (tokenParam) => {
     }
 }
 
-export const addProduct = ( productDto, token ) => axiosInstance.post( "/product/add", productDto, {headers:authHeader(token)} )
+export const addProduct = ( productDto, token ) => axiosInstance.post( "/product/add", productDto, { headers: authHeader( token ) } )
+
+export const bidDto = ( bidDto, token ) => axiosInstance.post( "/product/add/bid", bidDto, {headers:authHeader(token)} )
 
 export const authenticateUser = ( credentialsDto ) => axiosInstance.post( "/authenticate", credentialsDto )
 
@@ -19,4 +21,8 @@ export const registerUser = ( registerDto ) => axiosInstance.post( "/register", 
 
 export const getOrdersByUser = ( username, token ) => axiosInstance.get( "/order/find/username/" + username, { headers: authHeader( token ) } )
 
-export const findProductByCategory = ( category) => axiosInstance.get( `/product/find/category/${category}`)
+export const findProductByCategory = ( category ) => axiosInstance.get( `/product/find/category/${category}` )
+
+export const sellProduct = (productId, token) => axiosInstance.post(`/product/sell/${productId}`,null,  { headers: authHeader( token ) })
+
+export const findProductsByUsername = (username, token) => axiosInstance.get(`/product/find/username/${username}`,  { headers: authHeader( token ) })

@@ -102,7 +102,7 @@
                         Bid directly
                     </h5>
                     <div class="mb-4 ml-10 d-flex align-self-start">
-                        <form class="d-flex align-center" action="dsa">
+
                             <v-text-field
                                 v-model="directlyBid"
                                 class="bid-directly-input"
@@ -110,10 +110,10 @@
                                 label="Bid"
                                 value=""
                                 suffix="$" />
-                            <button class="bid-directly-button ml-2" @click="goToBidPaymentDirectly">
+                            <button class="bid-directly-button ml-2" @click="goToBidPaymentDirectly(directlyBid)">
                                 Place your bid
                             </button>
-                        </form>
+
                     </div>
                 </div>
             </div>
@@ -125,6 +125,8 @@
     import StarRating from '@core/shared/components/misc/StarRating.vue';
     import IconNotOk from '@core/shared/assets/icons/notok.svg';
     import IconOk from '@core/shared/assets/icons/ok.svg';
+    import { bidDto } from '@core/services/userService.js'
+    import {mapGetters, mapActions} from 'vuex'
 
     export default ( {
         components: {
@@ -150,7 +152,16 @@
                 }
             };
         },
+        computed: {
+             ...mapGetters({
+                getLoggedUser: 'user/loggedUser/getLoggedUser',
+                getToken: 'user/loggedUser/getToken'
+            }),
+        },
         methods: {
+            ...mapActions( {
+                notificationSuccess: 'notification/success',
+            } ),
            updateRemainingTime() {
                 const date = this.product.dateAdded.split('T')[0]
                 const time = this.product.dateAdded.split('T')[1].split(':')
@@ -158,7 +169,6 @@
                 bidMoment.setSeconds(time[2])
                 bidMoment.setMinutes(time[1])
                 bidMoment.setHours(time[0])
-                console.log(bidMoment)
                     setInterval(() => {
                     let thisMoment = new Date();
                     const difference = new Date(thisMoment - bidMoment);
@@ -167,15 +177,41 @@
                     this.remainingHours = 23 - difference.getUTCHours();
                     if (this.remainingSeconds === 0 && this.remainingMinutes === 0 && this.remainingHours === 0) {
                         this.isProductSoldOut = true
+                        sellProduct(this.product.productId, this.getToken)
                     }
                 }, 1000)
             },
             goToBidPaymentQuick( bid ) {
+                console.log( 'wtf', this.getLoggedUser.username,this.product.productId,bid)
+                bidDto({
+                    username: this.getLoggedUser.username,
+                    productId: this.product.productId,
+                    bid: this.product.bid + parseInt(bid)
+                },this.getToken).then(()=> {
+                    this.notificationSuccess( 'Bid successfully added');
+                    console.log(this.product.bid)
+                    this.product.bid = this.product.bid + parseInt(bid)
+                    // this.product.dateAdded = new Date().toLocaleString()
+                    console.log(this.product.dateAdded)
+                })
+                // this.notificationSuccess( 'Bid successfully added');
                 // console.log( bid );
-                this.$router.push( { name: 'bidPayment', params: { bid: bid, productId: this.product.productId } } );
+                // this.$router.push( { name: 'bidPayment', params: { bid: bid, productId: this.product.productId } } );
             },
             goToBidPaymentDirectly( bid ) {
-                this.$router.push( { name: 'bidPayment', params: { bid: this.directlyBid, productId: this.product.productId  } } );
+                // console.log( 'wtf', this.getLoggedUser().username,this.product.productId,bid)
+                bidDto({
+                    username: this.getLoggedUser.username,
+                    productId: this.product.productId,
+                    bid: this.product.bid + parseInt(bid)
+                },this.getToken).then(()=> {
+                    this.notificationSuccess( 'Bid successfully added');
+                    this.product.bid = this.product.bid + parseInt(bid)
+                    this.product.dateAdded = new Date().toLocaleString;
+                    console.log(this.product.dateAdded)
+                })
+                // this.notificationSuccess( 'Bid successfully added');
+                // this.$router.push( { name: 'bidPayment', params: { bid: this.directlyBid, productId: this.product.productId  } } );
             }
         },
         created: function()  {

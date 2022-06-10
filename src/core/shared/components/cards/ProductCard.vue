@@ -34,6 +34,7 @@
     import StarRating from '@core/shared/components/misc/StarRating.vue';
     import Timer from '@core/shared/components/timer/Timer.vue'
     import { mapActions, mapGetters} from 'vuex';
+    import {sellProduct} from '@core/services/userService.js'
 
     export default ( {
         data() {
@@ -66,7 +67,8 @@
         },
         computed: {
             ...mapGetters({
-                getProductById: 'addProduct/getProductById'
+                getProductById: 'addProduct/getProductById',
+                getToken: 'user/loggedUser/getToken'
             }),
 
         },
@@ -89,8 +91,11 @@
                     this.remainingSeconds =59 - difference.getSeconds();
                     this.remainingMinutes = 59 - difference.getMinutes();
                     this.remainingHours = 23 - difference.getUTCHours();
+                    console.log(this.getToken)
                     if (this.remainingSeconds === 0 && this.remainingMinutes === 0 && this.remainingHours === 0) {
                         this.isProductSoldOut = true
+
+                        sellProduct(this.product.productId,this.getToken)
                     }
                 }, 1000)
             },
