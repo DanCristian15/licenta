@@ -8,26 +8,18 @@
             v-if="!$vuetify.breakpoint.mdAndUp"
             @expand="menuExpanded=true"
             @collapse="menuExpanded=false" />
-        <TenantLogo />
-        <v-fade-transition v-if="$vuetify.breakpoint.mdAndUp">
-            <SearchKeywordWithAutocomplete
-                v-if="withSearch || isSearchFocused"
-                v-model="keyword"
-                redirect-to-search-on-enter
-                class="ml-4 mr-0 gst-header__search-keyword-with-autocomplete"
-                :style="{'minWidth':'310px'}"
-                @focus="onFocusSearchDo"
-                @blur="onBlurSearchDo" />
-        </v-fade-transition>
+        <TenantLogo class="gst-header__logo"/>
+
         <v-spacer />
         <template v-if="$vuetify.breakpoint.mdAndUp">
-            <div @click="goToNotificationsPage" class="mr-auto" :class="getLoggedUser.purchasedProducts.length - this.openedNotifications !== 0 ? 'gst-pulse-animation': ''" >
+            <div @click="goToNotificationsPage" class="mr-auto" :class="getLoggedUser.purchasedProducts.length - this.openedNotifications !== 0  && getIsLogged ? 'gst-pulse-animation': ''" >
                 <IconBell1  class="icon-bell mr-4"/>
-                 <div class="gst-notifications-number">{{getLoggedUser.purchasedProducts.length - this.openedNotifications}}</div>
+                 <div v-if="openedNotifications === 0 || !getIsLogged" class="gst-notifications-number">0</div>
+                 <div v-else class="gst-notifications-number">{{getLoggedUser.purchasedProducts.length - this.openedNotifications}}</div>
                  </div>
 
             <!-- <MainMenu v-if="showMainMenu" /> -->
-            <LoginButtonVariant1 v-if="!userIsAuth" :data-test-id="$testId('login')" @click.native="showModal" />
+            <LoginButtonVariant1 v-if="!userIsAuth" :data-test-id="$testId('login')" @click="showModal" />
             <TenantUserDropdownMenu v-if="userIsAuth && userDetail" :user-detail="userDetail" />
         </template>
         <template v-else>
@@ -48,6 +40,7 @@
     import SearchKeywordWithAutocomplete from '@core/shared/components/search/SearchKeywordWithAutocomplete.vue';
     import LoginModal from '@core/shared/components/modals/LoginModal.vue';
     import IconBell1 from '@core/shared/components/icons/IconBell1.vue';
+    import {findProductsByUsername} from '@core/services/userService.js'
 
     export default {
         name: 'TheHeader',
@@ -82,7 +75,10 @@
                 userIsAuth: 'user/profile/isAuth',
                 userDetail: 'user/profile/getDetail',
                 getProducts: 'addProduct/getProducts',
-                getLoggedUser: 'user/loggedUser/getLoggedUser'
+                getLoggedUser: 'user/loggedUser/getLoggedUser',
+                getToken: 'user/loggedUser/getToken',
+                getPurchasedProducts: 'user/loggedUser/getPurchasedProducts',
+                getIsLogged: 'user/loggedUser/getIsLogged'
             } ),
             keyword: {
                 get( ) {
@@ -104,10 +100,12 @@
         methods: {
 
             goToNotificationsPage() {
+                this.openedNotifications = this.getPurchasedProducts.length
                 this.$router.push({name: 'notifications'});
-                this.openedNotifications = this.getLoggedUser.purchasedProducts.length
+
             },
             ...mapActions( {
+                commitSetLoggedUserPurchasedProducts: 'user/loggedUser/commitSetLoggedUserPurchasedProducts',
                 updateSearch: 'searchState/update',
                 commitSetUserPurchasedProducts: 'user/signUp/commitSetUserPurchasedProducts'
             } ),
@@ -143,16 +141,15 @@
             }
         },
         created() {
+
             setInterval(()=> {
-                this.getProducts.forEach(product => {
-                    if (product.remainingSeconds > 29 ) {
-                        product.isProductSoldOut = true;
-                    }
-                    if (product.remainingSeconds === 29 ) {
-                        this.commitSetUserPurchasedProducts(product)
-                    }
-                });
-            }, 1000)
+                findProductsByUsername(this.getLoggedUser.username, this.getToken)
+                    .then((resp) => {
+                        // console.log(this.getPurchasedProducts.length)
+                        this.commitSetLoggedUserPurchasedProducts(resp.data)
+
+                    })
+            }, 5000)
         }
     };
 </script>
@@ -179,6 +176,7 @@
 
         .gst-header__logo {
             svg {
+                margin-top: -17px;
                 @include mobile-only {
                     max-width: 158px;
                 }

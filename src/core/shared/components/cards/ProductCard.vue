@@ -1,5 +1,5 @@
 <template>
-    <div v-if="category === product.category" class="product-card" :disabled="product.isProductSoldOut" :class="isProductSoldOut ? 'disabled' : ''"  @click="ret">
+    <div v-if="category === product.category" class="product-card" :disabled="product.sold || isProductSoldOut" :class="product.sold || isProductSoldOut ? 'disabled' : ''"  @click="onClickGoToProductDetails">
         <div class="product-card_image-container">
             <img class="product-card_image" :src="`data:image/png;base64,${product.imageSrc}`" alt="" />
         </div>
@@ -13,17 +13,17 @@
                 <div class="product-card-informations_price ">
                     <p>Current bid</p>
                     <p>
-                        {{ product.bid }}
+                        {{ product.bid }}$
                     </p>
                 </div>
                 <div class="product-card-informations_star-rating">
                     <p>Seller rating</p>
-                    <StarRating value="2" />
+                    <StarRating :value="2" />
                 </div>
             </div>
             <div class="product-card_remaining-time">
 
-                <p v-if="isProductSoldOut" class="soldOut"> Sold Out</p>
+                <p v-if="product.sold || this.isProductSoldOut" class="soldOut"> Sold Out</p>
                 <p v-else>Remaining time {{this.remainingHours}}:{{this.remainingMinutes}}:{{this.remainingSeconds}} </p>
             </div>
         </div>
@@ -75,7 +75,8 @@
         methods: {
              ...mapActions({
                 commitSetProductBid: 'addProduct/commitSetProductBid',
-                commitSetLastBidder: 'addProduct/commitSetLastBidder'
+                commitSetLastBidder: 'addProduct/commitSetLastBidder',
+                commitSetLoggedUserPurchasedProducts: 'user/loggedUser/commitSetLoggedUserPurchasedProducts'
             }),
             updateRemainingTime() {
                 const date = this.product.dateAdded.split('T')[0]
@@ -84,24 +85,22 @@
                 bidMoment.setSeconds(time[2])
                 bidMoment.setMinutes(time[1])
                 bidMoment.setHours(time[0])
-                console.log(bidMoment)
+                //console.log(bidMoment)
                     setInterval(() => {
                     let thisMoment = new Date();
                     const difference = new Date(thisMoment - bidMoment);
                     this.remainingSeconds =59 - difference.getSeconds();
                     this.remainingMinutes = 59 - difference.getMinutes();
                     this.remainingHours = 23 - difference.getUTCHours();
-                    console.log(this.getToken)
+                    //console.log(this.getToken)
                     if (this.remainingSeconds === 0 && this.remainingMinutes === 0 && this.remainingHours === 0) {
                         this.isProductSoldOut = true
-
                         sellProduct(this.product.productId,this.getToken)
                     }
                 }, 1000)
             },
-            ret() {
+            onClickGoToProductDetails() {
                 this.$router.push( { name: 'productDetailsPage', params: { product: this.product, productId: this.product.productId } } )
-                console.log(this.product)
             }
         },
          created: function()  {

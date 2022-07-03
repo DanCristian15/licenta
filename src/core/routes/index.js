@@ -25,6 +25,7 @@ const UserFavoritesTabsAttractions  = ( ) => import( '@core/views/user/TheUserFa
 const TheUserTickets                = ( ) => import( '@views/user/TheUserTickets' );
 const TheVenue                      = ( ) => import( '@core/views/venue/TheVenue' );
 const SearchModalContent            = () => import( '@core/shared/components/search/SearchModalContent' );
+const Orders                        = () => import( '@core/shared/components/orders/Orders.vue' );
 const ProductList                   = () => import( '@core/shared/components/ProductsList.vue' );
 const ProductDetailsPage            = () => import( '@core/views/product/ProductDetailsPage.vue' );
 const SignUp                        = () => import( '@core/views/signUp/SignUp.vue' );
@@ -109,6 +110,14 @@ export default [
         path: 'addProduct',
         name: 'addProduct',
         component: AddProduct,
+        meta: {
+            isPublic: true
+        }
+    },
+    {
+        path: 'orders',
+        name: 'orders',
+        component: Orders,
         meta: {
             isPublic: true
         }

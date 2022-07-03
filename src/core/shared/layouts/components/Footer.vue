@@ -1,33 +1,5 @@
 <template>
-    <div class="gst-footer">
-        <div class="content-max-width">
-            <v-layout wrap>
-                <v-flex grow :class="$vuetify.breakpoint.smAndDown && 'xs12'">
-                    <MainMenu :is-footer="true" />
-                </v-flex>
-                <v-flex v-if="$vuetify.breakpoint.mdAndUp" align-self-center shrink class="pr-3">
-                    <p class="gst-footer__copyright ma-0">
-                        {{ $t('copyright', { year: year }) }}
-                    </p>
-                    <p class="gst-footer__app-info">
-                        {{ appInfo }}
-                    </p>
-                </v-flex>
-                <v-flex shrink :class="$vuetify.breakpoint.smAndDown && 'xs12'">
-                    <LanguageSelectField is-secondary-type />
-                </v-flex>
-                <v-flex v-if="$vuetify.breakpoint.smAndDown" shrink :class="$vuetify.breakpoint.smAndDown && 'xs12'">
-                    <p class="gst-footer__copyright mt-12 mb-0">
-                        {{ $t('copyright', { year: year }) }}
-                    </p>
-                    <p class="gst-footer__app-info mb-0">
-                        {{ appInfo }}
-                    </p>
-                </v-flex>
-            </v-layout>
-            <LegalNotes />
-        </div>
-    </div>
+
 </template>
 <script>
     import appConstants from '@core/utils/constants/app';

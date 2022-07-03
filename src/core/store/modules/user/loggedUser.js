@@ -12,7 +12,7 @@ export default  {
             email: '',
             password: '',
             username: '',
-            purchasedProducts: '',
+            purchasedProducts: [],
             id: ''
         }
     },
@@ -25,6 +25,9 @@ export default  {
         },
         getToken( state ) {
             return state.token;
+        },
+        getPurchasedProducts(state) {
+            return state.loggedUser.purchasedProducts
         }
     },
     mutations: {
@@ -36,6 +39,12 @@ export default  {
             state.loggedUser.id = payload.id
             state.loggedUser.purchasedProducts = payload.purchasedProducts
             state.isLogged = true;
+        },
+        // puneUnu: ( state, payload) => {
+        //     state.unu.push( payload )
+        // },
+        setLoggedUserPurchasedProducts: ( state, payload ) => {
+            state.loggedUser.purchasedProducts = payload
         },
         unsetLoggedUser: ( state ) => {
             state.loggedUser.name = '';
@@ -51,8 +60,15 @@ export default  {
         },
     },
     actions: {
+        // commitPuneUnu( { commit }, payload ) {
+        //     console.log(payload)
+        //     commit( 'puneUnu', payload)
+        // },
         commitSetLoggedUser( { commit }, payload ) {
             commit( 'setLoggedUser', payload );
+        },
+        commitSetLoggedUserPurchasedProducts( { commit }, payload ) {
+            commit( 'setLoggedUserPurchasedProducts', payload );
         },
         commitUnsetLoggedUser( { commit } ) {
             commit( 'unsetLoggedUser' );

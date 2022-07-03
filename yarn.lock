@@ -1543,6 +1543,11 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.0.tgz#623aa40623550e3b94767cffeb096a6fb597ed09"
   integrity sha512-9GvTek+7cVw7r+L7TNGOG1astZJWXz2h5q4BqMXl28KN+24iSCm1xo+RhZOZvwdT3bzNe9hD7riJc/lBoO7mgg==
 
+"@stripe/stripe-js@^1.13.2":
+  version "1.32.0"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.32.0.tgz#4ecdd298db61ad9b240622eafed58da974bd210e"
+  integrity sha512-7EvBnbBfS1aynfLRmBFcuumHNGjKxnNkO47rorFBktqDYHwo7Yw6pfDW2iqq0R8r7i7XiJEdWPvvEgQAiDrx3A==
+
 "@stylelint/postcss-css-in-js@^0.37.2":
   version "0.37.2"
   resolved "https://registry.yarnpkg.com/@stylelint/postcss-css-in-js/-/postcss-css-in-js-0.37.2.tgz#7e5a84ad181f4234a2480803422a47b8749af3d2"
@@ -1862,6 +1867,14 @@
   integrity sha512-A1b8SU4D10uoPjwb0lnHmmu8wZhR9d+9o2PKBQT2jU5YPTKsxac6M2qGAdY7VcL+dHHhARVUDmeg0rOrcd9EjA==
   dependencies:
     "@types/node" "*"
+
+"@vue-stripe/vue-stripe@^4.4.2":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@vue-stripe/vue-stripe/-/vue-stripe-4.4.2.tgz#5120b5dbdad2d36f98177212ebfafed81f60a068"
+  integrity sha512-+XaquPv9kwbV75dCKTM72kYTujwDIZItRmteaFtDYE/JvmqpVfLhjdcYTi3ZCxVe+i4dx02h453dj9cKfo+jiw==
+  dependencies:
+    "@stripe/stripe-js" "^1.13.2"
+    vue-coerce-props "^1.0.0"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -13471,6 +13484,11 @@ vue-cli-plugin-vuetify@^2.0.2:
     semver "^7.1.2"
     shelljs "^0.8.3"
 
+vue-coerce-props@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-coerce-props/-/vue-coerce-props-1.0.0.tgz#af3d00aa419f0de79c2b020824c6c0387070d66e"
+  integrity sha512-4fdRMXO6FHzmE7H4soAph6QmPg3sL/RiGdd+axuxuU07f02LNMns0jMM88fmt1bvSbN+2Wyd8raho6p6nXUzag==
+
 vue-eslint-parser@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-5.0.0.tgz#00f4e4da94ec974b821a26ff0ed0f7a78402b8a1"
@@ -13545,6 +13563,11 @@ vue-scrollto@^2.17.1:
   integrity sha512-JojeVOP1Z50Jt0OCOd61jRRRF8TrNvPAzF4LAKwkTEZnt30mpDd48aDZZOEPD3l6z2PybOyUGFT/FNWfTtFv9w==
   dependencies:
     bezier-easing "2.1.0"
+
+vue-stripe-elements-plus@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-stripe-elements-plus/-/vue-stripe-elements-plus-1.0.3.tgz#1a19aa49e8e7569c41972a3a0faf273e01ed9f3f"
+  integrity sha512-Aq61f8KxrAe0l+eL5uZc1LePogfrPpAtjm/HqFDFYydRK2z7jl8Rb/IDTKeQi4Z+Tt+kX76WNtHWpxtt9chYSQ==
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"

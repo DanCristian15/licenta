@@ -99,6 +99,7 @@
         margin: auto;
         background: black;
         flex-wrap: wrap;
+        margin-bottom: 100px;
     }
 
     .image {

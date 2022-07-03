@@ -28,22 +28,22 @@
 
                     ]"
                     placeholder="Geographic origin" />
-                <label for="years">Year/s</label>
+                <label for="year">Year</label>
                 <v-text-field
-                    v-model="years"
+                    v-model="year"
                     :error-messages="[
-                        ...requiredError({ field: 'years' })
+                        ...requiredError({ field: 'year' })
                     ]"
-                    placeholder="Year/years" />
+                    placeholder="Year/year" />
 
                 <label>
                     Start bid
                     (All the prices will be condidered in USD)
                 </label>
                 <v-text-field
-                    v-model="lastBid"
+                    v-model="bid"
                     :error-messages="[
-                        ...requiredError({ field: 'lastBid' })
+                        ...requiredError({ field: 'bid' })
                     ]"
                     placeholder="Start bid" />
 
@@ -51,7 +51,10 @@
                 <v-select
                     v-model="category"
                     :items="categories"
-                    label="Choose a category" />
+                    label="Choose a category"
+                    :error-messages="[
+                        ...requiredError({ field: 'category' })
+                    ]" />
                 <label for="description">Description (optional) </label>
                 <v-textarea
                     v-model="description"
@@ -60,10 +63,8 @@
                 <input
                 type="file"
                 @change="saveImage">
-
-
             </div>
-            <BaseButton block :placeholder="$t('subscribeButton')" @click="validate" />
+            <BaseButton block placeholder="Add product" @click="validate" />
             <!-- <div> {{ getUsers() }} </div> -->
         </v-form>
     </div>
@@ -86,8 +87,8 @@
                 productName: '',
                 condition: '',
                 geographicOrigin: '',
-                years: '',
-                lastBid: '',
+                year: '',
+                bid: '',
                 category: '',
                 description: '',
                 categories: categories,
@@ -106,10 +107,10 @@
                 geographicOrigin: {
                     required,
                 },
-                years: {
+                year: {
                     required,
                 },
-                lastBid: {
+                bid: {
                     required,
                 },
                 category: {
@@ -141,36 +142,20 @@
 
             requiredError( { field } ) {
                 let errors = [];
-                if ( !this.$v[field].$dirty ) return errors;ß
+                if ( !this.$v[field].$dirty ) return errors;
                 !this.$v[field].required   && errors.push ( this.$t( '_common:formErrors.requiredField', { field: this.$t( `_common:form.labels.${field}` ), interpolation : { escapeValue: false } } ) );
                 return errors;
             },
             validate( ) {
                 this.$v.$touch( );
-                let i = 100;
 
                 if ( !this.$v.$invalid ) {
-
-
-                    console.log( this.$data, this.productName, this.category, this.years, this.description );
-                    this.commitAddProduct( {
-                        productName: this.productName,
-                        condition: this.condition,
-                        years: this.years,
-                        geographicOrigin: this.geographicOrigin,
-                        lastBid: this.lastBid,
-                        category: this.category,
-                        description: this.description,
-                        sellerEmail: this.getLoggedUser.email,
-                        sellerName: this.getLoggedUser.name
-                    } );
-
                     addProduct({
                         productName: this.productName,
                         condition: this.condition.toUpperCase(),
-                        year: this.years,
+                        year: this.year,
                         geographicOrigin: this.geographicOrigin,
-                        bid: this.lastBid,
+                        bid: this.bid,
                         category: this.category,
                         description: this.description,
                         ownerUser: this.getLoggedUser.username,

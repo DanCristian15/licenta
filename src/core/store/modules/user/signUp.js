@@ -29,8 +29,9 @@ export default {
 
         setUserPurchasedProducts: ( state, payload ) => {
             state.users.forEach( user => {
+                console.log(user.id, payload.lastBidder)
                 if ( user.id === payload.lastBidder ) {
-                    user.purchasedProducts.push( payload)
+                    user.purchasedProducts.push( payload )
                 }
             })
         }

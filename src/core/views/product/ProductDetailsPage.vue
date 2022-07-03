@@ -43,27 +43,12 @@
                 </div>
                 <div class="product-details-page__additional-informations-seller-profile u-height-100 u-width-100 d-flex flex-column align-center">
                     <div class="product-details-page__seller-profile-informations d-flex flex-column align-center pt-5 pb-5">
-                        <h3>Seller profile</h3>
-                        <div class="product-details-page__seller-profile-image d-flex align-center mb-3">
-                            <img width="50" :src="`data:image/png;base64,${product.imageSrc}`" />
-                            <p class="mt-3 ml-2">
-                                {{ product.ownerUser.username }}
-                            </p>
-                        </div>
-
+                        <h4>Seller name: {{ product.ownerUser.username }}</h4>
                         <div class="d-flex align-center">
                             <h5>
                                 Seller Rating
                             </h5>
-                            <StarRating class="mt-2 ml-2" :value="product.sellerRating" />
-                        </div>
-                        <div class="d-flex justify-center align-center">
-                            <h5>
-                                Seller country
-                            </h5>
-                            <div class="d-flex justify-center align-center ml-1">
-                                {{ product.sellerCountry }}
-                            </div>
+                            <StarRating class="mt-2 ml-2" :value="2" />
                         </div>
                         <div class="d-flex justify-center align-center">
                             <h5>
@@ -74,27 +59,21 @@
                                 <IconOk v-else />
                             </div>
                         </div>
-                        <div class="d-flex align-center">
-                            <h5>Sold products</h5>
-                            <div class="pt-1 pl-2">
-                                {{ product.soldProducts }}
-                            </div>
-                        </div>
                     </div>
                     <h5 class="mt-6 mb-4 ml-10 d-flex align-self-start">
                         Quick bid
                     </h5>
                     <div class="product-details-page__additional-informations-buttons-group u-width-100 d-flex justify-center flex-wrap">
-                        <button class="bid-button" @click="goToBidPaymentQuick(5)">
+                        <button class="bid-button" @click="updatePriceAndResetTimer(5)">
                             5 $
                         </button>
-                        <button class="bid-button" @click="goToBidPaymentQuick(10)">
+                        <button class="bid-button" @click="updatePriceAndResetTimer(10)">
                             10 $
                         </button>
-                        <button class="bid-button" @click="goToBidPaymentQuick(50)">
+                        <button class="bid-button" @click="updatePriceAndResetTimer(50)">
                             50 $
                         </button>
-                        <button class="bid-button" @click="goToBidPaymentQuick(100)">
+                        <button class="bid-button" @click="updatePriceAndResetTimer(100)">
                             100 $
                         </button>
                     </div>
@@ -110,14 +89,14 @@
                                 label="Bid"
                                 value=""
                                 suffix="$" />
-                            <button class="bid-directly-button ml-2" @click="goToBidPaymentDirectly(directlyBid)">
+                            <button class="bid-directly-button ml-2" @click="updatePriceAndResetTimer(directlyBid)">
                                 Place your bid
                             </button>
-
                     </div>
                 </div>
             </div>
         </div>
+        <p>{{this.product.description}}</p>
     </div>
 </template>
 
@@ -138,6 +117,9 @@
             return {
                 product: {},
                 directlyBid: '',
+                bidMoment: {
+                    type: new Date()
+                },
                 remainingTime: {
                     type: Number
                 },
@@ -165,13 +147,13 @@
            updateRemainingTime() {
                 const date = this.product.dateAdded.split('T')[0]
                 const time = this.product.dateAdded.split('T')[1].split(':')
-                let bidMoment = new Date(this.product.dateAdded.split('T')[0])
-                bidMoment.setSeconds(time[2])
-                bidMoment.setMinutes(time[1])
-                bidMoment.setHours(time[0])
+                this.bidMoment = new Date(this.product.dateAdded.split('T')[0])
+                this.bidMoment.setSeconds(time[2])
+                this.bidMoment.setMinutes(time[1])
+                this.bidMoment.setHours(time[0])
                     setInterval(() => {
                     let thisMoment = new Date();
-                    const difference = new Date(thisMoment - bidMoment);
+                    const difference = new Date(thisMoment - this.bidMoment);
                     this.remainingSeconds =59 - difference.getSeconds();
                     this.remainingMinutes = 59 - difference.getMinutes();
                     this.remainingHours = 23 - difference.getUTCHours();
@@ -181,25 +163,7 @@
                     }
                 }, 1000)
             },
-            goToBidPaymentQuick( bid ) {
-                console.log( 'wtf', this.getLoggedUser.username,this.product.productId,bid)
-                bidDto({
-                    username: this.getLoggedUser.username,
-                    productId: this.product.productId,
-                    bid: this.product.bid + parseInt(bid)
-                },this.getToken).then(()=> {
-                    this.notificationSuccess( 'Bid successfully added');
-                    console.log(this.product.bid)
-                    this.product.bid = this.product.bid + parseInt(bid)
-                    // this.product.dateAdded = new Date().toLocaleString()
-                    console.log(this.product.dateAdded)
-                })
-                // this.notificationSuccess( 'Bid successfully added');
-                // console.log( bid );
-                // this.$router.push( { name: 'bidPayment', params: { bid: bid, productId: this.product.productId } } );
-            },
-            goToBidPaymentDirectly( bid ) {
-                // console.log( 'wtf', this.getLoggedUser().username,this.product.productId,bid)
+            updatePriceAndResetTimer( bid ) {
                 bidDto({
                     username: this.getLoggedUser.username,
                     productId: this.product.productId,
@@ -207,11 +171,11 @@
                 },this.getToken).then(()=> {
                     this.notificationSuccess( 'Bid successfully added');
                     this.product.bid = this.product.bid + parseInt(bid)
-                    this.product.dateAdded = new Date().toLocaleString;
-                    console.log(this.product.dateAdded)
+                    this.product.dateAdded = new Date().toLocaleString();
+                    this.bidMoment.setSeconds(new Date(this.product.dateAdded).getSeconds())
+                    this.bidMoment.setMinutes(new Date(this.product.dateAdded).getMinutes())
+                    this.bidMoment.setHours(new Date(this.product.dateAdded).getHours())
                 })
-                // this.notificationSuccess( 'Bid successfully added');
-                // this.$router.push( { name: 'bidPayment', params: { bid: this.directlyBid, productId: this.product.productId  } } );
             }
         },
         created: function()  {

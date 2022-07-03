@@ -8,23 +8,17 @@
             Logged user profile
         </button>
         <p class="the-home_page-description">
-            eBid is one of the largest auction sites on the net and has a very large database of users and visitors.
-
-            Although the payment options are limited for buyers and sellers, the buyer safety, competition, reach and high traffic certainly outweighs the payment options by far.
-
-            eBid has over $1,833,400,514 gross listing value in over 13,300 categories making it the second largest online auction site after Ebay.
-
-            eBid also offers competitive fees together with great selling features that bring your listing(s) to a very wide audience provided you have a seller plus account.
+           Auction house is a web application that allows anyone to participate in auctions for various antiques, offering a user-friendly interface and a fast bidding process. Access to the application only requires the user to register and log in by filling in simple forms.
         </p>
         <p class="the-home-page__categories-title">
             CATEGORIES
         </p>
         <ImageMasonry />
-        <p class="the-home-page__categories-title2">
+        <!-- <p class="the-home-page__categories-title2">
             LAST ADDED
-        </p>
+        </p> -->
 
-        <Swiper />
+        <!-- <Swiper /> -->
         <!-- <ProductCard />
         <ProductList /> -->
     </div>

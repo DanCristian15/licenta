@@ -35,7 +35,6 @@
         },
         created: function()  {
             this.category = this.$route.params.category ;
-            console.log("Token",this.getToken)
             findProductByCategory(this.$route.params.category).then((res)=>{
                 this.products = res.data;
             })

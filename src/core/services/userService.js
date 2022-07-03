@@ -2,9 +2,9 @@ import  axiosInstance  from '@core/utils/axios.js'
 
 const authHeader = (tokenParam) => {
     const token = tokenParam;
-    console.log(token)
+    //console.log(token)
     if ( token ) {
-        console.log({'Authorization': 'Bearer ' + token})
+        //console.log({'Authorization': 'Bearer ' + token})
         return {'Authorization': 'Bearer ' + token};
     } else {
         return {};
@@ -23,6 +23,10 @@ export const getOrdersByUser = ( username, token ) => axiosInstance.get( "/order
 
 export const findProductByCategory = ( category ) => axiosInstance.get( `/product/find/category/${category}` )
 
-export const sellProduct = (productId, token) => axiosInstance.post(`/product/sell/${productId}`,null,  { headers: authHeader( token ) })
+export const sellProduct = ( productId, token ) => axiosInstance.post( `/product/sell/${productId}`, null, { headers: authHeader( token ) } )
 
-export const findProductsByUsername = (username, token) => axiosInstance.get(`/product/find/username/${username}`,  { headers: authHeader( token ) })
+export const addOrder = ( orderDetails, token ) => axiosInstance.post( `/order/add`, orderDetails, { headers: authHeader( token ) } )
+
+export const findProductsByUsername = ( username, token ) => axiosInstance.get( `/product/find/username/${username}`, { headers: authHeader( token ) } )
+
+export const pay = ( amount, token, currency ) => axiosInstance.post( '/payment', { amount, token, currency })

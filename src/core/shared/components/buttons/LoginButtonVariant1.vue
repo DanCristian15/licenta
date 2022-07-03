@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-btn
-            v-if="getIsLogged !== true"
+            v-if="!getIsLogged"
             center
             text
             class="gst-login-btn"

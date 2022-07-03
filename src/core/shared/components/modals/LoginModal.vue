@@ -123,7 +123,8 @@
                 commitSetLoggedUser         : 'user/loggedUser/commitSetLoggedUser',
                 userLogin                   : 'user/login',
                 showLoadingOverlay          : 'appState/setLoading',
-                commitAddToken              : 'user/loggedUser/commitAddToken'
+                commitAddToken              : 'user/loggedUser/commitAddToken',
+                notificationSuccess: 'notification/success',
             } ),
             goToSignUpPage() {
                 this.$router.push( { name: 'signUp' } );
@@ -167,6 +168,7 @@
                             this.commitAddToken(res.data.token);
                             getOrdersByUser(userParsed.sub, res.data.token).then((ress)=> {
                                 this.commitSetLoggedUser( { name: userParsed.name, password:"", username: userParsed.sub, email: userParsed.email , id: "", purchasedProducts: ress.data} );
+                                this.notificationSuccess( 'User successfully loged in');
                                 this.$emit( 'close' );
                             })
                         }
@@ -174,7 +176,7 @@
                             alert('Invalid credentials');
                         }
                     }).catch((error)=> {
-                    console.log(error)
+                    //console.log(error)
                     alert('Invalid credentials');
                     })
 

@@ -59,7 +59,16 @@
     "form": {
         "labels": {
             "address": "Address",
+            "bid": "Bid",
+            "year": "Year",
+            "category": "Category",
+            "geographicOrigin": "Geographic origin",
+            "productName": "Product name",
+            "condition": "Condition",
             "agree": "I agree to the ",
+            "county": "County",
+            "postalCode": "Postal Code",
+            "password": "Password",
             "city": "City",
             "country": "Country",
             "electronic": "Electronic Ticket",
